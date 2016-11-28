@@ -22,10 +22,12 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var startBuild: UIButton!
     
     
-    @IBOutlet weak var savedLabel: UITextField!
+    @IBOutlet weak var savedLabel: UILabel!
     
     
-    @IBOutlet weak var progressLabel: UITextField!
+    @IBOutlet weak var progressLabel: UILabel!
+    
+   
     
     
 
