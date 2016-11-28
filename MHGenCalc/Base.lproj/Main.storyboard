@@ -42,8 +42,7 @@
                                         <rect key="frame" x="-1" y="276" width="376" height="136"/>
                                         <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="376" id="mFd-12-Xef"/>
-                                            <constraint firstAttribute="height" constant="136" id="ze7-Gz-6ju"/>
+                                            <constraint firstAttribute="height" constant="136" id="MWU-fI-KGZ"/>
                                         </constraints>
                                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-progress Builds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vFY-jc-AAB">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
@@ -56,7 +55,6 @@
                                     </tableView>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pBM-br-7Vt">
                                         <rect key="frame" x="89" y="29" width="196" height="29"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="196" id="6qz-OX-7ZX"/>
                                             <constraint firstAttribute="height" constant="28" id="RUz-lU-Zx8"/>
@@ -90,10 +88,6 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rxo-T3-WVS">
                                         <rect key="frame" x="-1" y="123" width="376" height="136"/>
                                         <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="136" id="O8m-Hz-Cw7"/>
-                                            <constraint firstAttribute="width" constant="376" id="WhI-vg-yBt"/>
-                                        </constraints>
                                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved Builds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dab-A4-yLn">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -109,10 +103,13 @@
                                     <constraint firstItem="pBM-br-7Vt" firstAttribute="top" secondItem="vj3-V9-7F0" secondAttribute="top" constant="29" id="88E-fb-ypq"/>
                                     <constraint firstItem="pBM-br-7Vt" firstAttribute="centerX" secondItem="Rxo-T3-WVS" secondAttribute="centerX" id="9NW-n8-tCB"/>
                                     <constraint firstItem="pBM-br-7Vt" firstAttribute="centerX" secondItem="sZU-EZ-6kK" secondAttribute="centerX" id="FZ0-hM-gV3"/>
+                                    <constraint firstItem="DX1-RM-Oer" firstAttribute="trailing" secondItem="Rxo-T3-WVS" secondAttribute="trailing" id="KuQ-jg-xuy"/>
+                                    <constraint firstAttribute="trailing" secondItem="DX1-RM-Oer" secondAttribute="trailing" id="NM6-03-OzA"/>
                                     <constraint firstItem="Rxo-T3-WVS" firstAttribute="leading" secondItem="vj3-V9-7F0" secondAttribute="leading" constant="-1" id="Xvd-16-tSs"/>
                                     <constraint firstItem="Rxo-T3-WVS" firstAttribute="top" secondItem="pBM-br-7Vt" secondAttribute="bottom" constant="66" id="ba4-J9-n1w"/>
                                     <constraint firstItem="DX1-RM-Oer" firstAttribute="leading" secondItem="vj3-V9-7F0" secondAttribute="leading" constant="-1" id="fwX-Bv-rKd"/>
                                     <constraint firstItem="DX1-RM-Oer" firstAttribute="top" secondItem="Rxo-T3-WVS" secondAttribute="bottom" constant="17" id="gnG-9e-4HH"/>
+                                    <constraint firstItem="DX1-RM-Oer" firstAttribute="top" secondItem="vj3-V9-7F0" secondAttribute="top" constant="276" id="hic-qy-z8Q"/>
                                     <constraint firstItem="sZU-EZ-6kK" firstAttribute="top" secondItem="DX1-RM-Oer" secondAttribute="bottom" constant="82" id="m7u-K4-vak"/>
                                 </constraints>
                             </view>
