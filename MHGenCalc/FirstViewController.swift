@@ -29,8 +29,8 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var progressLabel: UILabel!
     
    
-    var displayStrings = [String]()
-    //var people = [Person]()
+    
+    var names = [String]()
     @IBAction func indexChange(_ sender: Any) {
         //switch segmentedControl.selectedSegmentIndex
         //{
@@ -47,12 +47,19 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     }
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         savedLabel.textAlignment = NSTextAlignment.center;
         progressLabel.textAlignment = NSTextAlignment.center;
+        
+        //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        let textField = "Wheee"
+        self.names.append(textField)
+        self.savedTable.reloadData()
         
         //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         //progressTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
@@ -102,16 +109,15 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     // MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return displayStrings.count
+        return names.count
     }
     
     func tableView(_ tableView: UITableView,
-                   cellForRowAt
-        indexPath: IndexPath) -> UITableViewCell {
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
-        cell!.textLabel!.text = displayStrings[indexPath.row]
+        cell!.textLabel!.text = names[indexPath.row]
         
         return cell!
     }
