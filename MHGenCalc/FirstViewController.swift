@@ -23,12 +23,14 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var startBuild: UIButton!
     
     
+    //@IBOutlet weak var savedLabel: UILabel!
+    
     @IBOutlet weak var savedLabel: UILabel!
     
-    
-    @IBOutlet weak var progressLabel: UILabel!
+    //@IBOutlet weak var progressLabel: UILabel!
     
    
+    @IBOutlet weak var progressLabel: UILabel!
     
     var names = [String]()
     @IBAction func indexChange(_ sender: Any) {
@@ -99,7 +101,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
             
             
                 
-            
+        
        // } catch let error as NSError {
         //    print("fetch or save failed \(error), \(error.userInfo)")
       //  }
@@ -112,16 +114,13 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         return names.count
     }
     
-    func tableView(_ tableView: UITableView,
-                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath:IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
         cell!.textLabel!.text = names[indexPath.row]
         
         return cell!
     }
-    
 
     
     
