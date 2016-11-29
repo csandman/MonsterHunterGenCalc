@@ -15,6 +15,7 @@
 		3F88F1BF1DDE4D080044EE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F88F1BD1DDE4D080044EE49 /* LaunchScreen.storyboard */; };
 		3F88F1CA1DDE4D080044EE49 /* MHGenCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1C91DDE4D080044EE49 /* MHGenCalcTests.swift */; };
 		3F88F1D51DDE4D090044EE49 /* MHGenCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1D41DDE4D090044EE49 /* MHGenCalcUITests.swift */; };
+		3FD85FAF1DECBF000003B560 /* MHGenCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FD85FAD1DECBF000003B560 /* MHGenCalc.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3F88F1D01DDE4D090044EE49 /* MHGenCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHGenCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88F1D41DDE4D090044EE49 /* MHGenCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHGenCalcUITests.swift; sourceTree = "<group>"; };
 		3F88F1D61DDE4D090044EE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD85FAE1DECBF000003B560 /* MHGenCalc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MHGenCalc.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3F88F1BB1DDE4D080044EE49 /* Assets.xcassets */,
 				3F88F1BD1DDE4D080044EE49 /* LaunchScreen.storyboard */,
 				3F88F1C01DDE4D080044EE49 /* Info.plist */,
+				3FD85FAD1DECBF000003B560 /* MHGenCalc.xcdatamodeld */,
 			);
 			path = MHGenCalc;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD85FAF1DECBF000003B560 /* MHGenCalc.xcdatamodeld in Sources */,
 				3F88F1B71DDE4D080044EE49 /* SecondViewController.swift in Sources */,
 				3F88F1B31DDE4D080044EE49 /* AppDelegate.swift in Sources */,
 				3F88F1B51DDE4D080044EE49 /* FirstViewController.swift in Sources */,
@@ -509,6 +513,7 @@
 				3F88F1DB1DDE4D090044EE49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F88F1DC1DDE4D090044EE49 /* Build configuration list for PBXNativeTarget "MHGenCalcTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				3F88F1DE1DDE4D090044EE49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F88F1DF1DDE4D090044EE49 /* Build configuration list for PBXNativeTarget "MHGenCalcUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,8 +531,22 @@
 				3F88F1E11DDE4D090044EE49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FD85FAD1DECBF000003B560 /* MHGenCalc.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FD85FAE1DECBF000003B560 /* MHGenCalc.xcdatamodel */,
+			);
+			currentVersion = 3FD85FAE1DECBF000003B560 /* MHGenCalc.xcdatamodel */;
+			path = MHGenCalc.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3F88F1A71DDE4D080044EE49 /* Project object */;
 }
