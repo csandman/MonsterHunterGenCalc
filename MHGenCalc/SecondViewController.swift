@@ -10,6 +10,12 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBAction func PalicoInProgress(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0{
+        }
+        else{
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
