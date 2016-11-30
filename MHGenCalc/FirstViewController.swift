@@ -33,11 +33,11 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var progressLabel: UILabel!
     
     var namesSaved = [String]()
-    //var namesSavedPal = [String]()
-    //var namesProgress = [String]()
-    //var namesProgressPal = [String]()
+    var namesSavedPal = [String]()
+    var namesProgress = [String]()
+    var namesProgressPal = [String]()
     
-    var people = [Person]()
+    //var people = [Person]()
     
     @IBAction func indexChange(_ sender: Any) {
         switch humanPalico.selectedSegmentIndex
@@ -69,7 +69,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         progressLabel.textAlignment = NSTextAlignment.center;
         
         //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        /*let palText = "CATCATCAT"
+        let palText = "CATCATCAT"
         self.namesSavedPal.append(palText)
         let textField = "Wheee"
         self.namesSaved.append(textField)
@@ -83,15 +83,15 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         self.namesProgress.append(text5)
         let text6 = "yeah!!!"
         self.namesProgressPal.append(text6)
-        self.savedTable.reloadData()*/
+        self.savedTable.reloadData()
         
         //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         //progressTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-        let appDelegate =
-            UIApplication.shared.delegate as! AppDelegate
+        //let appDelegate =
+           // UIApplication.shared.delegate as! AppDelegate
         
-        let managedContext = appDelegate.managedObjectContext
+        //let managedContext = appDelegate.managedObjectContext
         
         //let entity =  NSEntityDescription.entity(forEntityName: "Person", in:managedContext)
         //let person = Person(entity: entity!, insertInto: managedContext)
@@ -105,9 +105,9 @@ class FirstViewController: UIViewController, UITableViewDataSource {
           print("Could not save \(error), \(error.userInfo)")
     }*/
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        //let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
         
-        do {
+        /*do {
             let results =
              try managedContext.fetch(fetchRequest)
             people = results as! [Person]
@@ -128,14 +128,14 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         
        } catch let error as NSError {
         print("fetch or save failed \(error), \(error.userInfo)")
-       }
+       }*/
     }
 
     
     // MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        /*if(humanPalico.selectedSegmentIndex == 0)
+        if(humanPalico.selectedSegmentIndex == 0)
         {
             if tableView == savedTable{
         
@@ -153,22 +153,23 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                 else{
                     return self.namesProgressPal.count
                 }
-            }*/
+            }
         
-        if(humanPalico.selectedSegmentIndex == 0)
+        //coredata
+        /*if(humanPalico.selectedSegmentIndex == 0)
         {
             if tableView == savedTable{
                 
                 return namesSaved.count
                 
         }
-        }
+        }*/
         
-        return 0;
+        //return 0;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath:IndexPath) -> UITableViewCell {
-        /*if(humanPalico.selectedSegmentIndex == 0)
+        if(humanPalico.selectedSegmentIndex == 0)
         {
         if tableView == savedTable{
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellSaved")
@@ -196,16 +197,16 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                 cell2!.textLabel!.text = namesProgressPal[indexPath.row]
                 return cell2!
             }
-        }*/
+        }
         
-        
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CellSaved")
+        //coredata
+            /*let cell = tableView.dequeueReusableCell(withIdentifier: "CellSaved")
             
             let person = people[indexPath.row]
             
             cell!.textLabel!.text = person.value(forKey: "name") as? String
             
-            return cell!
+            return cell!*/
         
     }
 
