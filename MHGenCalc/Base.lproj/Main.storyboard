@@ -126,7 +126,7 @@
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="A5M-7J-77L" secondAttribute="centerX" id="z2Q-E5-AoB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Builds" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Builds" image="imageName.png" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="humanPalico" destination="pBM-br-7Vt" id="dTA-LY-qRk"/>
                         <outlet property="progressLabel" destination="vFY-jc-AAB" id="Vt5-2v-UFT"/>
@@ -270,13 +270,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJu-uU-4dl">
-                                <rect key="frame" x="235" y="371" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et9-21-Y8O">
-                                <rect key="frame" x="83" y="371" width="50" height="50"/>
+                                <rect key="frame" x="121" y="371" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
                             </button>
@@ -299,18 +294,11 @@
                                     <segue destination="EA7-0O-fGq" kind="show" id="RGl-kX-aMc"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Dft-MN-0bB">
-                                <rect key="frame" x="89" y="66" width="196" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJu-uU-4dl">
+                                <rect key="frame" x="197" y="371" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Human"/>
-                                    <segment title="Palico"/>
-                                </segments>
-                                <connections>
-                                    <action selector="PalicoInProgress:" destination="8rJ-Kc-sve" eventType="valueChanged" id="4XT-uJ-sJL"/>
-                                    <action selector="indexChange:" destination="9pv-A4-QxB" eventType="valueChanged" id="dLp-fQ-Fro"/>
-                                </connections>
-                            </segmentedControl>
+                                <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
@@ -363,7 +351,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
         <image name="imageName.png" width="30" height="30"/>
     </resources>
 </document>
