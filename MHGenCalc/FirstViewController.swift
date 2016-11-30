@@ -93,17 +93,17 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         
         let managedContext = appDelegate.managedObjectContext
         
-        let entity =  NSEntityDescription.entity(forEntityName: "Person", in:managedContext)
-        let person = Person(entity: entity!, insertInto: managedContext)
+        //let entity =  NSEntityDescription.entity(forEntityName: "Person", in:managedContext)
+        //let person = Person(entity: entity!, insertInto: managedContext)
         
-        person.name = "aaaaaa"
+        /*person.name = "aaaaaa"
         
         do {
            try managedContext.save()
            people.append(person)
     } catch let error as NSError  {
           print("Could not save \(error), \(error.userInfo)")
-    }
+    }*/
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
         
@@ -112,11 +112,13 @@ class FirstViewController: UIViewController, UITableViewDataSource {
              try managedContext.fetch(fetchRequest)
             people = results as! [Person]
             
+            
+            
           for p in people
            {
                people.append(p)
                 self.namesSaved.append(p.name!)
-               print(p.name!)
+            
             }
             
            self.savedTable.reloadData()
