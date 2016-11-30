@@ -126,7 +126,7 @@
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="A5M-7J-77L" secondAttribute="centerX" id="z2Q-E5-AoB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Builds" image="imageName.png" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Builds" image="builds" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="humanPalico" destination="pBM-br-7Vt" id="dTA-LY-qRk"/>
                         <outlet property="progressLabel" destination="vFY-jc-AAB" id="Vt5-2v-UFT"/>
@@ -164,7 +164,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" id="bNY-pX-NiK"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="bNY-pX-NiK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ga5-rb-kcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -334,7 +334,7 @@
         <scene sceneID="a4y-vo-6Jj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4CX-1e-Rw7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="In-Progress" image="imageName.png" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="In-Progress" image="inProg" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="F0U-Ug-Z8n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -351,6 +351,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="imageName.png" width="30" height="30"/>
+        <image name="builds" width="30" height="30"/>
+        <image name="inProg" width="30" height="30"/>
+        <image name="search" width="30" height="30"/>
     </resources>
 </document>
