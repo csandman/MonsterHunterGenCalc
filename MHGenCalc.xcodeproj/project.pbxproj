@@ -15,6 +15,8 @@
 		3F88F1BF1DDE4D080044EE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F88F1BD1DDE4D080044EE49 /* LaunchScreen.storyboard */; };
 		3F88F1CA1DDE4D080044EE49 /* MHGenCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1C91DDE4D080044EE49 /* MHGenCalcTests.swift */; };
 		3F88F1D51DDE4D090044EE49 /* MHGenCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1D41DDE4D090044EE49 /* MHGenCalcUITests.swift */; };
+		3F94E6B61DEE512200F32F8D /* buildsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F94E6B51DEE512200F32F8D /* buildsIcon.png */; };
+		3F94E6B81DEE51E100F32F8D /* inProgIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F94E6B71DEE51E100F32F8D /* inProgIcon.png */; };
 		3FD85FAF1DECBF000003B560 /* MHGenCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FD85FAD1DECBF000003B560 /* MHGenCalc.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		3F88F1D01DDE4D090044EE49 /* MHGenCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHGenCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88F1D41DDE4D090044EE49 /* MHGenCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHGenCalcUITests.swift; sourceTree = "<group>"; };
 		3F88F1D61DDE4D090044EE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F94E6B51DEE512200F32F8D /* buildsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buildsIcon.png; path = ../../Desktop/mhgc/MHGenCalc/Assets.xcassets/build.imageset/buildsIcon.png; sourceTree = "<group>"; };
+		3F94E6B71DEE51E100F32F8D /* inProgIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = inProgIcon.png; path = ../../Desktop/mhgc/MHGenCalc/Assets.xcassets/inProgIcon.imageset/inProgIcon.png; sourceTree = "<group>"; };
 		3FD85FAE1DECBF000003B560 /* MHGenCalc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MHGenCalc.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +89,8 @@
 				3F88F1C81DDE4D080044EE49 /* MHGenCalcTests */,
 				3F88F1D31DDE4D090044EE49 /* MHGenCalcUITests */,
 				3F88F1B01DDE4D080044EE49 /* Products */,
+				3F94E6B51DEE512200F32F8D /* buildsIcon.png */,
+				3F94E6B71DEE51E100F32F8D /* inProgIcon.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,6 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F88F1BF1DDE4D080044EE49 /* LaunchScreen.storyboard in Resources */,
+				3F94E6B61DEE512200F32F8D /* buildsIcon.png in Resources */,
+				3F94E6B81DEE51E100F32F8D /* inProgIcon.png in Resources */,
 				3F88F1BC1DDE4D080044EE49 /* Assets.xcassets in Resources */,
 				3F88F1BA1DDE4D080044EE49 /* Main.storyboard in Resources */,
 			);
