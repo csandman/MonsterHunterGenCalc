@@ -32,19 +32,30 @@ class FirstViewController: UIViewController, UITableViewDataSource {
    
     @IBOutlet weak var progressLabel: UILabel!
     
-    var names = [String]()
+    var namesSaved = [String]()
+    //var namesSavedPal = [String]()
+    //var namesProgress = [String]()
+    //var namesProgressPal = [String]()
+    
+    var people = [Person]()
+    
     @IBAction func indexChange(_ sender: Any) {
-        //switch segmentedControl.selectedSegmentIndex
-        //{
-        //case 0:
-        //Display human saved/in-progress builds
+        switch humanPalico.selectedSegmentIndex
+        {
+        case 0:
+            self.savedTable.reloadData()
+            self.progressTable.reloadData()
+            break;
         
-        //case 1:
-        //Display palico saved/in-progress builds
-        //default:
-        //  break;
+        case 1:
+            self.savedTable.reloadData()
+            self.progressTable.reloadData()
+            break;
+            
+        default:
+          break;
         
-        //}
+        }
         
     }
     
@@ -58,68 +69,142 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         progressLabel.textAlignment = NSTextAlignment.center;
         
         //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        
+        /*let palText = "CATCATCAT"
+        self.namesSavedPal.append(palText)
         let textField = "Wheee"
-        self.names.append(textField)
-        self.savedTable.reloadData()
+        self.namesSaved.append(textField)
+        let text2 = "asasas"
+        self.namesSaved.append(text2)
+        let text3 = "sasdasdasds"
+        self.namesSaved.append(text3)
+        let text4 = "asdads"
+        self.namesSaved.append(text4)
+        let text5 = "i dunno"
+        self.namesProgress.append(text5)
+        let text6 = "yeah!!!"
+        self.namesProgressPal.append(text6)
+        self.savedTable.reloadData()*/
         
         //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         //progressTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-        //let appDelegate =
-            //UIApplication.shared.delegate as! AppDelegate
+        let appDelegate =
+            UIApplication.shared.delegate as! AppDelegate
         
-        //let managedContext = appDelegate.managedObjectContext
+        let managedContext = appDelegate.managedObjectContext
         
-        //let entity =  NSEntityDescription.entity(forEntityName: "Person", in:managedContext)
-        //let person = Person(entity: entity!, insertInto: managedContext)
+        let entity =  NSEntityDescription.entity(forEntityName: "Person", in:managedContext)
+        let person = Person(entity: entity!, insertInto: managedContext)
         
-        //person.name = "aaaaaa"
+        person.name = "aaaaaa"
         
-        //do {
-        //    try managedContext.save()
-       //     people.append(person)
-        //} catch let error as NSError  {
-       //     print("Could not save \(error), \(error.userInfo)")
-       // }
+        do {
+           try managedContext.save()
+           people.append(person)
+    } catch let error as NSError  {
+          print("Could not save \(error), \(error.userInfo)")
+    }
         
-        //let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
         
-       // do {
-        //    let results =
-        //        try managedContext.fetch(fetchRequest)
-         //   people = results as! [Person]
+        do {
+            let results =
+             try managedContext.fetch(fetchRequest)
+            people = results as! [Person]
             
-         //   for p in people
-         //   {
-         //       people.append(p)
-         //       self.displayStrings.append(p.name!)
-         //       print(p.name!)
-          //  }
+          for p in people
+           {
+               people.append(p)
+                self.namesSaved.append(p.name!)
+               print(p.name!)
+            }
             
-         //   self.savedTable.reloadData()
+           self.savedTable.reloadData()
             
             
                 
         
-       // } catch let error as NSError {
-        //    print("fetch or save failed \(error), \(error.userInfo)")
-      //  }
+       } catch let error as NSError {
+        print("fetch or save failed \(error), \(error.userInfo)")
+       }
     }
 
     
     // MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        /*if(humanPalico.selectedSegmentIndex == 0)
+        {
+            if tableView == savedTable{
+        
+                return self.namesSaved.count
+            
+            }
+            else{
+                return self.namesProgress.count
+            }
+        }
+        else{
+                if tableView == savedTable{
+                    return self.namesSavedPal.count
+                }
+                else{
+                    return self.namesProgressPal.count
+                }
+            }*/
+        
+        if(humanPalico.selectedSegmentIndex == 0)
+        {
+            if tableView == savedTable{
+                
+                return namesSaved.count
+                
+        }
+        }
+        
+        return 0;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath:IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        /*if(humanPalico.selectedSegmentIndex == 0)
+        {
+        if tableView == savedTable{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellSaved")
         
-        cell!.textLabel!.text = names[indexPath.row]
+        cell!.textLabel!.text = namesSaved[indexPath.row]
         
         return cell!
+        }
+        else{
+            let cell2 = tableView.dequeueReusableCell(withIdentifier: "CellProgress")
+             cell2!.textLabel!.text = namesProgress[indexPath.row]
+            return cell2!
+            }
+        }
+        else{
+            if tableView == savedTable{
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CellSaved")
+                
+                cell!.textLabel!.text = namesSavedPal[indexPath.row]
+                
+                return cell!
+            }
+            else{
+                let cell2 = tableView.dequeueReusableCell(withIdentifier: "CellProgress")
+                cell2!.textLabel!.text = namesProgressPal[indexPath.row]
+                return cell2!
+            }
+        }*/
+        
+        
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CellSaved")
+            
+            let person = people[indexPath.row]
+            
+            cell!.textLabel!.text = person.value(forKey: "name") as? String
+            
+            return cell!
+        
     }
 
     
