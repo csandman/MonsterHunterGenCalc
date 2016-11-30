@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F34E59A1DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5981DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld */; };
+		3F34E5A31DEF51190002BD90 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59B1DEF51190002BD90 /* Armor.swift */; };
+		3F34E5A41DEF51190002BD90 /* Armor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59C1DEF51190002BD90 /* Armor+CoreDataProperties.swift */; };
+		3F34E5A51DEF51190002BD90 /* Builds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59D1DEF51190002BD90 /* Builds.swift */; };
+		3F34E5A61DEF51190002BD90 /* Builds+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59E1DEF51190002BD90 /* Builds+CoreDataProperties.swift */; };
+		3F34E5A71DEF51190002BD90 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59F1DEF51190002BD90 /* Person.swift */; };
+		3F34E5A81DEF51190002BD90 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5A01DEF51190002BD90 /* Person+CoreDataProperties.swift */; };
+		3F34E5A91DEF51190002BD90 /* Shoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5A11DEF51190002BD90 /* Shoes.swift */; };
+		3F34E5AA1DEF51190002BD90 /* Shoes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5A21DEF51190002BD90 /* Shoes+CoreDataProperties.swift */; };
+		3F34E5AC1DEF51940002BD90 /* armorTable.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3F34E5AB1DEF51940002BD90 /* armorTable.csv */; };
+		3F34E5AE1DEF57A20002BD90 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */; };
 		3F88F1B31DDE4D080044EE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1B21DDE4D080044EE49 /* AppDelegate.swift */; };
 		3F88F1B51DDE4D080044EE49 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1B41DDE4D080044EE49 /* FirstViewController.swift */; };
 		3F88F1B71DDE4D080044EE49 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1B61DDE4D080044EE49 /* SecondViewController.swift */; };
@@ -15,9 +26,6 @@
 		3F88F1BF1DDE4D080044EE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F88F1BD1DDE4D080044EE49 /* LaunchScreen.storyboard */; };
 		3F88F1CA1DDE4D080044EE49 /* MHGenCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1C91DDE4D080044EE49 /* MHGenCalcTests.swift */; };
 		3F88F1D51DDE4D090044EE49 /* MHGenCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1D41DDE4D090044EE49 /* MHGenCalcUITests.swift */; };
-		3F94E6B61DEE512200F32F8D /* buildsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F94E6B51DEE512200F32F8D /* buildsIcon.png */; };
-		3F94E6B81DEE51E100F32F8D /* inProgIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F94E6B71DEE51E100F32F8D /* inProgIcon.png */; };
-		3FD85FAF1DECBF000003B560 /* MHGenCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FD85FAD1DECBF000003B560 /* MHGenCalc.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F34E5991DEF4FB50002BD90 /* CS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CS.xcdatamodel; sourceTree = "<group>"; };
+		3F34E59B1DEF51190002BD90 /* Armor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
+		3F34E59C1DEF51190002BD90 /* Armor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Armor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F34E59D1DEF51190002BD90 /* Builds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builds.swift; sourceTree = "<group>"; };
+		3F34E59E1DEF51190002BD90 /* Builds+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Builds+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F34E59F1DEF51190002BD90 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3F34E5A01DEF51190002BD90 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F34E5A11DEF51190002BD90 /* Shoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shoes.swift; sourceTree = "<group>"; };
+		3F34E5A21DEF51190002BD90 /* Shoes+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shoes+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F34E5AB1DEF51940002BD90 /* armorTable.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = armorTable.csv; sourceTree = "<group>"; };
+		3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3F88F1AF1DDE4D080044EE49 /* MHGenCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHGenCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88F1B21DDE4D080044EE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F88F1B41DDE4D080044EE49 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -52,9 +71,6 @@
 		3F88F1D01DDE4D090044EE49 /* MHGenCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHGenCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88F1D41DDE4D090044EE49 /* MHGenCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHGenCalcUITests.swift; sourceTree = "<group>"; };
 		3F88F1D61DDE4D090044EE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F94E6B51DEE512200F32F8D /* buildsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buildsIcon.png; path = ../../Desktop/mhgc/MHGenCalc/Assets.xcassets/build.imageset/buildsIcon.png; sourceTree = "<group>"; };
-		3F94E6B71DEE51E100F32F8D /* inProgIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = inProgIcon.png; path = ../../Desktop/mhgc/MHGenCalc/Assets.xcassets/inProgIcon.imageset/inProgIcon.png; sourceTree = "<group>"; };
-		3FD85FAE1DECBF000003B560 /* MHGenCalc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MHGenCalc.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +105,6 @@
 				3F88F1C81DDE4D080044EE49 /* MHGenCalcTests */,
 				3F88F1D31DDE4D090044EE49 /* MHGenCalcUITests */,
 				3F88F1B01DDE4D080044EE49 /* Products */,
-				3F94E6B51DEE512200F32F8D /* buildsIcon.png */,
-				3F94E6B71DEE51E100F32F8D /* inProgIcon.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,14 +121,24 @@
 		3F88F1B11DDE4D080044EE49 /* MHGenCalc */ = {
 			isa = PBXGroup;
 			children = (
+				3F34E5981DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld */,
 				3F88F1B21DDE4D080044EE49 /* AppDelegate.swift */,
 				3F88F1B41DDE4D080044EE49 /* FirstViewController.swift */,
+				3F34E5AB1DEF51940002BD90 /* armorTable.csv */,
+				3F34E59B1DEF51190002BD90 /* Armor.swift */,
+				3F34E59C1DEF51190002BD90 /* Armor+CoreDataProperties.swift */,
+				3F34E59D1DEF51190002BD90 /* Builds.swift */,
+				3F34E59E1DEF51190002BD90 /* Builds+CoreDataProperties.swift */,
+				3F34E59F1DEF51190002BD90 /* Person.swift */,
+				3F34E5A01DEF51190002BD90 /* Person+CoreDataProperties.swift */,
+				3F34E5A11DEF51190002BD90 /* Shoes.swift */,
+				3F34E5A21DEF51190002BD90 /* Shoes+CoreDataProperties.swift */,
 				3F88F1B61DDE4D080044EE49 /* SecondViewController.swift */,
 				3F88F1B81DDE4D080044EE49 /* Main.storyboard */,
+				3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */,
 				3F88F1BB1DDE4D080044EE49 /* Assets.xcassets */,
 				3F88F1BD1DDE4D080044EE49 /* LaunchScreen.storyboard */,
 				3F88F1C01DDE4D080044EE49 /* Info.plist */,
-				3FD85FAD1DECBF000003B560 /* MHGenCalc.xcdatamodeld */,
 			);
 			path = MHGenCalc;
 			sourceTree = "<group>";
@@ -245,8 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F88F1BF1DDE4D080044EE49 /* LaunchScreen.storyboard in Resources */,
-				3F94E6B61DEE512200F32F8D /* buildsIcon.png in Resources */,
-				3F94E6B81DEE51E100F32F8D /* inProgIcon.png in Resources */,
+				3F34E5AC1DEF51940002BD90 /* armorTable.csv in Resources */,
 				3F88F1BC1DDE4D080044EE49 /* Assets.xcassets in Resources */,
 				3F88F1BA1DDE4D080044EE49 /* Main.storyboard in Resources */,
 			);
@@ -273,10 +296,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD85FAF1DECBF000003B560 /* MHGenCalc.xcdatamodeld in Sources */,
+				3F34E5A61DEF51190002BD90 /* Builds+CoreDataProperties.swift in Sources */,
+				3F34E59A1DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld in Sources */,
+				3F34E5A31DEF51190002BD90 /* Armor.swift in Sources */,
 				3F88F1B71DDE4D080044EE49 /* SecondViewController.swift in Sources */,
 				3F88F1B31DDE4D080044EE49 /* AppDelegate.swift in Sources */,
 				3F88F1B51DDE4D080044EE49 /* FirstViewController.swift in Sources */,
+				3F34E5A81DEF51190002BD90 /* Person+CoreDataProperties.swift in Sources */,
+				3F34E5A91DEF51190002BD90 /* Shoes.swift in Sources */,
+				3F34E5A71DEF51190002BD90 /* Person.swift in Sources */,
+				3F34E5A41DEF51190002BD90 /* Armor+CoreDataProperties.swift in Sources */,
+				3F34E5AA1DEF51190002BD90 /* Shoes+CoreDataProperties.swift in Sources */,
+				3F34E5A51DEF51190002BD90 /* Builds.swift in Sources */,
+				3F34E5AE1DEF57A20002BD90 /* ThirdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,12 +576,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3FD85FAD1DECBF000003B560 /* MHGenCalc.xcdatamodeld */ = {
+		3F34E5981DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3FD85FAE1DECBF000003B560 /* MHGenCalc.xcdatamodel */,
+				3F34E5991DEF4FB50002BD90 /* CS.xcdatamodel */,
 			);
-			currentVersion = 3FD85FAE1DECBF000003B560 /* MHGenCalc.xcdatamodel */;
+			currentVersion = 3F34E5991DEF4FB50002BD90 /* CS.xcdatamodel */;
 			path = MHGenCalc.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

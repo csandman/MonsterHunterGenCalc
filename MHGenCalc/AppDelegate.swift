@@ -104,6 +104,63 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func preloadDb () -> NSString {
+        
+        // name of the database file, with newline-separated records
+        let dbfile = "ArmorFile.csv"
+        // record field delimeter (is a comma for csv)
+        let delimeter = ","
+        
+        /*
+         process_fields takes as input an array of strings which are the raw field
+         values for a given record. If one wants to save the field values in
+         persistent memory, this is where the Core Data logic should go.
+         
+         Note that if field values need to be interpreted as non-String datatypes,
+         e.g. as numeric or boolean values, explicit type conversion needs to be
+         performed here as well.
+         */
+        func process_fields(fields : [NSString])
+        {
+            
+            let f0 = fields[0]
+            if (f0 != "") {
+                print((fields[0] as String)+","+(fields[1] as String)+","+(fields[2] as String))
+            }
+        }
+        
+        /*
+         import_db processes the input database file-- it iterates through each line,
+         splits the line into delimeter-separated fields, and applies process_fields to
+         the fields.
+         */
+        func import_db() -> NSString
+        {
+            do
+            {
+                let fileUrl = Bundle.main.url(forResource: "armorTable", withExtension:"csv")
+                let db = try NSString(contentsOf: fileUrl!, encoding: String.Encoding.utf8.rawValue)
+                
+                return db
+                //                let lines = db.componentsSeparatedByString("\n")
+                //
+                //                return lines
+                //                for line in lines
+                //                {
+                //                    let fields = line.componentsSeparatedByString(delimeter)
+                //                    process_fields(fields)
+                //                }
+            }
+            catch let error as NSError
+            {
+                print("file \(dbfile) input failed \(error), \(error.userInfo)")
+            }
+            return NSString()
+        }
+        
+        return import_db()
+    }
 
 }
 
