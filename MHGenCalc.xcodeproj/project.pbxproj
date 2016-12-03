@@ -18,6 +18,7 @@
 		3F34E5AA1DEF51190002BD90 /* Shoes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5A21DEF51190002BD90 /* Shoes+CoreDataProperties.swift */; };
 		3F34E5AC1DEF51940002BD90 /* armorTable.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3F34E5AB1DEF51940002BD90 /* armorTable.csv */; };
 		3F34E5AE1DEF57A20002BD90 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */; };
+		3F5D91C91DF321AD00B9CE2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5D91C81DF321AD00B9CE2B /* Images.xcassets */; };
 		3F88F1B31DDE4D080044EE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1B21DDE4D080044EE49 /* AppDelegate.swift */; };
 		3F88F1B51DDE4D080044EE49 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1B41DDE4D080044EE49 /* FirstViewController.swift */; };
 		3F88F1B71DDE4D080044EE49 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1B61DDE4D080044EE49 /* SecondViewController.swift */; };
@@ -57,6 +58,7 @@
 		3F34E5A21DEF51190002BD90 /* Shoes+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shoes+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F34E5AB1DEF51940002BD90 /* armorTable.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = armorTable.csv; sourceTree = "<group>"; };
 		3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		3F5D91C81DF321AD00B9CE2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3F88F1AF1DDE4D080044EE49 /* MHGenCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHGenCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88F1B21DDE4D080044EE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F88F1B41DDE4D080044EE49 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				3F88F1BB1DDE4D080044EE49 /* Assets.xcassets */,
 				3F88F1BD1DDE4D080044EE49 /* LaunchScreen.storyboard */,
 				3F88F1C01DDE4D080044EE49 /* Info.plist */,
+				3F5D91C81DF321AD00B9CE2B /* Images.xcassets */,
 			);
 			path = MHGenCalc;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F88F1BF1DDE4D080044EE49 /* LaunchScreen.storyboard in Resources */,
+				3F5D91C91DF321AD00B9CE2B /* Images.xcassets in Resources */,
 				3F34E5AC1DEF51940002BD90 /* armorTable.csv in Resources */,
 				3F88F1BC1DDE4D080044EE49 /* Assets.xcassets in Resources */,
 				3F88F1BA1DDE4D080044EE49 /* Main.storyboard in Resources */,
@@ -460,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MHGenCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UVM.MHGenCalc;
@@ -472,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MHGenCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UVM.MHGenCalc;
