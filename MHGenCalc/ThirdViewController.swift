@@ -71,6 +71,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
         
         
     }
+
     
     func saveArmor(line: String) -> Armor
      {

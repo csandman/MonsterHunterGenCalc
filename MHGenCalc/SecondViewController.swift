@@ -9,6 +9,8 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    @IBAction func addArmorInProgress(_ sender: UIButton) {
+    }
 
     @IBAction func PalicoInProgress(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0{
