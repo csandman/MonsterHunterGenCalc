@@ -23,21 +23,25 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eIG-fz-1EK">
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eIG-fz-1EK">
                                 <rect key="frame" x="0.0" y="94" width="375" height="234"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="0TW-jn-07c"/>
                                     <constraint firstAttribute="height" constant="234" id="ZsZ-4l-Xx7"/>
                                 </constraints>
+                                <color key="separatorColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <color key="sectionIndexBackgroundColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellSearch" id="1Ls-sO-PKJ">
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellSearch" id="1Ls-sO-PKJ">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Ls-sO-PKJ" id="Nd8-Nz-erB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -52,7 +56,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="d9M-y9-obE"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="w7i-O2-vhQ">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d5l-J2-lbf">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <rect key="frame" x="221" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Search"/>
                                 <connections>
