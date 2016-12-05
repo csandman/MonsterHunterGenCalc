@@ -42,10 +42,11 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                                                 let fetchedArmor = try moc.fetch(armorFetch) as! [Armor]
                                                 self.displayStrings.removeAll()
                                                 for armor in fetchedArmor {
-                                                    self.displayStrings.append(armor.name! + " has " + String(describing: armor.defense!) + " defense")
-                                                    self.tableView.reloadData()
+                                                    self.displayStrings.append(armor.name!)
+                                                    print(armor.name)
                                                 }
-//                                                print(fetchedArmor)
+                                                self.tableView.reloadData()
+                                                
                                             } catch {
                                                 fatalError("Failed to fetch armor: \(error)")
                                             }
@@ -68,123 +69,30 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                 animated: true,
                 completion: nil)
         
-        
-        
     }
 
-    
-//    func saveArmor(line: String) -> Armor
-//     {
-//     let appDelegate =
-//     UIApplication.shared.delegate as! AppDelegate
-//     
-//     let managedContext = appDelegate.managedObjectContext
-//     
-//     let entity =  NSEntityDescription.entity(forEntityName: "Armor", in:managedContext)
-//     let armor = Armor(entity: entity!, insertInto: managedContext)
-//     
-//        let fields = line.components(separatedBy: ",")
-//     
-//     armor.name = fields[11]
-//     armor.id = Int(fields[0]) as NSNumber?
-//     armor.slot = fields[1]
-//     armor.defense = Int(fields[2]) as NSNumber?
-//     armor.max_defense = Int(fields[3]) as NSNumber?
-//     armor.fire_res = Int(fields[4]) as NSNumber?
-//     armor.thunder_res = Int(fields[5]) as NSNumber?
-//     armor.dragon_res = Int(fields[6]) as NSNumber?
-//     armor.water_res = Int(fields[7]) as NSNumber?
-//     armor.ice_res = Int(fields[8]) as NSNumber?
-//     armor.hunter_type = Int(fields[9]) as NSNumber?
-//     armor.num_slots = Int(fields[10]) as NSNumber?
-//     armor.rarity = Int(fields[12]) as NSNumber?
-//     
-//     
-//     do {
-//     try managedContext.save()
-//     armors.append(armor)
-//     } catch let error as NSError  {
-////     print("Could not save \(error), \(error.userInfo)")
-//     }
-//     self.displayStrings.append(armor.name! + " has " + String(describing: armor.ice_res!) + " ice resistance")
-//     return armor
-//     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-  
-//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-//        let appDelegate =
-//            UIApplication.shared.delegate as! AppDelegate
-//        
-//        let db = appDelegate.preloadDb()
-//        let lines = db.components(separatedBy: "\n")
-//        for line in lines {
-//            self.saveArmor(line: line)
-//            self.tableView.reloadData()
+        //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-            
-            //            if (fields[0] != "") {
-            //                let nameField = String(fields[2])
-            //                var p = self.lookupName(nameField)
-            //
-            //                if (p == nil)
-            //                {
-            //                    p = self.saveName(nameField)
-            //                }
-            //
-            //                let shoeField = String(fields[1])
-            //                self.saveShoes(p!, style: shoeField)
-            //
-            //
-            
-            //            }
-            
-            
-//        }
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
-        /*let managedContext = appDelegate.managedObjectContext
+        let managedContext = appDelegate.managedObjectContext
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
         
         do {
-            let results =
-                try managedContext.fetch(fetchRequest)
-            people = results as! [Person]
-            
-            if (RESET)
-            {
-                for p in people
-                {
-                    for s in p.wardrobe!
-                    {
-                        managedContext.delete(s as! Shoes)
-                    }
-                    managedContext.delete(p)
-                }
-                try managedContext.save()
+            let results = try! managedContext.fetch(fetchRequest)
+            armors = results as! [Armor]
+            self.displayStrings.removeAll()
+            for armor in armors {
+                self.displayStrings.append(armor.name!)
             }
-            else
-            {
-                for p in people
-                {
-                    people.append(p)
-                    
-                    for s in p.wardrobe!
-                    {
-                        let shoes = s as! Shoes
-                        self.displayStrings.append(p.name! + " owns " + shoes.style!)
-                    }
-                }
-                self.tableView.reloadData()
-                
-            }
-        } catch let error as NSError {
-            print("fetch or save failed \(error), \(error.userInfo)")
-        }*/
-        
+        }
+        self.tableView.reloadData()
     }
     // MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView,

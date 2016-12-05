@@ -211,44 +211,11 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     }
 
     
-    var people = [Person]()
     var armors = [Armor]()
     var builds = [Builds]()
     var displayStrings = [String]()
     var currentSet: [String: String] = ["setName":""]
     
-    
-    func lookupName(name: String) -> Person?
-    {
-        for p in people
-        {
-            if (name == p.name) { return p }
-        }
-        return nil
-    }
-    
-    
-    /*func saveName(name: String) -> Person
-    {
-        let appDelegate =
-            UIApplication.shared.delegate as! AppDelegate
-        
-        let managedContext = appDelegate.managedObjectContext
-        
-        let entity =  NSEntityDescription.entity(forEntityName: "Person", in:managedContext)
-        let person = Person(entity: entity!, insertInto: managedContext)
-        
-        person.name = name
-        
-        do {
-            try managedContext.save()
-            people.append(person)
-        } catch let error as NSError  {
-            print("Could not save \(error), \(error.userInfo)")
-        }
-        
-        return person
-    }*/
     
    /* func createNewSet() {
         self.saveSet()
@@ -350,43 +317,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         return build
     }*/
     
-    /*func saveArmor(line: String) -> Armor
-    {
-        let appDelegate =
-            UIApplication.shared.delegate as! AppDelegate
-        
-        let managedContext = appDelegate.managedObjectContext
-        
-        let entity =  NSEntityDescription.entity(forEntityName: "Armor", in:managedContext)
-        let armor = Armor(entity: entity!, insertInto: managedContext)
-        
-        let fields = line.componentsSeparatedByString(",")
-        
-        armor.name = fields[11]
-        armor.id = Int(fields[0])
-        armor.slot = fields[1]
-        armor.defense = Int(fields[2])
-        armor.max_defense = Int(fields[3])
-        armor.fire_res = Int(fields[4])
-        armor.thunder_res = Int(fields[5])
-        armor.dragon_res = Int(fields[6])
-        armor.water_res = Int(fields[7])
-        armor.ice_res = Int(fields[8])
-        armor.hunter_type = Int(fields[9])
-        armor.num_slots = Int(fields[10])
-        armor.rarity = Int(fields[12])
-        
-     
-        do {
-            try managedContext.save()
-            armors.append(armor)
-        } catch let error as NSError  {
-            print("Could not save \(error), \(error.userInfo)")
-        }
-        self.displayStrings.append(armor.name! + " has " + String(describing: armor.ice_res!) + " ice resistance")
-        return armor
-    }*/
- 
+    
     /*func saveShoes(person: Person, style: String)
     {
         let appDelegate =
