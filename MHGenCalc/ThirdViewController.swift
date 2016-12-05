@@ -42,8 +42,8 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                                                 let fetchedArmor = try moc.fetch(armorFetch) as! [Armor]
                                                 self.displayStrings.removeAll()
                                                 for armor in fetchedArmor {
-                                                    self.displayStrings.append(armor.name!)
-                                                    print(armor.name)
+                                                    self.displayStrings.append(armor.name! as String!)
+                                                    print(armor.name! as String)
                                                 }
                                                 self.tableView.reloadData()
                                                 
@@ -89,7 +89,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
             armors = results as! [Armor]
             self.displayStrings.removeAll()
             for armor in armors {
-                self.displayStrings.append(armor.name!)
+                self.displayStrings.append(armor.name! as String)
             }
         }
         self.tableView.reloadData()
@@ -98,7 +98,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
         appDelegate.addArmorPieceById(1376337)
         appDelegate.addArmorPieceById(1441869)
         appDelegate.addArmorPieceById(1507453)
-//        appDelegate.addArmorPieceById(1572902)
+        appDelegate.addArmorPieceById(1572902)
         print(appDelegate.currentSet)
         print(appDelegate.saveSet())
         let set = appDelegate.loadExistingSet(name: "test1")

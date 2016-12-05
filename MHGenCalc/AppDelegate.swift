@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             _ = self.saveArmor(line: line)
         }
         for armor in armors {
-            print (armor.name)
+            print (armor.name! as String)
         }
         return true
     }
@@ -203,22 +203,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         armor.num_slots = Int(fields[10]) as NSNumber?
         armor.rarity = Int(fields[12]) as NSNumber?
         
-        if (lookupArmor(name: armor.name!) == nil) {
+        if (self.lookupArmor(name: fields[11]) == nil) {
             do {
                 try managedContext.save()
                 armors.append(armor)
             } catch let error as NSError  {
                 print("Could not save \(error), \(error.userInfo)")
             }
+            self.displayStrings.append(armor.name!)
             
+        } else {
+            print(self.lookupArmor(name: fields[11]))
         }
         
-        self.displayStrings.append(armor.name!)
+        
         return armor
     }
     func lookupArmor(name: String) -> Armor? {
-        for a in armors {
-            if (name == a.name) { return a }
+        for a in self.armors {
+            if (name == a.name!) { return a }
         }
         return nil
     }
