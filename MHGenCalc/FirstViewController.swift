@@ -214,196 +214,19 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     var armors = [Armor]()
     var builds = [Builds]()
     var displayStrings = [String]()
-    var currentSet: [String: String] = ["setName":""]
     
     
-   /* func createNewSet() {
-        self.saveSet()
-        self.currentSet = ["setName":""]
-        //switch to set page
-    }
     
-    func addArmorPiece(armorPiece: Armor) {
-        let armorId = armorPiece.id
-        let armorType = armorPiece.slot!.lowercased()
         
-        self.currentSet[armorType] = String(describing: armorId)
-        
-    }*/
-    
-   /* func saveSet() -> Builds {
-        let appDelegate =
-            UIApplication.shared.delegate as! AppDelegate
-        
-        let managedContext = appDelegate.managedObjectContext
-        let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
-        var build = Builds(entity: entity!, insertInto: managedContext)
-        
-        var tempSet = self.currentSet
-        if (tempSet["setName"]! == "") {
-            
-            let alert = UIAlertController(title: "Enter Set Name",
-                                          message: "Enter a name for the set",
-                                          preferredStyle: .alert)
-            let addTitleAction = UIAlertAction(title: "AddSetName",
-                                               style: .default,
-                                               handler: { (action:UIAlertAction) -> Void in
-                                                
-                                                let name = alert.textFields![0].text
-                                                print(name!)
-                                                build.setName = name as NSString?
-            })
-            
-            let cancelAction = UIAlertAction(title: "Cancel",
-                                             style: .default,
-                                             handler: { (action: UIAlertAction) -> Void in })
-            
-            alert.addTextField {
-                (textField: UITextField) -> Void in
-            }
-            
-            
-            alert.addAction(addTitleAction)
-            alert.addAction(cancelAction)
-            
-            present(alert,
-                                  animated: true,
-                                  completion: nil)
-            
-            
-            
-            //save as new set
-            /*build.head = Int(tempSet["head"])
-            build.chest = Int(tempSet["chest"])
-            build.arms = Int(tempSet["arms"])
-            build.waist = Int(tempSet["waist"])
-            build.legs = Int(tempSet["legs"])*/
-            
-            
-            do {
-                try managedContext.save()
-                self.builds.append(build)
-            } catch let error as NSError  {
-                print("Could not save \(error), \(error.userInfo)")
-            }
-            
-        } else {
-            //check to see if set exists.  if it does, update it, if it does not, save it as new
-            let buildFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
-            let predicate = NSPredicate(format: "%K LIKE %@", "setName", tempSet["setName"]!)
-            buildFetch.predicate = predicate
-            do {
-                let fetchedBuilds = try managedContext.fetch(buildFetch) as! [Builds]
-                build = fetchedBuilds[0]
-                //save as new set
-               /* build.head = Int(tempSet["head"])
-                build.chest = Int(tempSet["chest"])
-                build.arms = Int(tempSet["arms"])
-                build.waist = Int(tempSet["waist"])
-                build.legs = Int(tempSet["legs"])*/
-                
-                do {
-                    try managedContext.save()
-                    self.builds.append(build)
-                } catch let error as NSError  {
-                    print("Could not save \(error), \(error.userInfo)")
-                }
-            } catch {
-                fatalError("Failed to fetch armor: \(error)")
-            }
-            
-        }
-        
-        return build
-    }*/
-    
-    
-    /*func saveShoes(person: Person, style: String)
-    {
-        let appDelegate =
-            UIApplication.sharedApplication.delegate as! AppDelegate
-        
-        let managedContext = appDelegate.managedObjectContext
-        
-        let entity =  NSEntityDescription.entityForName("Shoes", inManagedObjectContext:managedContext)
-        let shoes = Shoes(entity: entity!, insertIntoManagedObjectContext: managedContext)
-        
-        shoes.style = style
-        person.wardrobe!.setByAddingObject(shoes)
-        shoes.owner = person
-        
-        do {
-            try managedContext.save()
-        } catch let error as NSError  {
-            print("Could not save \(error), \(error.userInfo)")
-        }
-    }*/
-    
-    //    @IBAction func search(sender: AnyObject) {
-    //        let alert = UIAlertController(title: "Search",
-    //            message: "Search for an existing entry",
-    //            preferredStyle: .Alert)
-    //    }
-        /*@IBAction func addName(sender: AnyObject) {
-        
-        let alert = UIAlertController(title: "New Name/Shoes",
-                                      message: "Add a new name/shoes combo",
-                                      preferredStyle: .Alert)
-        
-        let saveAction = UIAlertAction(title: "Save",
-                                       style: .Default,
-                                       handler: { (action:UIAlertAction) -> Void in
-                                        
-                                        let nameField = alert.textFields![0]
-                                        var p = self.lookupName(nameField.text!)
-                                        
-                                        if (p == nil)
-                                        {
-                                            p = self.saveName(nameField.text!)
-                                        }
-                                        
-                                        let shoeField = alert.textFields![1]
-                                        self.saveShoes(p!, style: shoeField.text!)
-                                        
-                                        self.displayStrings.append(p!.name! + " owns " + shoeField.text!)
-                                        self.tableView.reloadData()
-        })
-        
-        let cancelAction = UIAlertAction(title: "Cancel",
-                                         style: .Default,
-                                         handler: { (action: UIAlertAction) -> Void in })
-        
-        alert.addTextFieldWithConfigurationHandler {
-            (textField: UITextField) -> Void in
-        }
-        
-        alert.addTextFieldWithConfigurationHandler {
-            (textField: UITextField) -> Void in
-        }
-        
-        alert.addAction(saveAction)
-        alert.addAction(cancelAction)
-        
-        presentViewController(alert,
-                              animated: true,
-                              completion: nil)
-    }*/
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
     }
     
-    
-
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

@@ -1,3 +1,4 @@
+
 //
 //  AppDelegate.swift
 //  MHGenCalc
@@ -15,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     var armors = [Armor]()
+    var builds = [Builds]()
     var displayStrings = [String]()
+    var currentSet: [String: String] = ["setName":""]
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -218,6 +221,179 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if (name == a.name) { return a }
         }
         return nil
+    }
+    
+    func createNewSet() {
+        self.currentSet = ["setName":""]
+        //switch to set page
+    }
+    
+    func loadExistingSet(name: String) -> Builds {
+        let buildFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
+        let predicate = NSPredicate(format: "%K LIKE %@", "setName", name)
+        buildFetch.predicate = predicate
+        let fetchedBuilds = try! self.managedObjectContext.fetch(buildFetch) as! [Builds]
+        let build = fetchedBuilds[0]
+        let chestString = String(describing: build.chest! as Int)
+        let headString = String(describing: build.head! as Int)
+        let legsString = String(describing: build.legs! as Int)
+        let armsString = String(describing: build.arms! as Int)
+        let waistString = String(describing: build.waist! as Int)
+        self.currentSet = ["setName":build.setName! as String,"head":headString,"chest":chestString,"arms":armsString,"legs":legsString, "waist":waistString]
+        return build
+    }
+    
+    func addArmorPiece(_ armorPiece: Armor) {
+        let armorId = armorPiece.id
+        let armorType = armorPiece.slot!.lowercased()
+        
+        self.currentSet[armorType] = String(describing: armorId)
+        
+    }
+    
+    func addArmorPieceById(_ armorId: Int) {
+        
+        let armorFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let predicate = NSPredicate(format: "%K == %d", "id", armorId)
+        armorFetch.predicate = predicate
+        let fetchedArmor = try! self.managedObjectContext.fetch(armorFetch) as! [Armor]
+        let armor = fetchedArmor[0]
+        let armorType = armor.slot!.lowercased()
+        self.currentSet[armorType] = String(describing: armor.id!)
+    }
+    
+    func saveSet() -> Builds {
+        let managedContext = self.managedObjectContext
+        let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
+        var build = Builds(entity: entity!, insertInto: managedContext)
+        
+        var tempSet = self.currentSet
+        if (tempSet["setName"]! == "") {
+            
+//            let alert = UIAlertController(title: "Enter Set Name",
+//                                          message: "Enter a name for the set",
+//                                          preferredStyle: .alert)
+//            let addTitleAction = UIAlertAction(title: "AddSetName",
+//                                               style: .default,
+//                                               handler: { (action:UIAlertAction) -> Void in
+//                                                
+//                                                let name = alert.textFields![0].text
+//                                                print(name)
+//                                                build.setName = name as NSString?
+//            })
+//            
+//            let cancelAction = UIAlertAction(title: "Cancel",
+//                                             style: .default,
+//                                             handler: { (action: UIAlertAction) -> Void in })
+//            
+//            alert.addTextField {
+//                (textField: UITextField) -> Void in
+//            }
+//            
+//            
+//            alert.addAction(addTitleAction)
+//            alert.addAction(cancelAction)
+//            
+//            present(alert,
+//                    animated: true,
+//                    completion: nil)
+            
+            
+            
+            //save as new set
+            build.setName = "test1"
+            build.head = Int(tempSet["head"]!) as NSNumber?
+            build.chest = Int(tempSet["chest"]!) as NSNumber?
+            build.arms = Int(tempSet["arms"]!) as NSNumber?
+            build.waist = Int(tempSet["waist"]!) as NSNumber?
+            build.legs = Int(tempSet["legs"]!) as NSNumber?
+            
+            
+            do {
+                try managedContext.save()
+                self.builds.append(build)
+            } catch let error as NSError  {
+                print("Could not save \(error), \(error.userInfo)")
+            }
+            
+        } else {
+            //check to see if set exists.  if it does, update it, if it does not, save it as new
+            let buildFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
+            let predicate = NSPredicate(format: "%K LIKE %@", "setName", tempSet["setName"]!)
+            buildFetch.predicate = predicate
+            do {
+                var fetchedBuilds = try managedContext.fetch(buildFetch) as! [Builds]
+                build = fetchedBuilds[0]
+                //save as new set
+                build.head = Int(tempSet["head"]!) as NSNumber?
+                build.chest = Int(tempSet["chest"]!) as NSNumber?
+                build.arms = Int(tempSet["arms"]!) as NSNumber?
+                build.waist = Int(tempSet["waist"]!) as NSNumber?
+                build.legs = Int(tempSet["legs"]!) as NSNumber?
+                
+                do {
+                    try managedContext.save()
+                    self.builds.append(build)
+                } catch let error as NSError  {
+                    print("Could not save \(error), \(error.userInfo)")
+                }
+            } catch {
+                fatalError("Failed to fetch armor: \(error)")
+            }
+            
+        }
+        
+        return build
+    }
+    
+    func totalStats(build: Builds) {
+        let headId = build.head as! Int
+        let chestId = build.chest as! Int
+        let legsId = build.legs as! Int
+        let armsId = build.arms as! Int
+        let waistId = build.waist as! Int
+        
+        
+        let headFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let headPredicate = NSPredicate(format: "%K == %d", "id", headId)
+        headFetch.predicate = headPredicate
+        var fetchedHead = try! self.managedObjectContext.fetch(headFetch) as! [Armor]
+        let head = fetchedHead[0]
+        
+        let chestFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let chestPredicate = NSPredicate(format: "%K == %d", "id", chestId)
+        chestFetch.predicate = chestPredicate
+        var fetchedChest = try! self.managedObjectContext.fetch(chestFetch) as! [Armor]
+        let chest = fetchedChest[0]
+        
+        let armsFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let armsPredicate = NSPredicate(format: "%K == %d", "id", armsId)
+        armsFetch.predicate = armsPredicate
+        var fetchedArms = try! self.managedObjectContext.fetch(armsFetch) as! [Armor]
+        let arms = fetchedArms[0]
+        
+        let legsFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let legsPredicate = NSPredicate(format: "%K == %d", "id", legsId)
+        legsFetch.predicate = legsPredicate
+        var fetchedLegs = try! self.managedObjectContext.fetch(legsFetch) as! [Armor]
+        let legs = fetchedLegs[0]
+        
+        let waistFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let waistPredicate = NSPredicate(format: "%K == %d", "id", waistId)
+        waistFetch.predicate = waistPredicate
+        var fetchedWaist = try! self.managedObjectContext.fetch(waistFetch) as! [Armor]
+        let waist = fetchedWaist[0]
+        
+        
+        let total_defense = Int(head.defense!) + Int(chest.defense!) + Int(arms.defense!) + Int(legs.defense!) + Int(waist.defense!)
+        let total_max_defense = Int(head.max_defense!) + Int(chest.max_defense!) + Int(arms.max_defense!) + Int(legs.max_defense!) + Int(waist.max_defense!)
+        let total_dragon_res = Int(head.dragon_res!) + Int(chest.dragon_res!) + Int(arms.dragon_res!) + Int(legs.dragon_res!) + Int(waist.dragon_res!)
+        let total_ice_res = Int(head.ice_res!) + Int(chest.ice_res!) + Int(arms.ice_res!) + Int(legs.ice_res!) + Int(waist.ice_res!)
+        let total_fire_res = Int(head.fire_res!) + Int(chest.fire_res!) + Int(arms.fire_res!) + Int(legs.fire_res!) + Int(waist.fire_res!)
+        let total_thunder_res = Int(head.thunder_res!) + Int(chest.thunder_res!) + Int(arms.thunder_res!) + Int(legs.thunder_res!) + Int(waist.thunder_res!)
+        let total_water_res = Int(head.water_res!) + Int(chest.water_res!) + Int(arms.water_res!) + Int(legs.water_res!) + Int(waist.water_res!)
+        let totalArr = ["defense":total_defense,"max_defense":total_max_defense,"dragon_res":total_dragon_res,"ice_res":total_ice_res,"fire_res":total_fire_res,"thunder_res":total_thunder_res,"water_res":total_water_res]
+        print(totalArr)
     }
 
 }

@@ -1,3 +1,4 @@
+_id,slot,defense,max_defense,fire_res,thunder_res,dragon_res,water_res,ice_res,hunter_type,num_slots,name,rarity
 1310721,Head,1,25,0,0,0,0,0,2,1,Leather Headgear,1
 1310722,Head,2,26,0,1,0,0,0,2,3,Chainmail Headgear,1
 1310723,Head,2,26,0,0,0,1,0,2,1,Bherna Turban,1
@@ -662,667 +663,667 @@
 1311443,Head,32,46,5,5,-3,5,5,1,1,Varia Suit Scope,6
 1311444,Head,48,62,4,4,-4,4,4,0,0,Zero Suit Wig,6
 1311445,Head,24,38,5,5,-3,5,5,1,1,Zero Suit Toupee,6
-1376257,Body,1,25,0,0,0,0,0,2,0,Leather Vest,1
-1376258,Body,2,26,0,1,0,0,0,2,1,Chainmail Vest,1
-1376259,Body,2,26,0,0,0,1,0,2,1,Bherna Mail,1
-1376260,Body,2,26,1,0,0,0,0,0,0,Hunting Mail,1
-1376261,Body,1,25,2,0,0,0,0,1,0,Hunting Vest,1
-1376262,Body,2,26,-1,0,0,0,2,2,0,Mafumofu Jacket,1
-1376263,Body,2,26,0,1,0,0,0,2,0,Yukumo Dogi,1
-1376264,Body,2,26,1,0,2,0,0,2,1,Loc Lac Shawl,1
-1376265,Body,6,30,0,0,0,0,0,0,1,Hunter's Mail,1
-1376266,Body,3,27,0,0,0,0,0,1,1,Hunter's Vest,1
-1376267,Body,6,30,0,0,0,0,-1,0,0,Bone Mail,1
-1376268,Body,3,27,0,0,0,0,-1,1,0,Bone Vest,1
-1376271,Body,6,30,2,0,0,-2,0,0,2,Chaos Plate,1
-1376272,Body,3,27,2,0,0,-2,0,1,2,Chaos Brigandine,1
-1376279,Body,6,30,-2,0,0,0,0,0,0,Jaggi Mail,1
-1376280,Body,3,27,-2,0,0,0,0,1,0,Jaggi Vest,1
-1376281,Body,8,32,-2,0,0,0,0,0,0,Maccao Mail,1
-1376282,Body,4,28,-2,1,1,1,1,1,0,Maccao Vest,1
-1376283,Body,8,32,0,0,0,0,-2,0,0,Velociprey Mail,1
-1376284,Body,4,28,0,1,0,1,-2,1,0,Velociprey Vest,1
-1376285,Body,8,32,0,-1,0,0,2,0,0,Giaprey Mail,1
-1376286,Body,4,28,0,-1,0,0,3,1,0,Giaprey Vest,1
-1376287,Body,10,34,0,1,0,0,-2,0,0,Genprey Mail,1
-1376288,Body,5,29,1,2,0,0,-2,1,0,Genprey Vest,1
-1376289,Body,10,34,-2,1,2,1,1,0,1,Vespoid Mail,1
-1376290,Body,5,29,-2,2,3,2,2,1,1,Vespoid Vest,1
-1376291,Body,10,34,-1,-1,4,-1,-1,0,0,Hornetaur Mail,1
-1376292,Body,5,29,-1,-1,6,-1,-1,1,0,Hornetaur Vest,1
-1376293,Body,10,34,-2,0,2,0,0,0,1,Bnahabra Suit,1
-1376294,Body,5,29,-2,1,3,1,1,1,1,Bnahabra Vest,1
-1376297,Body,5,29,0,0,0,0,0,2,1,Mosswine Vest,1
-1376298,Body,12,36,2,0,0,0,-2,0,0,Rhenoplos Mail,1
-1376299,Body,6,30,3,0,0,0,-2,1,0,Rhenoplos Vest,1
-1376300,Body,12,36,0,-2,0,2,1,0,1,Bulldrome Mail,1
-1376301,Body,6,30,0,-2,0,3,1,1,1,Bulldrome Vest,1
-1376303,Body,14,38,-2,-2,0,0,0,0,0,Arzuros Mail,1
-1376304,Body,7,31,-2,-2,0,0,0,1,0,Arzuros Vest,1
-1376305,Body,14,38,2,0,0,0,-3,0,1,Cephalos Mail,1
-1376306,Body,7,31,2,0,0,0,-3,1,1,Cephalos Vest,1
-1376307,Body,8,28,0,0,0,0,0,2,1,Derring Jacket,2
-1376308,Body,12,32,-1,-1,0,0,-1,0,1,Alloy Mail,2
-1376309,Body,6,26,-1,-1,0,0,-1,1,1,Alloy Vest,2
-1376310,Body,12,32,1,-1,0,-1,0,0,2,Battle Mail,2
-1376311,Body,6,26,2,-1,0,-1,0,1,2,Battle Vest,2
-1376312,Body,14,34,-1,1,0,-1,0,0,1,Ingot Mail,2
-1376313,Body,7,27,-1,2,0,-1,0,1,1,Ingot Vest,2
-1376314,Body,14,34,0,2,0,-1,-1,0,0,High Metal Mail,2
-1376315,Body,7,27,0,3,0,-1,-1,1,0,High Metal Vest,2
-1376318,Body,12,32,0,1,0,1,0,0,0,Melahoa Jacket,2
-1376319,Body,6,26,0,1,0,1,0,1,0,Melahoa Stalk,2
-1376320,Body,14,34,1,-2,0,2,0,0,1,Makluva Cover,2
-1376321,Body,7,27,1,-2,0,3,0,1,1,Makluva Scale,2
-1376322,Body,12,32,3,0,0,1,2,0,1,Bistro Suit,2
-1376323,Body,6,26,4,0,0,1,3,1,1,Bistro Vest,2
-1376324,Body,18,38,2,2,3,-2,-2,0,2,Obituary Thorax,2
-1376325,Body,9,29,3,2,4,-2,-2,1,2,Obituary Pleuron,2
-1376326,Body,18,38,2,2,3,-2,-2,0,2,Butterfly Thorax,2
-1376327,Body,9,29,3,2,4,-2,-2,1,2,Butterfly Pleuron,2
-1376328,Body,16,36,2,1,0,1,-1,0,1,Death Stench Muscle,2
-1376329,Body,8,28,3,1,0,1,-1,1,1,Death Stench Heart,2
-1376330,Body,16,36,2,0,0,2,-2,0,0,Acorn Mail,2
-1376331,Body,8,28,3,0,0,3,-2,1,0,Acorn Vest,2
-1376332,Body,14,34,-3,0,0,1,2,0,0,Mosgharl Ribplate,2
-1376333,Body,7,27,-3,0,0,2,3,1,0,Mosgharl Ribguard,2
-1376334,Body,14,34,-1,-1,0,3,0,0,0,Edel Ribplate,2
-1376335,Body,7,27,-1,-1,0,4,0,1,0,Edel Ribguard,2
-1376336,Body,18,38,3,-1,3,-1,-1,0,0,Skalda Thorax,2
-1376337,Body,9,29,4,-1,3,-1,-1,1,0,Skalda Pleuron,2
-1376338,Body,18,38,3,-1,3,-1,-1,0,0,Spio Thorax,2
-1376339,Body,9,29,4,-1,3,-1,-1,1,0,Spio Pleuron,2
-1376340,Body,12,32,-2,-1,0,4,0,0,0,Droth Mail,2
-1376341,Body,6,26,-2,-1,0,5,0,1,0,Droth Vest,2
-1376342,Body,14,34,4,0,0,-2,-1,0,1,Uroktor Torso,2
-1376343,Body,7,27,5,0,0,-2,-1,1,1,Uroktor Vest,2
-1376346,Body,14,34,-1,2,0,0,3,0,0,Moofah Suit,2
-1376347,Body,7,27,-1,3,0,0,4,1,0,Moofah Jacket,2
-1376349,Body,10,30,1,1,1,2,1,0,0,Velociprey Body,2
-1376350,Body,5,25,1,1,1,3,1,1,0,Velociprey Suit,2
-1376351,Body,10,30,1,2,1,1,1,0,0,Genprey Body,2
-1376352,Body,5,25,1,3,1,1,1,1,0,Genprey Suit,2
-1376353,Body,10,30,2,1,1,1,1,0,0,Ioprey Body,2
-1376354,Body,5,25,3,1,1,1,1,1,0,Ioprey Wear,2
-1376355,Body,10,30,1,1,2,1,1,0,0,Remobra Suit,2
-1376356,Body,5,25,1,1,3,1,1,1,0,Remobra Wear,2
-1376357,Body,14,34,2,-1,0,-1,0,0,1,Ioprey Mail,2
-1376358,Body,7,27,3,-1,0,-1,0,1,1,Ioprey Vest,2
-1376359,Body,16,36,4,0,0,-1,-3,0,0,Kut-Ku Mail,2
-1376360,Body,8,28,5,0,0,-1,-3,1,0,Kut-Ku Vest,2
-1376361,Body,14,34,-3,0,0,1,4,0,0,Lagombi Mail,2
-1376362,Body,7,27,-3,0,0,1,5,1,0,Lagombi Vest,2
-1376363,Body,16,36,-3,4,0,1,-1,0,1,Gypceros Mail,2
-1376364,Body,8,28,-3,5,0,1,-1,1,1,Gypceros Vest,2
-1376365,Body,18,38,2,-1,1,-3,0,0,1,Tetsucabra Mail,2
-1376366,Body,9,29,3,-1,1,-3,0,1,1,Tetsucabra Vest,2
-1376367,Body,20,40,-1,-3,1,3,0,0,0,Hermitaur Mail,2
-1376368,Body,10,30,-1,-3,1,4,0,1,0,Hermitaur Vest,2
-1376369,Body,18,38,2,0,1,-3,-1,0,1,Volvidon Mail,2
-1376370,Body,9,29,3,0,1,-3,-1,1,1,Volvidon Vest,2
-1376371,Body,18,38,-3,-1,0,4,0,0,1,Ludroth Mail,2
-1376372,Body,9,29,-3,-1,0,5,0,1,1,Ludroth Vest,2
-1376373,Body,18,38,-2,1,0,-2,1,0,0,Malfestio Mail,2
-1376374,Body,9,29,-1,1,0,-2,1,1,0,Malfestio Vest,2
-1376375,Body,18,38,-4,4,1,1,2,0,0,Khezu Mail,2
-1376376,Body,9,29,-4,5,1,1,2,1,0,Khezu Vest,2
-1376377,Body,20,40,3,-2,-3,0,0,0,0,Rathian Mail,2
-1376378,Body,10,30,4,-2,-3,0,0,1,0,Rathian Vest,2
-1376379,Body,20,40,2,-1,1,0,-3,0,0,Nibelsnarf Mail,2
-1376380,Body,10,30,3,-1,1,0,-3,1,0,Nibelsnarf Vest,2
-1376381,Body,18,38,-4,0,0,1,4,0,1,Blango Mail,2
-1376382,Body,9,29,-4,0,0,1,5,1,1,Blango Vest,2
-1376383,Body,20,40,1,-1,0,2,-1,0,0,Ceanataur Mail,2
-1376384,Body,10,30,2,-1,0,2,-1,1,0,Ceanataur Vest,2
-1376385,Body,20,40,1,0,1,-1,-3,0,1,Najarala Mail,2
-1376386,Body,10,30,1,1,1,-1,-3,1,1,Najarala Vest,2
-1376387,Body,18,38,-2,-3,1,1,1,0,1,Nargacuga Mail,2
-1376388,Body,9,29,-2,-2,1,1,1,1,1,Nargacuga Vest,2
-1376389,Body,18,38,0,0,0,0,0,0,1,Scholarly Suit,2
-1376390,Body,9,29,0,0,0,0,0,1,1,Scholarly Vest,2
-1376391,Body,20,40,0,-2,0,3,-1,0,2,Vaik Mail,3
-1376392,Body,10,30,0,-2,0,4,-1,1,2,Vaik Vest,3
-1376395,Body,20,40,-2,3,2,0,-2,0,1,Aelucanth Thorax,3
-1376396,Body,10,30,-2,3,3,0,-2,1,1,Aelucanth Pleuron,3
-1376397,Body,20,40,-2,3,2,0,-2,0,1,Rhopessa Thorax,3
-1376398,Body,10,30,-2,3,3,0,-2,1,1,Rhopessa Pleuron,3
-1376399,Body,24,44,1,-2,3,-2,2,0,1,Artian Mail,3
-1376400,Body,12,32,3,-2,3,-2,2,1,1,Artian Vest,3
-1376401,Body,22,42,2,2,0,-1,0,0,0,Garuga Mail,3
-1376402,Body,11,31,3,2,0,-1,0,1,0,Garuga Vest,3
-1376404,Body,26,46,3,0,-2,-4,-1,0,0,Uragaan Mail,3
-1376405,Body,13,33,4,0,-2,-4,-1,1,0,Uragaan Vest,3
-1376406,Body,24,44,4,-2,-4,0,0,0,1,Rathalos Mail,3
-1376407,Body,12,32,5,-2,-4,0,0,1,1,Rathalos Vest,3
-1376408,Body,24,44,-3,4,-2,2,-1,0,2,Lagiacrus Mail,3
-1376409,Body,12,32,-3,5,-2,2,-1,1,2,Lagiacrus Vest,3
-1376410,Body,22,42,0,4,1,-1,-4,0,0,Zinogre Mail,3
-1376411,Body,11,31,0,5,1,-1,-4,1,0,Zinogre Vest,3
-1376412,Body,20,40,0,-3,-1,2,1,0,1,Mizutsune Mail,3
-1376413,Body,10,30,0,-2,-1,2,1,1,1,Mizutsune Vest,3
-1376414,Body,24,44,0,3,2,-2,-3,0,0,Astalos Mail,3
-1376415,Body,12,32,0,4,2,-2,-3,1,0,Astalos Vest,3
-1376416,Body,26,46,-3,-1,2,1,3,0,0,Gammoth Mail,3
-1376417,Body,13,33,-3,-1,2,1,4,1,0,Gammoth Vest,3
-1376418,Body,24,44,3,1,-1,-3,0,0,1,Glavenus Mail,3
-1376419,Body,12,32,4,1,-1,-3,0,1,1,Glavenus Vest,3
-1376420,Body,24,44,-2,-1,-2,2,2,0,0,Gore Mail,3
-1376421,Body,12,32,-2,-1,-2,3,2,1,0,Gore Vest,3
-1376422,Body,24,44,2,-3,0,0,-2,0,0,Regios Mail,3
-1376423,Body,12,32,4,-3,0,0,-2,1,0,Regios Vest,3
-1376424,Body,24,44,2,-3,-2,0,0,0,0,Tigrex Mail,3
-1376425,Body,12,32,4,-3,-2,0,0,1,0,Tigrex Vest,3
-1376426,Body,26,46,-1,3,2,-1,0,0,0,Kirin Jacket,3
-1376427,Body,13,33,-1,4,2,-1,0,1,0,Kirin Cape,3
-1376428,Body,24,44,2,0,0,-4,-2,0,1,Brachydios Mail,3
-1376429,Body,12,32,2,0,0,-3,-2,1,1,Brachydios Vest,3
-1376430,Body,26,46,-2,0,-4,2,2,0,0,Arc Mail,3
-1376431,Body,26,46,-2,0,-4,2,2,0,0,Storge Mail,3
-1376432,Body,13,33,-2,0,-3,2,2,1,0,Arc Vest,3
-1376433,Body,13,33,-2,0,-3,2,2,1,0,Storge Vest,3
-1376434,Body,26,46,-1,-2,-3,2,3,0,1,Kushala Cista,3
-1376435,Body,13,33,-1,-2,-3,2,5,1,1,Kushala Vise,3
-1376436,Body,26,46,-5,0,-3,1,2,0,0,Mizuha Guards,3
-1376437,Body,13,33,-4,0,-3,1,2,1,0,Cham Camise,3
-1376438,Body,26,46,4,1,-3,-4,-1,0,0,Kaiser Mail,3
-1376439,Body,13,33,4,1,-3,-3,-1,1,0,Kaiser Vest,3
-1376440,Body,26,46,-1,-1,-2,-1,-1,0,1,Skeletal Sternum,3
-1376441,Body,13,33,-1,-1,-1,-1,-1,1,1,Decayed Sternum,3
-1376442,Body,24,44,2,2,-5,2,2,0,1,Black Hide,3
-1376443,Body,12,32,2,2,-4,2,2,1,1,Black Skin,3
-1376444,Body,22,42,1,1,1,1,1,0,0,Black Belt Mail,3
-1376445,Body,11,31,1,1,2,1,1,1,0,Black Belt Vest,3
-1376446,Body,20,40,0,0,0,0,0,0,0,Guild Bard Bolero,3
-1376447,Body,10,30,0,0,0,0,0,1,0,Guild Bard Vest,3
-1376448,Body,20,40,0,0,0,0,0,0,0,Maiden's Suit,3
-1376449,Body,10,30,0,0,0,0,0,1,0,French Maid Vest,3
-1376450,Body,20,40,0,0,0,0,0,0,1,Helper Suit,3
-1376451,Body,10,30,0,0,0,0,0,1,1,Healer Vest,3
-1376452,Body,20,40,0,0,0,0,0,0,0,Dianthus Gown,3
-1376453,Body,10,30,0,0,0,0,0,1,0,Campanile Gown,3
-1376454,Body,10,30,-2,-2,0,-2,-2,2,0,Bath Robe,3
-1376455,Body,22,42,1,1,1,1,1,0,0,Gourmew Suit,3
-1376456,Body,11,31,1,1,1,1,1,1,0,Gourmew Vest,3
-1376457,Body,24,40,0,0,0,0,0,0,0,Leather Mail S,4
-1376458,Body,24,40,0,1,0,0,0,0,1,Chainmail Armor S,4
-1376459,Body,26,42,0,0,0,1,0,0,2,Bherna Mail S,4
-1376460,Body,13,29,0,0,0,2,0,1,2,Bherna Vest S,4
-1376461,Body,26,42,1,0,0,0,0,0,0,Hunting Mail S,4
-1376462,Body,13,29,2,0,0,0,0,1,0,Hunting Vest S,4
-1376463,Body,26,42,-1,0,0,0,2,0,0,Mafumofu Suit S,4
-1376464,Body,13,29,-1,0,0,0,4,1,0,Mafumofu Jacket S,4
-1376465,Body,26,42,0,1,0,0,0,0,0,Yukumo Sky Dogi,4
-1376466,Body,13,29,0,2,0,0,0,1,0,Yukumo Land Dogi,4
-1376467,Body,15,31,1,0,2,0,0,2,1,Loc Lac Shawl S,4
-1376468,Body,26,42,0,0,0,0,0,0,1,Hunter's Mail S,4
-1376469,Body,13,29,0,0,0,0,0,1,1,Hunter's Vest S,4
-1376470,Body,22,38,0,0,0,0,0,0,0,Hunter's Mail R,4
-1376471,Body,11,27,0,0,0,0,0,1,0,Hunter's Vest R,4
-1376472,Body,30,46,0,0,0,0,-1,0,1,Bone Mail S,4
-1376473,Body,15,31,0,0,0,0,-1,1,1,Bone Vest S,4
-1376478,Body,36,52,2,0,0,-2,0,0,3,Chaos Archplate,4
-1376479,Body,18,34,4,0,0,-2,0,1,3,Chaos Archbrigandine,4
-1376480,Body,32,48,0,1,0,1,0,0,0,Melahoa Jacket S,4
-1376481,Body,16,32,0,1,0,1,0,1,0,Melahoa Stalk S,4
-1376482,Body,28,44,0,1,0,1,0,0,0,Melahoa Jacket U,4
-1376483,Body,14,30,0,1,0,1,0,1,0,Melahoa Stalk U,4
-1376484,Body,36,52,1,-2,0,2,0,0,1,Makluva Cover S,4
-1376485,Body,18,34,1,-2,0,3,0,1,1,Makluva Scale S,4
-1376486,Body,32,48,1,-2,0,2,0,0,2,Makluva Cover U,4
-1376487,Body,16,32,1,-2,0,3,0,1,2,Makluva Scale U,4
-1376488,Body,34,50,3,0,0,1,2,0,1,Bistro Suit S,4
-1376489,Body,17,33,4,0,0,1,3,1,1,Bistro Vest S,4
-1376490,Body,36,52,2,0,0,2,-2,0,0,Acorn Mail S,4
-1376491,Body,18,34,3,0,0,3,-2,1,0,Acorn Vest S,4
-1376492,Body,36,52,-3,0,0,1,2,0,0,Mosgharl Ribplate S,4
-1376493,Body,18,34,-3,0,0,2,3,1,0,Mosgharl Ribguard S,4
-1376494,Body,34,50,-1,-1,0,3,0,0,0,Edel Ribplate S,4
-1376495,Body,17,33,-1,-1,0,4,0,1,0,Edel Ribguard S,4
-1376496,Body,32,48,-1,2,0,0,3,0,0,Moofah Suit S,4
-1376497,Body,16,32,-1,3,0,0,4,1,0,Moofah Jacket S,4
-1376498,Body,28,44,-2,0,1,2,-1,0,0,Slagtoth Cloak,4
-1376499,Body,14,30,-2,0,1,3,-1,1,0,Slagtoth Wrap,4
-1376503,Body,20,36,1,1,1,2,1,0,0,Velociprey Body S,4
-1376504,Body,10,26,1,1,1,3,1,1,0,Velociprey Suit S,4
-1376505,Body,20,36,1,2,1,1,1,0,0,Genprey Body S,4
-1376506,Body,10,26,1,3,1,1,1,1,0,Genprey Suit S,4
-1376507,Body,20,36,2,1,1,1,1,0,0,Ioprey Body S,4
-1376508,Body,10,26,3,1,1,1,1,1,0,Ioprey Wear S,4
-1376509,Body,20,36,1,1,2,1,1,0,0,Remobra Suit S,4
-1376510,Body,10,26,1,1,3,1,1,1,0,Remobra Wear S,4
-1376517,Body,19,35,0,0,0,0,0,2,1,Mosswine Vest S,4
-1376518,Body,32,48,2,0,0,0,-2,0,1,Rhenoplos Mail S,4
-1376519,Body,16,32,3,0,0,0,-2,1,1,Rhenoplos Vest S,4
-1376520,Body,28,44,-2,0,0,0,0,0,1,Jaggi Mail S,4
-1376521,Body,14,30,-2,0,0,0,0,1,1,Jaggi Vest S,4
-1376522,Body,28,44,-2,-1,0,4,0,0,0,Droth Mail S,4
-1376523,Body,14,30,-2,-1,0,5,0,1,0,Droth Vest S,4
-1376524,Body,30,46,4,0,0,-2,-1,0,1,Uroktor Torso S,4
-1376525,Body,15,31,5,0,0,-2,-1,1,1,Uroktor Vest S,4
-1376526,Body,30,46,-2,0,0,0,0,0,0,Maccao Mail S,4
-1376527,Body,15,31,-2,1,1,1,1,1,0,Maccao Vest S,4
-1376528,Body,30,46,0,0,0,0,-2,0,0,Velociprey Mail S,4
-1376529,Body,15,31,0,1,0,1,-2,1,0,Velociprey Vest S,4
-1376530,Body,30,46,0,-1,0,0,2,0,0,Giaprey Mail S,4
-1376531,Body,15,31,0,-1,0,0,3,1,0,Giaprey Vest S,4
-1376532,Body,32,48,0,1,0,0,-2,0,0,Genprey Mail S,4
-1376533,Body,16,32,1,2,0,0,-2,1,0,Genprey Vest S,4
-1376534,Body,36,52,0,1,0,0,-2,0,1,EX Genprey Mail,4
-1376535,Body,18,34,1,2,0,0,-2,1,1,EX Genprey Vest,4
-1376536,Body,34,50,2,-1,0,-1,0,0,1,Ioprey Mail S,4
-1376537,Body,17,33,3,-1,0,-1,0,1,1,Ioprey Vest S,4
-1376538,Body,38,54,2,-1,0,-1,0,0,0,EX Ioprey Mail,4
-1376539,Body,19,35,3,-1,0,-1,0,1,0,EX Ioprey Vest,4
-1376540,Body,32,48,-2,1,2,1,1,0,2,Vespoid Mail S,4
-1376541,Body,16,32,-2,2,3,2,2,1,2,Vespoid Vest S,4
-1376542,Body,36,52,-2,1,2,1,1,0,0,EX Vespoid Mail,4
-1376543,Body,18,34,-2,2,3,2,2,1,0,EX Vespoid Vest,4
-1376544,Body,36,52,-1,-1,4,-1,-1,0,0,Hornetaur Mail S,4
-1376545,Body,18,34,-1,-1,6,-1,-1,1,0,Hornetaur Vest S,4
-1376546,Body,40,56,-1,-1,4,-1,-1,0,1,EX Hornetaur Mail,4
-1376547,Body,20,36,-1,-1,6,-1,-1,1,1,EX Hornetaur Vest,4
-1376548,Body,32,48,-1,-1,4,-1,-1,0,2,Hornetaur Mail R,4
-1376549,Body,16,32,-1,-1,6,-1,-1,1,2,Hornetaur Vest R,4
-1376550,Body,32,48,-2,0,2,0,0,0,0,Bnahabra Suit S,4
-1376551,Body,16,32,-2,1,3,1,1,1,0,Bnahabra Vest S,4
-1376554,Body,36,52,0,-2,0,2,1,0,1,Bulldrome Mail S,4
-1376555,Body,18,34,0,-2,0,3,1,1,1,Bulldrome Vest S,4
-1376557,Body,38,54,-2,-2,0,0,0,0,0,Arzuros Mail S,4
-1376558,Body,19,35,-2,-2,0,0,0,1,0,Arzuros Vest S,4
-1376559,Body,42,58,2,0,0,0,-3,0,1,Cephalos Mail S,4
-1376560,Body,21,37,2,0,0,0,-3,1,1,Cephalos Vest S,4
-1376561,Body,46,62,2,0,0,0,-3,0,0,EX Cephalos Mail,4
-1376562,Body,23,39,2,0,0,0,-3,1,0,EX Cephalos Vest,4
-1376563,Body,44,60,3,0,0,-1,-3,0,0,Kut-Ku Mail S,4
-1376564,Body,22,38,4,0,0,-1,-3,1,0,Kut-Ku Vest S,4
-1376565,Body,44,60,-2,-1,1,2,0,0,1,Kecha Mail,4
-1376566,Body,22,38,-2,-1,1,3,0,1,1,Kecha Vest,4
-1376567,Body,40,56,-3,0,0,1,3,0,0,Lagombi Mail S,4
-1376568,Body,20,36,-3,0,0,1,4,1,0,Lagombi Vest S,4
-1376569,Body,46,62,-3,4,0,1,-1,0,2,Gypceros Mail S,4
-1376570,Body,23,39,-3,5,0,1,-1,1,2,Gypceros Vest S,4
-1376571,Body,42,58,-3,4,0,1,-1,0,0,Gypceros Mail R,4
-1376572,Body,21,37,-3,5,0,1,-1,1,0,Gypceros Vest R,4
-1376573,Body,46,62,2,-1,1,-3,0,0,1,Tetsucabra Mail S,4
-1376574,Body,23,39,3,-1,1,-3,0,1,1,Tetsucabra Vest S,4
-1376575,Body,48,64,-1,-3,1,3,0,0,0,Hermitaur Mail S,4
-1376576,Body,24,40,-1,-3,1,4,0,1,0,Hermitaur Vest S,4
-1376577,Body,52,68,-1,-3,1,3,0,0,0,EX Hermitaur Mail,4
-1376578,Body,26,42,-1,-3,1,4,0,1,0,EX Hermitaur Vest,4
-1376579,Body,44,60,-1,-3,1,3,0,0,3,Hermitaur Mail R,4
-1376580,Body,22,38,-1,-3,1,4,0,1,3,Hermitaur Vest R,4
-1376581,Body,46,62,2,0,1,-3,-1,0,1,Volvidon Mail S,4
-1376582,Body,23,39,3,0,1,-3,-1,1,1,Volvidon Vest S,4
-1376583,Body,46,62,-3,-1,0,4,0,0,1,Ludroth Mail S,4
-1376584,Body,23,39,-3,-1,0,5,0,1,1,Ludroth Vest S,4
-1376585,Body,42,58,-3,-1,0,4,0,0,0,Ludroth Mail R,4
-1376586,Body,21,37,-3,-1,0,5,0,1,0,Ludroth Vest R,4
-1376587,Body,44,60,0,0,0,0,0,0,0,Lecturer's Suit,4
-1376588,Body,22,38,0,0,0,0,0,1,0,Lecturer's Jacket,4
-1376589,Body,40,56,-1,-1,0,0,-1,0,1,Alloy Mail S,5
-1376590,Body,20,36,-1,-1,0,0,-1,1,1,Alloy Vest S,5
-1376591,Body,36,52,-1,-1,0,0,-1,0,1,Alloy Mail R,5
-1376592,Body,18,34,-1,-1,0,0,-1,1,1,Alloy Vest R,5
-1376593,Body,44,60,1,-1,0,-1,0,0,2,Battle Mail S,5
-1376594,Body,22,38,2,-1,0,-1,0,1,2,Battle Vest S,5
-1376595,Body,48,64,-1,1,0,-1,0,0,1,Ingot Mail S,5
-1376596,Body,24,40,-1,2,0,-1,0,1,1,Ingot Vest S,5
-1376597,Body,44,60,-1,1,0,-1,0,0,0,Ingot Mail R,5
-1376598,Body,22,38,-1,2,0,-1,0,1,0,Ingot Vest R,5
-1376599,Body,46,62,0,2,0,-1,-1,0,1,High Metal Mail S,5
-1376600,Body,23,39,0,3,0,-1,-1,1,1,High Metal Vest S,5
-1376601,Body,42,58,0,2,0,-1,-1,0,0,High Metal Mail U,5
-1376602,Body,21,37,0,3,0,-1,-1,1,0,High Metal Vest U,5
-1376605,Body,48,64,-1,-1,-1,4,-1,0,0,Lobster Mail,5
-1376606,Body,24,40,-1,-1,-1,5,-1,1,0,Lobster Vest,5
-1376607,Body,50,66,2,2,3,-2,-2,0,2,Obituary Thorax S,5
-1376608,Body,25,41,3,2,4,-2,-2,1,2,Obituary Pleuron S,5
-1376609,Body,50,66,2,2,3,-2,-2,0,2,Butterfly Thorax S,5
-1376610,Body,25,41,3,2,4,-2,-2,1,2,Butterfly Pleuron S,5
-1376611,Body,48,64,2,1,0,1,-1,0,2,Death Stench Muscle S,5
-1376612,Body,24,40,3,1,0,1,-1,1,2,Death Stench Heart S,5
-1376613,Body,44,60,2,1,0,1,-1,0,0,Death Stench Muscle R,5
-1376614,Body,22,38,3,1,0,1,-1,1,0,Death Stench Heart R,5
-1376615,Body,46,62,0,-2,0,3,-1,0,0,Vaik Mail S,5
-1376616,Body,23,39,0,-2,0,4,-1,1,0,Vaik Vest S,5
-1376617,Body,48,64,-2,3,2,0,-2,0,1,Aelucanth Thorax S,5
-1376618,Body,24,40,-2,3,3,0,-2,1,1,Aelucanth Pleuron S,5
-1376619,Body,48,64,-2,3,2,0,-2,0,1,Rhopessa Thorax S,5
-1376620,Body,24,40,-2,3,3,0,-2,1,1,Rhopessa Pleuron S,5
-1376621,Body,44,60,2,0,-2,0,2,0,0,Patissier's Suit,5
-1376622,Body,22,38,4,0,-2,0,2,1,0,Patissier's Vest,5
-1376623,Body,48,64,3,-1,3,-1,-1,0,0,Skalda Thorax S,5
-1376624,Body,24,40,4,-1,3,-1,-1,1,0,Skalda Pleuron S,5
-1376625,Body,48,64,3,-1,3,-1,-1,0,0,Spio Thorax S,5
-1376626,Body,24,40,4,-1,3,-1,-1,1,0,Spio Pleuron S,5
-1376627,Body,44,60,-2,1,0,-2,1,0,0,Malfestio Mail S,5
-1376628,Body,22,38,-1,1,0,-2,1,1,0,Malfestio Vest S,5
-1376629,Body,46,62,-2,-4,0,3,4,0,0,Zamtrios Mail,5
-1376630,Body,23,39,-2,-4,0,3,5,1,0,Zamtrios Vest,5
-1376631,Body,50,66,-4,4,1,1,2,0,0,Khezu Mail S,5
-1376632,Body,25,41,-4,5,1,1,2,1,0,Khezu Vest S,5
-1376633,Body,46,62,-4,4,1,1,2,0,0,Khezu Mail R,5
-1376634,Body,23,39,-4,5,1,1,2,1,0,Khezu Vest R,5
-1376635,Body,50,66,3,-2,-3,0,0,0,0,Rathian Mail S,5
-1376636,Body,25,41,4,-2,-3,0,0,1,0,Rathian Vest S,5
-1376637,Body,54,70,3,-2,-3,0,0,0,0,EX Rathian Mail,5
-1376638,Body,27,43,4,-2,-3,0,0,1,0,EX Rathian Vest,5
-1376639,Body,46,62,3,-2,-3,0,0,0,2,Rathian Mail R,5
-1376640,Body,23,39,4,-2,-3,0,0,1,2,Rathian Vest R,5
-1376641,Body,50,66,2,-1,1,0,-3,0,0,Nibelsnarf Mail S,5
-1376642,Body,25,41,3,-1,1,0,-3,1,0,Nibelsnarf Vest S,5
-1376643,Body,52,68,-2,-4,1,4,2,0,0,Plesioth Mail,5
-1376644,Body,26,42,-2,-4,1,5,2,1,0,Plesioth Vest,5
-1376645,Body,50,66,-4,0,0,1,4,0,1,Blango Mail S,5
-1376646,Body,25,41,-4,0,0,1,5,1,1,Blango Vest S,5
-1376647,Body,54,70,-4,0,0,1,4,0,1,EX Blango Mail,5
-1376648,Body,27,43,-4,0,0,1,5,1,1,EX Blango Vest,5
-1376649,Body,56,72,4,0,1,-4,0,0,1,Lavasioth Mail,5
-1376650,Body,28,44,5,0,1,-4,0,1,1,Lavasioth Vest,5
-1376651,Body,60,76,4,0,1,-4,0,0,1,EX Lavasioth Mail,5
-1376652,Body,30,46,5,0,1,-4,0,1,1,EX Lavasioth Vest,5
-1376653,Body,48,64,1,-1,0,2,-1,0,0,Ceanataur Mail S,5
-1376654,Body,24,40,2,-1,0,2,-1,1,0,Ceanataur Vest S,5
-1376655,Body,52,68,1,-1,0,2,-1,0,0,EX Ceanataur Mail,5
-1376656,Body,26,42,2,-1,0,2,-1,1,0,EX Ceanataur Vest,5
-1376657,Body,44,60,1,-1,0,2,-1,0,1,Ceanataur Mail R,5
-1376658,Body,22,38,2,-1,0,2,-1,1,1,Ceanataur Vest R,5
-1376659,Body,56,72,1,0,1,-1,-3,0,1,Najarala Mail S,5
-1376660,Body,28,44,1,1,1,-1,-3,1,1,Najarala Vest S,5
-1376661,Body,40,56,-2,-3,1,1,1,0,0,Nargacuga Mail S,5
-1376662,Body,20,36,-2,-2,1,1,1,1,0,Nargacuga Vest S,5
-1376663,Body,56,72,2,2,0,-1,0,0,0,Garuga Mail S,5
-1376664,Body,28,44,3,2,0,-1,0,1,0,Garuga Vest S,5
-1376666,Body,64,80,3,0,-2,-4,-1,0,0,Uragaan Mail S,5
-1376667,Body,32,48,4,0,-2,-4,-1,1,0,Uragaan Vest S,5
-1376668,Body,50,66,3,3,3,3,3,0,0,Black Belt Mail S,5
-1376669,Body,25,41,3,3,4,3,3,1,0,Black Belt Vest S,5
-1376670,Body,50,66,0,0,0,0,0,0,0,Guardian Suit,5
-1376671,Body,25,41,0,0,0,0,0,1,0,Guardian Vest,5
-1376672,Body,54,70,0,0,0,0,0,0,0,Guardian Suit U,5
-1376673,Body,27,43,0,0,0,0,0,1,0,Guardian Vest U,5
-1376674,Body,48,64,0,0,0,0,0,0,0,Scholar's Blouse,5
-1376675,Body,24,40,0,0,0,0,0,1,0,Scholar's Vest,5
-1376676,Body,48,64,0,0,0,0,0,0,0,Sailor Suit,5
-1376677,Body,24,40,0,0,0,0,0,1,0,Sailor Vest,5
-1376678,Body,15,31,-2,-2,0,-2,-2,2,1,Luxury Bath Robe,5
-1376679,Body,52,68,-2,-2,2,4,3,0,0,Kita Star Jacket,5
-1376680,Body,26,42,-2,-2,2,5,3,1,0,Umi Ocean Jacket,5
-1376682,Body,48,62,0,0,0,0,0,0,1,Derring Mail S,6
-1376683,Body,24,38,1,1,1,1,1,1,1,Derring Vest S,6
-1376684,Body,54,68,-2,0,4,0,0,0,1,Dober Mail,6
-1376685,Body,27,41,-2,0,5,0,0,1,1,Dober Vest,6
-1376686,Body,60,74,-1,-3,-1,2,1,0,0,Damascus Mail,6
-1376687,Body,30,44,-1,-3,-1,2,1,1,0,Damascus Vest,6
-1376688,Body,56,70,-1,-3,-1,2,1,0,0,Damascus Mail R,6
-1376689,Body,28,42,-1,-3,-1,2,1,1,0,Damascus Vest R,6
-1376696,Body,60,74,1,-2,3,-2,2,0,1,Artian Mail S,6
-1376697,Body,30,44,3,-2,3,-2,2,1,1,Artian Vest S,6
-1376698,Body,56,70,1,-2,3,-2,2,0,1,Artian Mail R,6
-1376699,Body,28,42,3,-2,3,-2,2,1,1,Artian Vest R,6
-1376700,Body,60,74,-3,-2,5,4,-2,0,0,Seltas Mail,6
-1376701,Body,30,44,-3,-2,6,4,-2,1,0,Seltas Vest,6
-1376702,Body,58,72,4,-2,-4,0,0,0,1,Rathalos Mail S,6
-1376703,Body,29,43,5,-2,-4,0,0,1,1,Rathalos Vest S,6
-1376704,Body,62,76,4,-2,-4,0,0,0,1,EX Rathalos Mail,6
-1376705,Body,31,45,5,-2,-4,0,0,1,1,EX Rathalos Vest,6
-1376706,Body,54,68,4,-2,-4,0,0,0,0,Rathalos Mail R,6
-1376707,Body,27,41,5,-2,-4,0,0,1,0,Rathalos Vest R,6
-1376708,Body,58,72,-3,4,-2,2,-1,0,2,Lagiacrus Mail S,6
-1376709,Body,29,43,-3,5,-2,2,-1,1,2,Lagiacrus Vest S,6
-1376710,Body,54,68,-3,4,-2,2,-1,0,1,Lagiacrus Mail R,6
-1376711,Body,27,41,-3,5,-2,2,-1,1,1,Lagiacrus Vest R,6
-1376712,Body,58,72,0,4,1,-1,-4,0,0,Zinogre Mail S,6
-1376713,Body,29,43,0,5,1,-1,-4,1,0,Zinogre Vest S,6
-1376714,Body,62,76,0,4,1,-1,-4,0,0,EX Zinogre Mail,6
-1376715,Body,31,45,0,5,1,-1,-4,1,0,EX Zinogre Vest,6
-1376716,Body,50,64,0,-3,-1,2,1,0,1,Mizutsune Mail S,6
-1376717,Body,25,39,0,-2,-1,2,1,1,1,Mizutsune Vest S,6
-1376718,Body,58,72,0,3,2,-2,-3,0,0,Astalos Mail S,6
-1376719,Body,29,43,0,4,2,-2,-3,1,0,Astalos Vest S,6
-1376720,Body,66,80,-3,-1,2,1,3,0,0,Gammoth Mail S,6
-1376721,Body,33,47,-3,-1,2,1,4,1,0,Gammoth Vest S,6
-1376722,Body,60,74,3,1,-1,-3,0,0,0,Glavenus Mail S,6
-1376723,Body,30,44,4,1,-1,-3,0,1,1,Glavenus Vest S,6
-1376724,Body,60,74,4,0,0,-4,-1,0,0,Agnaktor Mail,6
-1376725,Body,30,44,6,0,0,-4,-1,1,0,Agnaktor Vest,6
-1376726,Body,60,74,-2,-1,-2,2,2,0,0,Gore Mail S,6
-1376727,Body,30,44,-2,-1,-2,3,2,1,0,Gore Vest S,6
-1376728,Body,64,78,-2,-1,-2,2,2,0,0,EX Gore Mail,6
-1376729,Body,32,46,-2,-1,-2,3,2,1,0,EX Gore Vest,6
-1376730,Body,56,70,-2,-1,-2,2,2,0,0,Gore Mail R,6
-1376731,Body,28,42,-2,-1,-2,3,2,1,0,Gore Vest R,6
-1376732,Body,60,74,2,-3,0,0,-2,0,0,Regios Mail S,6
-1376733,Body,30,44,4,-3,0,0,-2,1,0,Regios Vest S,6
-1376734,Body,66,80,-3,1,1,2,-2,0,0,Duramboros Mail,6
-1376735,Body,33,47,-2,1,1,2,-2,1,0,Duramboros Vest,6
-1376736,Body,60,74,2,-3,-2,0,0,0,0,Tigrex Mail S,6
-1376737,Body,30,44,4,-3,-2,0,0,1,0,Tigrex Vest S,6
-1376738,Body,64,78,2,-3,-2,0,0,0,0,EX Tigrex Mail,6
-1376739,Body,32,46,4,-3,-2,0,0,1,0,EX Tigrex Vest,6
-1376740,Body,56,70,2,-3,-2,0,0,0,2,Tigrex Mail R,6
-1376741,Body,28,42,4,-3,-2,0,0,1,2,Tigrex Vest R,6
-1376742,Body,64,78,-1,3,2,-1,0,0,1,Kirin Jacket S,6
-1376743,Body,32,46,-1,4,2,-1,0,1,1,Kirin Cape S,6
-1376744,Body,60,74,-1,3,2,-1,0,0,1,Kirin Jacket R,6
-1376745,Body,30,44,-1,4,2,-1,0,1,1,Kirin Cape R,6
-1376746,Body,62,76,2,0,0,-4,-2,0,2,Brachydios Mail S,6
-1376747,Body,31,45,2,0,0,-3,-2,1,2,Brachydios Vest S,6
-1376748,Body,66,80,2,0,0,-4,-2,0,1,EX Brachydios Mail,6
-1376749,Body,33,47,2,0,0,-3,-2,1,1,EX Brachydios Vest,6
-1376750,Body,66,80,2,3,2,1,-5,0,1,Golden Haori,6
-1376751,Body,33,47,2,3,2,1,-4,1,1,Puppeteer Suit,6
-1376752,Body,66,80,0,-4,-4,0,0,0,0,Vangis Mail,6
-1376753,Body,33,47,0,-3,-4,0,0,1,0,Vangis Vest,6
-1376754,Body,50,64,0,0,0,0,0,0,1,Guild Knight Suit,6
-1376755,Body,25,39,0,0,0,0,0,1,1,Guild Knight Vest,6
-1376756,Body,50,64,0,0,0,0,0,0,1,Maiden's Suit S,6
-1376757,Body,25,39,0,0,0,0,0,1,1,French Maid Vest S,6
-1376758,Body,50,64,0,0,0,0,0,0,1,Blue Guild Suit,6
-1376759,Body,25,39,0,0,0,0,0,1,1,Blue Guild Vest,6
-1376760,Body,50,64,0,0,0,0,0,0,1,Red Guild Suit,6
-1376761,Body,25,39,0,0,0,0,0,1,1,Red Guild Vest,6
-1376762,Body,50,64,0,0,0,0,0,0,1,Helper Suit S,6
-1376763,Body,25,39,0,0,0,0,0,1,1,Healer Vest S,6
-1376764,Body,50,64,0,0,0,0,0,0,0,Helper Suit U,6
-1376765,Body,25,39,0,0,0,0,0,1,0,Healer Vest U,6
-1376766,Body,50,64,0,0,0,0,0,0,1,Guild Bard Bolero S,6
-1376767,Body,25,39,0,0,0,0,0,1,1,Guild Bard Vest S,6
-1376768,Body,15,29,0,0,0,0,0,2,3,Chakra Necklace,6
-1376771,Body,50,64,0,0,0,0,0,0,0,Dianthus Wealgown,6
-1376772,Body,25,39,0,0,0,0,0,1,0,Campanile Wealgown,6
-1376773,Body,50,64,0,0,0,0,0,0,0,Ace Mail,6
-1376774,Body,25,39,0,0,0,0,0,1,0,Ace Vest,6
-1376775,Body,50,64,0,0,0,0,0,0,0,Sororal Mail,6
-1376776,Body,25,39,0,0,0,0,0,1,0,Sororal Vest,6
-1376777,Body,50,64,0,0,0,0,0,0,0,Hawksuit,6
-1376778,Body,25,39,0,0,0,0,0,1,0,Hawkjacket,6
-1376779,Body,56,70,1,1,1,1,1,0,0,Gourmew Suit S,6
-1376780,Body,28,42,1,1,1,1,1,1,0,Gourmew Vest S,6
-1376782,Body,50,64,0,0,0,0,0,0,1,Scholarly Suit S,6
-1376783,Body,25,39,0,0,0,0,0,1,1,Scholarly Vest S,6
-1376784,Body,56,70,0,0,0,0,0,0,2,Ranger's Girdle,6
-1376785,Body,28,42,0,0,0,0,0,1,2,Archer's Girdle,6
-1376786,Body,56,70,2,2,1,-1,-1,0,0,Shinobi Heaven Suit,7
-1376787,Body,28,42,2,2,2,-1,-1,1,0,Shinobi Land Suit,7
-1376788,Body,60,74,2,2,1,-1,-1,0,0,Shinobi Sky Suit,7
-1376789,Body,30,44,2,2,2,-1,-1,1,0,Shinobi Sea Suit,7
-1376790,Body,66,80,2,-2,2,2,-2,0,0,Ancient Mail,7
-1376791,Body,33,47,2,-2,3,2,-2,1,0,Ancient Vest,7
-1376792,Body,66,80,2,2,2,-2,-2,0,0,Master's Mail,7
-1376793,Body,33,47,3,2,2,-2,-2,1,0,Master's Vest,7
-1376794,Body,66,80,2,2,-5,2,2,0,1,Black Hide S,7
-1376795,Body,33,47,2,2,-5,2,3,1,1,Black Skin S,7
-1376796,Body,66,80,-2,2,-2,2,2,0,0,Toka Doate,7
-1376797,Body,33,47,-2,3,-2,2,2,1,0,Mitsuaoi Doate,7
-1376798,Body,64,78,4,-3,-4,0,0,0,0,EX Rathian Mail S,7
-1376799,Body,32,46,6,-3,-4,0,0,1,0,EX Rathian Vest S,7
-1376800,Body,64,78,5,-4,-4,0,0,0,1,EX Rathalos Mail S,7
-1376801,Body,32,46,6,-4,-4,0,0,1,1,EX Rathalos Vest S,7
-1376802,Body,64,78,2,-4,-3,0,0,0,0,EX Tigrex Mail S,7
-1376803,Body,32,46,4,-4,-3,0,0,1,0,EX Tigrex Vest S,7
-1376804,Body,68,82,-2,0,-4,2,2,0,0,Arc Mail S,7
-1376805,Body,68,82,-2,0,-4,2,2,0,0,Storge Mail S,7
-1376806,Body,34,48,-2,0,-3,2,2,1,0,Arc Vest S,7
-1376807,Body,34,48,-2,0,-3,2,2,1,0,Storge Vest S,7
-1376808,Body,72,86,-2,0,-4,2,2,0,0,EX Arc Mail,7
-1376809,Body,72,86,-2,0,-4,2,2,0,0,EX Storge Mail,7
-1376810,Body,36,50,-2,0,-3,2,2,1,0,EX Arc Vest,7
-1376811,Body,36,50,-2,0,-3,2,2,1,0,EX Storge Vest,7
-1376812,Body,64,78,-2,0,-4,2,2,0,1,Arc Mail R,7
-1376813,Body,64,78,-2,0,-4,2,2,0,1,Storge Mail R,7
-1376814,Body,32,46,-2,0,-3,2,2,1,1,Arc Vest R,7
-1376815,Body,32,46,-2,0,-3,2,2,1,1,Storge Vest R,7
-1376816,Body,72,86,-1,-2,-3,2,3,0,0,Kushala Cista S,7
-1376817,Body,36,50,-1,-2,-3,2,5,1,0,Kushala Vise S,7
-1376818,Body,76,90,-1,-2,-3,2,3,0,0,EX Kushala Cista,7
-1376819,Body,38,52,-1,-2,-3,2,5,1,0,EX Kushala Vise,7
-1376820,Body,68,82,-1,-2,-3,2,3,0,0,Kushala Cista R,7
-1376821,Body,34,48,-1,-2,-3,2,5,1,0,Kushala Vise R,7
-1376822,Body,56,70,-5,0,-3,1,2,0,0,Mizuha Guards S,7
-1376823,Body,28,42,-4,0,-3,1,2,1,0,Cham Camise S,7
-1376824,Body,60,74,-5,0,-3,1,2,0,0,EX Mizuha Guards,7
-1376825,Body,30,44,-4,0,-3,1,2,1,0,EX Cham Camise,7
-1376826,Body,66,80,4,1,-3,-4,-1,0,0,Kaiser Mail S,7
-1376827,Body,33,47,4,1,-3,-3,-1,1,0,Kaiser Vest S,7
-1376828,Body,70,84,4,1,-3,-4,-1,0,0,EX Kaiser Mail,7
-1376829,Body,35,49,4,1,-3,-3,-1,1,0,EX Kaiser Vest,7
-1376830,Body,66,80,2,-4,4,-6,0,0,0,Silver Solmail,7
-1376831,Body,33,47,2,-4,4,-5,0,1,0,Silver Solvest,7
-1376832,Body,70,84,2,-4,4,-6,0,0,0,EX Silver Solmail,7
-1376833,Body,35,49,2,-4,4,-5,0,1,0,EX Silver Solvest,7
-1376834,Body,62,76,2,-4,4,-6,0,0,0,Silver Solmail R,7
-1376835,Body,31,45,2,-4,4,-5,0,1,0,Silver Solvest R,7
-1376836,Body,64,78,2,-6,4,-4,0,0,0,Golden Lunemail,7
-1376837,Body,32,46,2,-5,4,-4,0,1,0,Golden Lunevest,7
-1376838,Body,68,82,2,-6,4,-4,0,0,0,EX Golden Lunemail,7
-1376839,Body,34,48,2,-5,4,-4,0,1,0,EX Golden Lunevest,7
-1376840,Body,70,84,2,3,2,1,-6,0,1,Divine Ire Haori,7
-1376841,Body,35,49,2,3,2,1,-5,1,1,Crusher Garb,7
-1376842,Body,70,84,-2,-5,-2,-2,-2,0,0,Esurient Mail,7
-1376843,Body,35,49,-2,-4,-2,-2,-2,1,1,Esurient Vest,7
-1376844,Body,66,80,-2,-5,-2,-2,-2,0,2,Esurient Mail R,7
-1376845,Body,33,47,-2,-4,-2,-2,-2,1,2,Esurient Vest R,7
-1376846,Body,74,88,4,-3,-5,0,2,0,0,Akantor Aegis,7
-1376847,Body,37,51,4,-3,-4,0,2,1,0,Akantor Plate,7
-1376848,Body,70,84,4,-3,-5,0,2,0,0,Akantor Aegis R,7
-1376849,Body,35,49,4,-3,-4,0,2,1,0,Akantor Plate R,7
-1376850,Body,80,94,-4,-3,-2,0,4,0,0,Ukanlos Aegis,7
-1376851,Body,40,54,-4,-3,-2,0,4,1,0,Ukanlos Plate,7
-1376852,Body,70,84,-3,0,-5,4,0,0,0,Tempest Robe,7
-1376853,Body,35,49,-3,0,-5,5,0,1,0,Welkin Robe,7
-1376854,Body,66,80,-3,0,-5,4,0,0,0,Tempest Robe R,7
-1376855,Body,33,47,-3,0,-5,5,0,1,0,Welkin Robe R,7
-1376856,Body,70,84,-1,-1,-2,-1,-1,0,1,Skeletal Sternum R,7
-1376857,Body,35,49,-1,-1,-1,-1,-1,1,1,Decayed Sternum R,7
-1376858,Body,70,84,0,1,-4,2,1,0,1,Astral Suit,7
-1376859,Body,35,49,0,1,-3,2,1,1,1,Astral Vest,7
-1376860,Body,76,90,0,0,-4,0,0,0,0,Escadora Soul,7
-1376861,Body,38,52,0,0,-4,0,0,1,0,Escadora Seele,7
-1376862,Body,72,86,0,0,-4,0,0,0,0,Escadora Soul R,7
-1376863,Body,36,50,0,0,-4,0,0,1,0,Escadora Seele R,7
-1376871,Body,44,60,1,1,3,1,1,0,0,Strange Mail,5
-1376872,Body,22,38,2,2,3,2,2,1,0,Strange Vest,5
-1376873,Body,26,46,-2,1,0,2,-1,0,0,Redhelm Mail,8
-1376874,Body,13,33,-2,1,0,3,-1,1,0,Redhelm Vest,8
-1376875,Body,22,42,-4,-2,0,3,4,0,0,Snowbaron Mail,8
-1376876,Body,11,31,-4,-2,0,3,5,1,0,Snowbaron Vest,8
-1376877,Body,30,50,0,-4,0,4,0,0,0,Stonefist Mail,8
-1376878,Body,15,35,0,-4,0,5,0,1,0,Stonefist Vest,8
-1376879,Body,30,50,4,-1,-3,0,0,0,0,Dreadqueen Mail,8
-1376880,Body,15,35,4,-1,-3,1,1,1,0,Dreadqueen Vest,8
-1376881,Body,52,72,3,-2,0,-3,0,0,0,Drilltusk Mail,8
-1376882,Body,26,46,4,-2,1,-3,1,1,0,Drilltusk Vest,8
-1376883,Body,44,64,-2,-3,0,1,0,0,0,Silverwind Mail,8
-1376884,Body,22,42,-2,-3,1,1,1,1,0,Silverwind Vest,8
-1376885,Body,70,90,4,1,-2,-4,1,0,0,Crystalbeard Mail,8
-1376886,Body,35,55,5,1,-2,-4,1,1,0,Crystalbeard Vest,8
-1376887,Body,66,86,2,2,0,-4,-2,0,0,Deadeye Mail,8
-1376888,Body,33,53,3,3,0,-4,-2,1,0,Deadeye Vest,8
-1376889,Body,68,88,5,-2,-3,0,0,0,0,Dreadking Mail,8
-1376890,Body,34,54,5,-2,-3,1,1,1,0,Dreadking Vest,8
-1376891,Body,68,88,0,4,1,0,-3,0,0,Thunderlord Mail,8
-1376892,Body,34,54,0,5,1,0,-3,1,0,Thunderlord Vest,8
-1376893,Body,70,90,2,-4,-2,1,1,0,0,Grimclaw Mail,8
-1376894,Body,35,55,3,-4,-2,1,1,1,0,Grimclaw Vest,8
-1376895,Body,70,90,4,1,0,-3,-2,0,0,Hellblade Mail,8
-1376896,Body,35,55,4,1,0,-3,-2,1,0,Hellblade Vest,8
-1376902,Body,44,60,0,0,0,0,3,0,0,X Gammoth Jacket,5
-1376903,Body,22,38,0,0,0,0,4,1,0,X Gammoth Jersey,5
-1376904,Body,44,60,0,0,0,3,0,0,0,X Mizutsune Jacket,5
-1376905,Body,22,38,0,0,0,4,0,1,0,X Mizutsune Jersey,5
-1376906,Body,44,60,3,0,0,0,0,0,0,X Dino Jacket,5
-1376907,Body,22,38,4,0,0,0,0,1,0,X Dino Jersey,5
-1376908,Body,44,60,0,3,0,0,0,0,0,X Astalos Jacket,5
-1376909,Body,22,38,0,4,0,0,0,1,0,X Astalos Jersey,5
-1376910,Body,50,66,2,2,2,2,2,0,0,Booyah Jacket,5
-1376911,Body,25,41,3,3,3,3,3,1,0,Booyah Bomber,5
-1376912,Body,50,66,2,2,2,2,2,0,0,Biker Jacket,5
-1376913,Body,25,41,3,3,3,3,3,1,0,Biker Leather,5
-1376914,Body,70,84,4,4,4,4,4,0,0,Ultimate Garb,7
-1376915,Body,35,49,5,5,5,5,5,1,0,Ultimate Attire,7
-1376916,Body,66,80,4,4,4,4,4,0,0,Champion's Body,7
-1376917,Body,33,47,5,5,5,5,5,1,0,Strongman's Body,7
-1376918,Body,68,82,1,1,1,1,1,0,1,Zodias Mail,7
-1376919,Body,34,48,2,2,2,2,2,1,1,Zodias Vest,7
-1376920,Body,52,66,0,0,0,0,0,0,0,Pirate Suit J,6
-1376921,Body,26,40,0,0,0,0,0,1,0,Pirate Jacket J,6
-1376922,Body,56,70,-4,-4,-4,-4,-4,0,0,Buccaneer Suit J,6
-1376923,Body,28,42,-3,-3,-3,-3,-3,1,0,Buccaneer Jacket J,6
-1376924,Body,54,68,0,4,1,-1,-2,0,1,Dynaqlo Coat,6
-1376925,Body,27,41,0,5,1,-1,-2,1,1,Dynaqlo Jacket,6
-1376926,Body,24,44,1,1,1,1,1,0,0,Promising Plate,3
-1376927,Body,12,32,2,2,2,2,2,1,0,Halcyon Plate,3
-1376928,Body,56,70,1,1,1,1,1,0,2,Blue Star Suit,6
-1376929,Body,28,42,2,2,2,2,2,1,2,Blue Star Jacket,6
-1376930,Body,64,78,0,0,0,0,0,0,0,Star Rook Mail,7
-1376931,Body,32,46,0,0,0,0,0,1,0,Star Rook Vest,7
-1376932,Body,52,66,1,1,1,1,1,0,0,Star Knight Mail,6
-1376933,Body,26,40,2,2,2,2,2,1,0,Star Knight Vest,6
-1376938,Body,64,78,2,2,2,2,2,0,1,Hero's Clothes,7
-1376939,Body,32,46,3,3,3,3,3,1,1,Hero's Tunic,7
-1376940,Body,64,78,4,4,-4,4,4,0,0,Varia Suit Armor,6
-1376941,Body,32,46,5,5,-3,5,5,1,0,Varia Suit Barrier,6
-1376942,Body,48,62,4,4,-4,4,4,0,0,Zero Suit Body,6
-1376943,Body,24,38,5,5,-3,5,5,1,0,Zero Suit Wear,6
-1376944,Body,66,80,2,2,2,2,2,0,0,Mail of Rage,7
-1376945,Body,33,47,3,3,3,3,3,1,0,Vest of Rage,7
-1376946,Body,66,80,2,2,2,2,2,0,0,Mail of Anat,7
-1376947,Body,33,47,3,3,3,3,3,1,0,Vest of Anat,7
-1376948,Body,50,66,2,2,2,2,2,0,0,Rider Jacket,5
-1376949,Body,25,41,3,3,3,3,3,1,0,Rider Leather,5
-1376950,Body,14,34,-3,0,0,1,2,0,0,Mosgharl Ribplate,2
-1376951,Body,7,27,-3,0,0,2,3,1,0,Mosgharl Ribguard,2
-1376952,Body,26,46,-3,-1,2,1,3,0,0,Gammoth Mail,3
-1376953,Body,13,33,-3,-1,2,1,4,1,0,Gammoth Vest,3
-1376954,Body,22,42,1,1,1,1,1,0,0,Gourmew Suit,3
-1376955,Body,11,31,1,1,1,1,1,1,0,Gourmew Vest,3
-1376956,Body,12,28,0,1,0,1,0,1,0,Leather Vest S,4
-1376957,Body,12,28,0,1,0,0,1,1,1,Chainmail Vest S,4
-1376958,Body,36,52,-3,0,0,1,2,0,0,Mosgharl Ribplate S,4
-1376959,Body,18,34,-3,0,0,2,3,1,0,Mosgharl Ribguard S,4
-1376960,Body,66,80,-3,-1,2,1,3,0,0,Gammoth Mail S,6
-1376961,Body,33,47,-3,-1,2,1,4,1,0,Gammoth Vest S,6
-1376962,Body,50,64,0,0,0,0,0,0,1,Blue Guild Suit,6
-1376963,Body,25,39,0,0,0,0,0,1,1,Blue Guild Vest,6
-1376964,Body,50,64,0,0,0,0,0,0,1,Red Guild Suit,6
-1376965,Body,25,39,0,0,0,0,0,1,1,Red Guild Vest,6
-1376966,Body,56,70,1,1,1,1,1,0,0,Gourmew Suit S,6
-1376967,Body,28,42,1,1,1,1,1,1,0,Gourmew Vest S,6
-1376968,Body,64,78,1,1,1,1,1,0,0,Promising Archplate,7
-1376969,Body,32,46,2,2,2,2,2,1,0,Halcyon Archplate,7
-1376970,Body,24,44,1,1,1,1,1,0,1,Lucid Robe,3
-1376971,Body,12,32,2,2,2,2,2,1,1,Dreamy Robe,3
-1376972,Body,64,78,1,1,1,1,1,0,1,Lucid Archrobe,7
-1376973,Body,32,46,2,2,2,2,2,1,1,Dreamy Archrobe,7
-1376974,Body,60,74,2,2,2,2,2,0,1,Hiryu Sky Suit,7
-1376975,Body,30,44,2,3,2,2,2,1,1,Hiryu Land Suit,7
-1376976,Body,62,76,3,0,3,0,0,0,1,Lodestar Suit,7
-1376977,Body,31,45,3,0,4,0,0,1,1,Lodestar Vest,7
-1376978,Body,64,78,4,4,-4,4,4,0,0,Varia Suit Armor,6
-1376979,Body,32,46,5,5,-3,5,5,1,0,Varia Suit Barrier,6
-1376980,Body,48,62,4,4,-4,4,4,0,0,Zero Suit Body,6
-1376981,Body,24,38,5,5,-3,5,5,1,0,Zero Suit Wear,6
+1376257,Chest,1,25,0,0,0,0,0,2,0,Leather Vest,1
+1376258,Chest,2,26,0,1,0,0,0,2,1,Chainmail Vest,1
+1376259,Chest,2,26,0,0,0,1,0,2,1,Bherna Mail,1
+1376260,Chest,2,26,1,0,0,0,0,0,0,Hunting Mail,1
+1376261,Chest,1,25,2,0,0,0,0,1,0,Hunting Vest,1
+1376262,Chest,2,26,-1,0,0,0,2,2,0,Mafumofu Jacket,1
+1376263,Chest,2,26,0,1,0,0,0,2,0,Yukumo Dogi,1
+1376264,Chest,2,26,1,0,2,0,0,2,1,Loc Lac Shawl,1
+1376265,Chest,6,30,0,0,0,0,0,0,1,Hunter's Mail,1
+1376266,Chest,3,27,0,0,0,0,0,1,1,Hunter's Vest,1
+1376267,Chest,6,30,0,0,0,0,-1,0,0,Bone Mail,1
+1376268,Chest,3,27,0,0,0,0,-1,1,0,Bone Vest,1
+1376271,Chest,6,30,2,0,0,-2,0,0,2,Chaos Plate,1
+1376272,Chest,3,27,2,0,0,-2,0,1,2,Chaos Brigandine,1
+1376279,Chest,6,30,-2,0,0,0,0,0,0,Jaggi Mail,1
+1376280,Chest,3,27,-2,0,0,0,0,1,0,Jaggi Vest,1
+1376281,Chest,8,32,-2,0,0,0,0,0,0,Maccao Mail,1
+1376282,Chest,4,28,-2,1,1,1,1,1,0,Maccao Vest,1
+1376283,Chest,8,32,0,0,0,0,-2,0,0,Velociprey Mail,1
+1376284,Chest,4,28,0,1,0,1,-2,1,0,Velociprey Vest,1
+1376285,Chest,8,32,0,-1,0,0,2,0,0,Giaprey Mail,1
+1376286,Chest,4,28,0,-1,0,0,3,1,0,Giaprey Vest,1
+1376287,Chest,10,34,0,1,0,0,-2,0,0,Genprey Mail,1
+1376288,Chest,5,29,1,2,0,0,-2,1,0,Genprey Vest,1
+1376289,Chest,10,34,-2,1,2,1,1,0,1,Vespoid Mail,1
+1376290,Chest,5,29,-2,2,3,2,2,1,1,Vespoid Vest,1
+1376291,Chest,10,34,-1,-1,4,-1,-1,0,0,Hornetaur Mail,1
+1376292,Chest,5,29,-1,-1,6,-1,-1,1,0,Hornetaur Vest,1
+1376293,Chest,10,34,-2,0,2,0,0,0,1,Bnahabra Suit,1
+1376294,Chest,5,29,-2,1,3,1,1,1,1,Bnahabra Vest,1
+1376297,Chest,5,29,0,0,0,0,0,2,1,Mosswine Vest,1
+1376298,Chest,12,36,2,0,0,0,-2,0,0,Rhenoplos Mail,1
+1376299,Chest,6,30,3,0,0,0,-2,1,0,Rhenoplos Vest,1
+1376300,Chest,12,36,0,-2,0,2,1,0,1,Bulldrome Mail,1
+1376301,Chest,6,30,0,-2,0,3,1,1,1,Bulldrome Vest,1
+1376303,Chest,14,38,-2,-2,0,0,0,0,0,Arzuros Mail,1
+1376304,Chest,7,31,-2,-2,0,0,0,1,0,Arzuros Vest,1
+1376305,Chest,14,38,2,0,0,0,-3,0,1,Cephalos Mail,1
+1376306,Chest,7,31,2,0,0,0,-3,1,1,Cephalos Vest,1
+1376307,Chest,8,28,0,0,0,0,0,2,1,Derring Jacket,2
+1376308,Chest,12,32,-1,-1,0,0,-1,0,1,Alloy Mail,2
+1376309,Chest,6,26,-1,-1,0,0,-1,1,1,Alloy Vest,2
+1376310,Chest,12,32,1,-1,0,-1,0,0,2,Battle Mail,2
+1376311,Chest,6,26,2,-1,0,-1,0,1,2,Battle Vest,2
+1376312,Chest,14,34,-1,1,0,-1,0,0,1,Ingot Mail,2
+1376313,Chest,7,27,-1,2,0,-1,0,1,1,Ingot Vest,2
+1376314,Chest,14,34,0,2,0,-1,-1,0,0,High Metal Mail,2
+1376315,Chest,7,27,0,3,0,-1,-1,1,0,High Metal Vest,2
+1376318,Chest,12,32,0,1,0,1,0,0,0,Melahoa Jacket,2
+1376319,Chest,6,26,0,1,0,1,0,1,0,Melahoa Stalk,2
+1376320,Chest,14,34,1,-2,0,2,0,0,1,Makluva Cover,2
+1376321,Chest,7,27,1,-2,0,3,0,1,1,Makluva Scale,2
+1376322,Chest,12,32,3,0,0,1,2,0,1,Bistro Suit,2
+1376323,Chest,6,26,4,0,0,1,3,1,1,Bistro Vest,2
+1376324,Chest,18,38,2,2,3,-2,-2,0,2,Obituary Thorax,2
+1376325,Chest,9,29,3,2,4,-2,-2,1,2,Obituary Pleuron,2
+1376326,Chest,18,38,2,2,3,-2,-2,0,2,Butterfly Thorax,2
+1376327,Chest,9,29,3,2,4,-2,-2,1,2,Butterfly Pleuron,2
+1376328,Chest,16,36,2,1,0,1,-1,0,1,Death Stench Muscle,2
+1376329,Chest,8,28,3,1,0,1,-1,1,1,Death Stench Heart,2
+1376330,Chest,16,36,2,0,0,2,-2,0,0,Acorn Mail,2
+1376331,Chest,8,28,3,0,0,3,-2,1,0,Acorn Vest,2
+1376332,Chest,14,34,-3,0,0,1,2,0,0,Mosgharl Ribplate,2
+1376333,Chest,7,27,-3,0,0,2,3,1,0,Mosgharl Ribguard,2
+1376334,Chest,14,34,-1,-1,0,3,0,0,0,Edel Ribplate,2
+1376335,Chest,7,27,-1,-1,0,4,0,1,0,Edel Ribguard,2
+1376336,Chest,18,38,3,-1,3,-1,-1,0,0,Skalda Thorax,2
+1376337,Chest,9,29,4,-1,3,-1,-1,1,0,Skalda Pleuron,2
+1376338,Chest,18,38,3,-1,3,-1,-1,0,0,Spio Thorax,2
+1376339,Chest,9,29,4,-1,3,-1,-1,1,0,Spio Pleuron,2
+1376340,Chest,12,32,-2,-1,0,4,0,0,0,Droth Mail,2
+1376341,Chest,6,26,-2,-1,0,5,0,1,0,Droth Vest,2
+1376342,Chest,14,34,4,0,0,-2,-1,0,1,Uroktor Torso,2
+1376343,Chest,7,27,5,0,0,-2,-1,1,1,Uroktor Vest,2
+1376346,Chest,14,34,-1,2,0,0,3,0,0,Moofah Suit,2
+1376347,Chest,7,27,-1,3,0,0,4,1,0,Moofah Jacket,2
+1376349,Chest,10,30,1,1,1,2,1,0,0,Velociprey Body,2
+1376350,Chest,5,25,1,1,1,3,1,1,0,Velociprey Suit,2
+1376351,Chest,10,30,1,2,1,1,1,0,0,Genprey Body,2
+1376352,Chest,5,25,1,3,1,1,1,1,0,Genprey Suit,2
+1376353,Chest,10,30,2,1,1,1,1,0,0,Ioprey Body,2
+1376354,Chest,5,25,3,1,1,1,1,1,0,Ioprey Wear,2
+1376355,Chest,10,30,1,1,2,1,1,0,0,Remobra Suit,2
+1376356,Chest,5,25,1,1,3,1,1,1,0,Remobra Wear,2
+1376357,Chest,14,34,2,-1,0,-1,0,0,1,Ioprey Mail,2
+1376358,Chest,7,27,3,-1,0,-1,0,1,1,Ioprey Vest,2
+1376359,Chest,16,36,4,0,0,-1,-3,0,0,Kut-Ku Mail,2
+1376360,Chest,8,28,5,0,0,-1,-3,1,0,Kut-Ku Vest,2
+1376361,Chest,14,34,-3,0,0,1,4,0,0,Lagombi Mail,2
+1376362,Chest,7,27,-3,0,0,1,5,1,0,Lagombi Vest,2
+1376363,Chest,16,36,-3,4,0,1,-1,0,1,Gypceros Mail,2
+1376364,Chest,8,28,-3,5,0,1,-1,1,1,Gypceros Vest,2
+1376365,Chest,18,38,2,-1,1,-3,0,0,1,Tetsucabra Mail,2
+1376366,Chest,9,29,3,-1,1,-3,0,1,1,Tetsucabra Vest,2
+1376367,Chest,20,40,-1,-3,1,3,0,0,0,Hermitaur Mail,2
+1376368,Chest,10,30,-1,-3,1,4,0,1,0,Hermitaur Vest,2
+1376369,Chest,18,38,2,0,1,-3,-1,0,1,Volvidon Mail,2
+1376370,Chest,9,29,3,0,1,-3,-1,1,1,Volvidon Vest,2
+1376371,Chest,18,38,-3,-1,0,4,0,0,1,Ludroth Mail,2
+1376372,Chest,9,29,-3,-1,0,5,0,1,1,Ludroth Vest,2
+1376373,Chest,18,38,-2,1,0,-2,1,0,0,Malfestio Mail,2
+1376374,Chest,9,29,-1,1,0,-2,1,1,0,Malfestio Vest,2
+1376375,Chest,18,38,-4,4,1,1,2,0,0,Khezu Mail,2
+1376376,Chest,9,29,-4,5,1,1,2,1,0,Khezu Vest,2
+1376377,Chest,20,40,3,-2,-3,0,0,0,0,Rathian Mail,2
+1376378,Chest,10,30,4,-2,-3,0,0,1,0,Rathian Vest,2
+1376379,Chest,20,40,2,-1,1,0,-3,0,0,Nibelsnarf Mail,2
+1376380,Chest,10,30,3,-1,1,0,-3,1,0,Nibelsnarf Vest,2
+1376381,Chest,18,38,-4,0,0,1,4,0,1,Blango Mail,2
+1376382,Chest,9,29,-4,0,0,1,5,1,1,Blango Vest,2
+1376383,Chest,20,40,1,-1,0,2,-1,0,0,Ceanataur Mail,2
+1376384,Chest,10,30,2,-1,0,2,-1,1,0,Ceanataur Vest,2
+1376385,Chest,20,40,1,0,1,-1,-3,0,1,Najarala Mail,2
+1376386,Chest,10,30,1,1,1,-1,-3,1,1,Najarala Vest,2
+1376387,Chest,18,38,-2,-3,1,1,1,0,1,Nargacuga Mail,2
+1376388,Chest,9,29,-2,-2,1,1,1,1,1,Nargacuga Vest,2
+1376389,Chest,18,38,0,0,0,0,0,0,1,Scholarly Suit,2
+1376390,Chest,9,29,0,0,0,0,0,1,1,Scholarly Vest,2
+1376391,Chest,20,40,0,-2,0,3,-1,0,2,Vaik Mail,3
+1376392,Chest,10,30,0,-2,0,4,-1,1,2,Vaik Vest,3
+1376395,Chest,20,40,-2,3,2,0,-2,0,1,Aelucanth Thorax,3
+1376396,Chest,10,30,-2,3,3,0,-2,1,1,Aelucanth Pleuron,3
+1376397,Chest,20,40,-2,3,2,0,-2,0,1,Rhopessa Thorax,3
+1376398,Chest,10,30,-2,3,3,0,-2,1,1,Rhopessa Pleuron,3
+1376399,Chest,24,44,1,-2,3,-2,2,0,1,Artian Mail,3
+1376400,Chest,12,32,3,-2,3,-2,2,1,1,Artian Vest,3
+1376401,Chest,22,42,2,2,0,-1,0,0,0,Garuga Mail,3
+1376402,Chest,11,31,3,2,0,-1,0,1,0,Garuga Vest,3
+1376404,Chest,26,46,3,0,-2,-4,-1,0,0,Uragaan Mail,3
+1376405,Chest,13,33,4,0,-2,-4,-1,1,0,Uragaan Vest,3
+1376406,Chest,24,44,4,-2,-4,0,0,0,1,Rathalos Mail,3
+1376407,Chest,12,32,5,-2,-4,0,0,1,1,Rathalos Vest,3
+1376408,Chest,24,44,-3,4,-2,2,-1,0,2,Lagiacrus Mail,3
+1376409,Chest,12,32,-3,5,-2,2,-1,1,2,Lagiacrus Vest,3
+1376410,Chest,22,42,0,4,1,-1,-4,0,0,Zinogre Mail,3
+1376411,Chest,11,31,0,5,1,-1,-4,1,0,Zinogre Vest,3
+1376412,Chest,20,40,0,-3,-1,2,1,0,1,Mizutsune Mail,3
+1376413,Chest,10,30,0,-2,-1,2,1,1,1,Mizutsune Vest,3
+1376414,Chest,24,44,0,3,2,-2,-3,0,0,Astalos Mail,3
+1376415,Chest,12,32,0,4,2,-2,-3,1,0,Astalos Vest,3
+1376416,Chest,26,46,-3,-1,2,1,3,0,0,Gammoth Mail,3
+1376417,Chest,13,33,-3,-1,2,1,4,1,0,Gammoth Vest,3
+1376418,Chest,24,44,3,1,-1,-3,0,0,1,Glavenus Mail,3
+1376419,Chest,12,32,4,1,-1,-3,0,1,1,Glavenus Vest,3
+1376420,Chest,24,44,-2,-1,-2,2,2,0,0,Gore Mail,3
+1376421,Chest,12,32,-2,-1,-2,3,2,1,0,Gore Vest,3
+1376422,Chest,24,44,2,-3,0,0,-2,0,0,Regios Mail,3
+1376423,Chest,12,32,4,-3,0,0,-2,1,0,Regios Vest,3
+1376424,Chest,24,44,2,-3,-2,0,0,0,0,Tigrex Mail,3
+1376425,Chest,12,32,4,-3,-2,0,0,1,0,Tigrex Vest,3
+1376426,Chest,26,46,-1,3,2,-1,0,0,0,Kirin Jacket,3
+1376427,Chest,13,33,-1,4,2,-1,0,1,0,Kirin Cape,3
+1376428,Chest,24,44,2,0,0,-4,-2,0,1,Brachydios Mail,3
+1376429,Chest,12,32,2,0,0,-3,-2,1,1,Brachydios Vest,3
+1376430,Chest,26,46,-2,0,-4,2,2,0,0,Arc Mail,3
+1376431,Chest,26,46,-2,0,-4,2,2,0,0,Storge Mail,3
+1376432,Chest,13,33,-2,0,-3,2,2,1,0,Arc Vest,3
+1376433,Chest,13,33,-2,0,-3,2,2,1,0,Storge Vest,3
+1376434,Chest,26,46,-1,-2,-3,2,3,0,1,Kushala Cista,3
+1376435,Chest,13,33,-1,-2,-3,2,5,1,1,Kushala Vise,3
+1376436,Chest,26,46,-5,0,-3,1,2,0,0,Mizuha Guards,3
+1376437,Chest,13,33,-4,0,-3,1,2,1,0,Cham Camise,3
+1376438,Chest,26,46,4,1,-3,-4,-1,0,0,Kaiser Mail,3
+1376439,Chest,13,33,4,1,-3,-3,-1,1,0,Kaiser Vest,3
+1376440,Chest,26,46,-1,-1,-2,-1,-1,0,1,Skeletal Sternum,3
+1376441,Chest,13,33,-1,-1,-1,-1,-1,1,1,Decayed Sternum,3
+1376442,Chest,24,44,2,2,-5,2,2,0,1,Black Hide,3
+1376443,Chest,12,32,2,2,-4,2,2,1,1,Black Skin,3
+1376444,Chest,22,42,1,1,1,1,1,0,0,Black Belt Mail,3
+1376445,Chest,11,31,1,1,2,1,1,1,0,Black Belt Vest,3
+1376446,Chest,20,40,0,0,0,0,0,0,0,Guild Bard Bolero,3
+1376447,Chest,10,30,0,0,0,0,0,1,0,Guild Bard Vest,3
+1376448,Chest,20,40,0,0,0,0,0,0,0,Maiden's Suit,3
+1376449,Chest,10,30,0,0,0,0,0,1,0,French Maid Vest,3
+1376450,Chest,20,40,0,0,0,0,0,0,1,Helper Suit,3
+1376451,Chest,10,30,0,0,0,0,0,1,1,Healer Vest,3
+1376452,Chest,20,40,0,0,0,0,0,0,0,Dianthus Gown,3
+1376453,Chest,10,30,0,0,0,0,0,1,0,Campanile Gown,3
+1376454,Chest,10,30,-2,-2,0,-2,-2,2,0,Bath Robe,3
+1376455,Chest,22,42,1,1,1,1,1,0,0,Gourmew Suit,3
+1376456,Chest,11,31,1,1,1,1,1,1,0,Gourmew Vest,3
+1376457,Chest,24,40,0,0,0,0,0,0,0,Leather Mail S,4
+1376458,Chest,24,40,0,1,0,0,0,0,1,Chainmail Armor S,4
+1376459,Chest,26,42,0,0,0,1,0,0,2,Bherna Mail S,4
+1376460,Chest,13,29,0,0,0,2,0,1,2,Bherna Vest S,4
+1376461,Chest,26,42,1,0,0,0,0,0,0,Hunting Mail S,4
+1376462,Chest,13,29,2,0,0,0,0,1,0,Hunting Vest S,4
+1376463,Chest,26,42,-1,0,0,0,2,0,0,Mafumofu Suit S,4
+1376464,Chest,13,29,-1,0,0,0,4,1,0,Mafumofu Jacket S,4
+1376465,Chest,26,42,0,1,0,0,0,0,0,Yukumo Sky Dogi,4
+1376466,Chest,13,29,0,2,0,0,0,1,0,Yukumo Land Dogi,4
+1376467,Chest,15,31,1,0,2,0,0,2,1,Loc Lac Shawl S,4
+1376468,Chest,26,42,0,0,0,0,0,0,1,Hunter's Mail S,4
+1376469,Chest,13,29,0,0,0,0,0,1,1,Hunter's Vest S,4
+1376470,Chest,22,38,0,0,0,0,0,0,0,Hunter's Mail R,4
+1376471,Chest,11,27,0,0,0,0,0,1,0,Hunter's Vest R,4
+1376472,Chest,30,46,0,0,0,0,-1,0,1,Bone Mail S,4
+1376473,Chest,15,31,0,0,0,0,-1,1,1,Bone Vest S,4
+1376478,Chest,36,52,2,0,0,-2,0,0,3,Chaos Archplate,4
+1376479,Chest,18,34,4,0,0,-2,0,1,3,Chaos Archbrigandine,4
+1376480,Chest,32,48,0,1,0,1,0,0,0,Melahoa Jacket S,4
+1376481,Chest,16,32,0,1,0,1,0,1,0,Melahoa Stalk S,4
+1376482,Chest,28,44,0,1,0,1,0,0,0,Melahoa Jacket U,4
+1376483,Chest,14,30,0,1,0,1,0,1,0,Melahoa Stalk U,4
+1376484,Chest,36,52,1,-2,0,2,0,0,1,Makluva Cover S,4
+1376485,Chest,18,34,1,-2,0,3,0,1,1,Makluva Scale S,4
+1376486,Chest,32,48,1,-2,0,2,0,0,2,Makluva Cover U,4
+1376487,Chest,16,32,1,-2,0,3,0,1,2,Makluva Scale U,4
+1376488,Chest,34,50,3,0,0,1,2,0,1,Bistro Suit S,4
+1376489,Chest,17,33,4,0,0,1,3,1,1,Bistro Vest S,4
+1376490,Chest,36,52,2,0,0,2,-2,0,0,Acorn Mail S,4
+1376491,Chest,18,34,3,0,0,3,-2,1,0,Acorn Vest S,4
+1376492,Chest,36,52,-3,0,0,1,2,0,0,Mosgharl Ribplate S,4
+1376493,Chest,18,34,-3,0,0,2,3,1,0,Mosgharl Ribguard S,4
+1376494,Chest,34,50,-1,-1,0,3,0,0,0,Edel Ribplate S,4
+1376495,Chest,17,33,-1,-1,0,4,0,1,0,Edel Ribguard S,4
+1376496,Chest,32,48,-1,2,0,0,3,0,0,Moofah Suit S,4
+1376497,Chest,16,32,-1,3,0,0,4,1,0,Moofah Jacket S,4
+1376498,Chest,28,44,-2,0,1,2,-1,0,0,Slagtoth Cloak,4
+1376499,Chest,14,30,-2,0,1,3,-1,1,0,Slagtoth Wrap,4
+1376503,Chest,20,36,1,1,1,2,1,0,0,Velociprey Body S,4
+1376504,Chest,10,26,1,1,1,3,1,1,0,Velociprey Suit S,4
+1376505,Chest,20,36,1,2,1,1,1,0,0,Genprey Body S,4
+1376506,Chest,10,26,1,3,1,1,1,1,0,Genprey Suit S,4
+1376507,Chest,20,36,2,1,1,1,1,0,0,Ioprey Body S,4
+1376508,Chest,10,26,3,1,1,1,1,1,0,Ioprey Wear S,4
+1376509,Chest,20,36,1,1,2,1,1,0,0,Remobra Suit S,4
+1376510,Chest,10,26,1,1,3,1,1,1,0,Remobra Wear S,4
+1376517,Chest,19,35,0,0,0,0,0,2,1,Mosswine Vest S,4
+1376518,Chest,32,48,2,0,0,0,-2,0,1,Rhenoplos Mail S,4
+1376519,Chest,16,32,3,0,0,0,-2,1,1,Rhenoplos Vest S,4
+1376520,Chest,28,44,-2,0,0,0,0,0,1,Jaggi Mail S,4
+1376521,Chest,14,30,-2,0,0,0,0,1,1,Jaggi Vest S,4
+1376522,Chest,28,44,-2,-1,0,4,0,0,0,Droth Mail S,4
+1376523,Chest,14,30,-2,-1,0,5,0,1,0,Droth Vest S,4
+1376524,Chest,30,46,4,0,0,-2,-1,0,1,Uroktor Torso S,4
+1376525,Chest,15,31,5,0,0,-2,-1,1,1,Uroktor Vest S,4
+1376526,Chest,30,46,-2,0,0,0,0,0,0,Maccao Mail S,4
+1376527,Chest,15,31,-2,1,1,1,1,1,0,Maccao Vest S,4
+1376528,Chest,30,46,0,0,0,0,-2,0,0,Velociprey Mail S,4
+1376529,Chest,15,31,0,1,0,1,-2,1,0,Velociprey Vest S,4
+1376530,Chest,30,46,0,-1,0,0,2,0,0,Giaprey Mail S,4
+1376531,Chest,15,31,0,-1,0,0,3,1,0,Giaprey Vest S,4
+1376532,Chest,32,48,0,1,0,0,-2,0,0,Genprey Mail S,4
+1376533,Chest,16,32,1,2,0,0,-2,1,0,Genprey Vest S,4
+1376534,Chest,36,52,0,1,0,0,-2,0,1,EX Genprey Mail,4
+1376535,Chest,18,34,1,2,0,0,-2,1,1,EX Genprey Vest,4
+1376536,Chest,34,50,2,-1,0,-1,0,0,1,Ioprey Mail S,4
+1376537,Chest,17,33,3,-1,0,-1,0,1,1,Ioprey Vest S,4
+1376538,Chest,38,54,2,-1,0,-1,0,0,0,EX Ioprey Mail,4
+1376539,Chest,19,35,3,-1,0,-1,0,1,0,EX Ioprey Vest,4
+1376540,Chest,32,48,-2,1,2,1,1,0,2,Vespoid Mail S,4
+1376541,Chest,16,32,-2,2,3,2,2,1,2,Vespoid Vest S,4
+1376542,Chest,36,52,-2,1,2,1,1,0,0,EX Vespoid Mail,4
+1376543,Chest,18,34,-2,2,3,2,2,1,0,EX Vespoid Vest,4
+1376544,Chest,36,52,-1,-1,4,-1,-1,0,0,Hornetaur Mail S,4
+1376545,Chest,18,34,-1,-1,6,-1,-1,1,0,Hornetaur Vest S,4
+1376546,Chest,40,56,-1,-1,4,-1,-1,0,1,EX Hornetaur Mail,4
+1376547,Chest,20,36,-1,-1,6,-1,-1,1,1,EX Hornetaur Vest,4
+1376548,Chest,32,48,-1,-1,4,-1,-1,0,2,Hornetaur Mail R,4
+1376549,Chest,16,32,-1,-1,6,-1,-1,1,2,Hornetaur Vest R,4
+1376550,Chest,32,48,-2,0,2,0,0,0,0,Bnahabra Suit S,4
+1376551,Chest,16,32,-2,1,3,1,1,1,0,Bnahabra Vest S,4
+1376554,Chest,36,52,0,-2,0,2,1,0,1,Bulldrome Mail S,4
+1376555,Chest,18,34,0,-2,0,3,1,1,1,Bulldrome Vest S,4
+1376557,Chest,38,54,-2,-2,0,0,0,0,0,Arzuros Mail S,4
+1376558,Chest,19,35,-2,-2,0,0,0,1,0,Arzuros Vest S,4
+1376559,Chest,42,58,2,0,0,0,-3,0,1,Cephalos Mail S,4
+1376560,Chest,21,37,2,0,0,0,-3,1,1,Cephalos Vest S,4
+1376561,Chest,46,62,2,0,0,0,-3,0,0,EX Cephalos Mail,4
+1376562,Chest,23,39,2,0,0,0,-3,1,0,EX Cephalos Vest,4
+1376563,Chest,44,60,3,0,0,-1,-3,0,0,Kut-Ku Mail S,4
+1376564,Chest,22,38,4,0,0,-1,-3,1,0,Kut-Ku Vest S,4
+1376565,Chest,44,60,-2,-1,1,2,0,0,1,Kecha Mail,4
+1376566,Chest,22,38,-2,-1,1,3,0,1,1,Kecha Vest,4
+1376567,Chest,40,56,-3,0,0,1,3,0,0,Lagombi Mail S,4
+1376568,Chest,20,36,-3,0,0,1,4,1,0,Lagombi Vest S,4
+1376569,Chest,46,62,-3,4,0,1,-1,0,2,Gypceros Mail S,4
+1376570,Chest,23,39,-3,5,0,1,-1,1,2,Gypceros Vest S,4
+1376571,Chest,42,58,-3,4,0,1,-1,0,0,Gypceros Mail R,4
+1376572,Chest,21,37,-3,5,0,1,-1,1,0,Gypceros Vest R,4
+1376573,Chest,46,62,2,-1,1,-3,0,0,1,Tetsucabra Mail S,4
+1376574,Chest,23,39,3,-1,1,-3,0,1,1,Tetsucabra Vest S,4
+1376575,Chest,48,64,-1,-3,1,3,0,0,0,Hermitaur Mail S,4
+1376576,Chest,24,40,-1,-3,1,4,0,1,0,Hermitaur Vest S,4
+1376577,Chest,52,68,-1,-3,1,3,0,0,0,EX Hermitaur Mail,4
+1376578,Chest,26,42,-1,-3,1,4,0,1,0,EX Hermitaur Vest,4
+1376579,Chest,44,60,-1,-3,1,3,0,0,3,Hermitaur Mail R,4
+1376580,Chest,22,38,-1,-3,1,4,0,1,3,Hermitaur Vest R,4
+1376581,Chest,46,62,2,0,1,-3,-1,0,1,Volvidon Mail S,4
+1376582,Chest,23,39,3,0,1,-3,-1,1,1,Volvidon Vest S,4
+1376583,Chest,46,62,-3,-1,0,4,0,0,1,Ludroth Mail S,4
+1376584,Chest,23,39,-3,-1,0,5,0,1,1,Ludroth Vest S,4
+1376585,Chest,42,58,-3,-1,0,4,0,0,0,Ludroth Mail R,4
+1376586,Chest,21,37,-3,-1,0,5,0,1,0,Ludroth Vest R,4
+1376587,Chest,44,60,0,0,0,0,0,0,0,Lecturer's Suit,4
+1376588,Chest,22,38,0,0,0,0,0,1,0,Lecturer's Jacket,4
+1376589,Chest,40,56,-1,-1,0,0,-1,0,1,Alloy Mail S,5
+1376590,Chest,20,36,-1,-1,0,0,-1,1,1,Alloy Vest S,5
+1376591,Chest,36,52,-1,-1,0,0,-1,0,1,Alloy Mail R,5
+1376592,Chest,18,34,-1,-1,0,0,-1,1,1,Alloy Vest R,5
+1376593,Chest,44,60,1,-1,0,-1,0,0,2,Battle Mail S,5
+1376594,Chest,22,38,2,-1,0,-1,0,1,2,Battle Vest S,5
+1376595,Chest,48,64,-1,1,0,-1,0,0,1,Ingot Mail S,5
+1376596,Chest,24,40,-1,2,0,-1,0,1,1,Ingot Vest S,5
+1376597,Chest,44,60,-1,1,0,-1,0,0,0,Ingot Mail R,5
+1376598,Chest,22,38,-1,2,0,-1,0,1,0,Ingot Vest R,5
+1376599,Chest,46,62,0,2,0,-1,-1,0,1,High Metal Mail S,5
+1376600,Chest,23,39,0,3,0,-1,-1,1,1,High Metal Vest S,5
+1376601,Chest,42,58,0,2,0,-1,-1,0,0,High Metal Mail U,5
+1376602,Chest,21,37,0,3,0,-1,-1,1,0,High Metal Vest U,5
+1376605,Chest,48,64,-1,-1,-1,4,-1,0,0,Lobster Mail,5
+1376606,Chest,24,40,-1,-1,-1,5,-1,1,0,Lobster Vest,5
+1376607,Chest,50,66,2,2,3,-2,-2,0,2,Obituary Thorax S,5
+1376608,Chest,25,41,3,2,4,-2,-2,1,2,Obituary Pleuron S,5
+1376609,Chest,50,66,2,2,3,-2,-2,0,2,Butterfly Thorax S,5
+1376610,Chest,25,41,3,2,4,-2,-2,1,2,Butterfly Pleuron S,5
+1376611,Chest,48,64,2,1,0,1,-1,0,2,Death Stench Muscle S,5
+1376612,Chest,24,40,3,1,0,1,-1,1,2,Death Stench Heart S,5
+1376613,Chest,44,60,2,1,0,1,-1,0,0,Death Stench Muscle R,5
+1376614,Chest,22,38,3,1,0,1,-1,1,0,Death Stench Heart R,5
+1376615,Chest,46,62,0,-2,0,3,-1,0,0,Vaik Mail S,5
+1376616,Chest,23,39,0,-2,0,4,-1,1,0,Vaik Vest S,5
+1376617,Chest,48,64,-2,3,2,0,-2,0,1,Aelucanth Thorax S,5
+1376618,Chest,24,40,-2,3,3,0,-2,1,1,Aelucanth Pleuron S,5
+1376619,Chest,48,64,-2,3,2,0,-2,0,1,Rhopessa Thorax S,5
+1376620,Chest,24,40,-2,3,3,0,-2,1,1,Rhopessa Pleuron S,5
+1376621,Chest,44,60,2,0,-2,0,2,0,0,Patissier's Suit,5
+1376622,Chest,22,38,4,0,-2,0,2,1,0,Patissier's Vest,5
+1376623,Chest,48,64,3,-1,3,-1,-1,0,0,Skalda Thorax S,5
+1376624,Chest,24,40,4,-1,3,-1,-1,1,0,Skalda Pleuron S,5
+1376625,Chest,48,64,3,-1,3,-1,-1,0,0,Spio Thorax S,5
+1376626,Chest,24,40,4,-1,3,-1,-1,1,0,Spio Pleuron S,5
+1376627,Chest,44,60,-2,1,0,-2,1,0,0,Malfestio Mail S,5
+1376628,Chest,22,38,-1,1,0,-2,1,1,0,Malfestio Vest S,5
+1376629,Chest,46,62,-2,-4,0,3,4,0,0,Zamtrios Mail,5
+1376630,Chest,23,39,-2,-4,0,3,5,1,0,Zamtrios Vest,5
+1376631,Chest,50,66,-4,4,1,1,2,0,0,Khezu Mail S,5
+1376632,Chest,25,41,-4,5,1,1,2,1,0,Khezu Vest S,5
+1376633,Chest,46,62,-4,4,1,1,2,0,0,Khezu Mail R,5
+1376634,Chest,23,39,-4,5,1,1,2,1,0,Khezu Vest R,5
+1376635,Chest,50,66,3,-2,-3,0,0,0,0,Rathian Mail S,5
+1376636,Chest,25,41,4,-2,-3,0,0,1,0,Rathian Vest S,5
+1376637,Chest,54,70,3,-2,-3,0,0,0,0,EX Rathian Mail,5
+1376638,Chest,27,43,4,-2,-3,0,0,1,0,EX Rathian Vest,5
+1376639,Chest,46,62,3,-2,-3,0,0,0,2,Rathian Mail R,5
+1376640,Chest,23,39,4,-2,-3,0,0,1,2,Rathian Vest R,5
+1376641,Chest,50,66,2,-1,1,0,-3,0,0,Nibelsnarf Mail S,5
+1376642,Chest,25,41,3,-1,1,0,-3,1,0,Nibelsnarf Vest S,5
+1376643,Chest,52,68,-2,-4,1,4,2,0,0,Plesioth Mail,5
+1376644,Chest,26,42,-2,-4,1,5,2,1,0,Plesioth Vest,5
+1376645,Chest,50,66,-4,0,0,1,4,0,1,Blango Mail S,5
+1376646,Chest,25,41,-4,0,0,1,5,1,1,Blango Vest S,5
+1376647,Chest,54,70,-4,0,0,1,4,0,1,EX Blango Mail,5
+1376648,Chest,27,43,-4,0,0,1,5,1,1,EX Blango Vest,5
+1376649,Chest,56,72,4,0,1,-4,0,0,1,Lavasioth Mail,5
+1376650,Chest,28,44,5,0,1,-4,0,1,1,Lavasioth Vest,5
+1376651,Chest,60,76,4,0,1,-4,0,0,1,EX Lavasioth Mail,5
+1376652,Chest,30,46,5,0,1,-4,0,1,1,EX Lavasioth Vest,5
+1376653,Chest,48,64,1,-1,0,2,-1,0,0,Ceanataur Mail S,5
+1376654,Chest,24,40,2,-1,0,2,-1,1,0,Ceanataur Vest S,5
+1376655,Chest,52,68,1,-1,0,2,-1,0,0,EX Ceanataur Mail,5
+1376656,Chest,26,42,2,-1,0,2,-1,1,0,EX Ceanataur Vest,5
+1376657,Chest,44,60,1,-1,0,2,-1,0,1,Ceanataur Mail R,5
+1376658,Chest,22,38,2,-1,0,2,-1,1,1,Ceanataur Vest R,5
+1376659,Chest,56,72,1,0,1,-1,-3,0,1,Najarala Mail S,5
+1376660,Chest,28,44,1,1,1,-1,-3,1,1,Najarala Vest S,5
+1376661,Chest,40,56,-2,-3,1,1,1,0,0,Nargacuga Mail S,5
+1376662,Chest,20,36,-2,-2,1,1,1,1,0,Nargacuga Vest S,5
+1376663,Chest,56,72,2,2,0,-1,0,0,0,Garuga Mail S,5
+1376664,Chest,28,44,3,2,0,-1,0,1,0,Garuga Vest S,5
+1376666,Chest,64,80,3,0,-2,-4,-1,0,0,Uragaan Mail S,5
+1376667,Chest,32,48,4,0,-2,-4,-1,1,0,Uragaan Vest S,5
+1376668,Chest,50,66,3,3,3,3,3,0,0,Black Belt Mail S,5
+1376669,Chest,25,41,3,3,4,3,3,1,0,Black Belt Vest S,5
+1376670,Chest,50,66,0,0,0,0,0,0,0,Guardian Suit,5
+1376671,Chest,25,41,0,0,0,0,0,1,0,Guardian Vest,5
+1376672,Chest,54,70,0,0,0,0,0,0,0,Guardian Suit U,5
+1376673,Chest,27,43,0,0,0,0,0,1,0,Guardian Vest U,5
+1376674,Chest,48,64,0,0,0,0,0,0,0,Scholar's Blouse,5
+1376675,Chest,24,40,0,0,0,0,0,1,0,Scholar's Vest,5
+1376676,Chest,48,64,0,0,0,0,0,0,0,Sailor Suit,5
+1376677,Chest,24,40,0,0,0,0,0,1,0,Sailor Vest,5
+1376678,Chest,15,31,-2,-2,0,-2,-2,2,1,Luxury Bath Robe,5
+1376679,Chest,52,68,-2,-2,2,4,3,0,0,Kita Star Jacket,5
+1376680,Chest,26,42,-2,-2,2,5,3,1,0,Umi Ocean Jacket,5
+1376682,Chest,48,62,0,0,0,0,0,0,1,Derring Mail S,6
+1376683,Chest,24,38,1,1,1,1,1,1,1,Derring Vest S,6
+1376684,Chest,54,68,-2,0,4,0,0,0,1,Dober Mail,6
+1376685,Chest,27,41,-2,0,5,0,0,1,1,Dober Vest,6
+1376686,Chest,60,74,-1,-3,-1,2,1,0,0,Damascus Mail,6
+1376687,Chest,30,44,-1,-3,-1,2,1,1,0,Damascus Vest,6
+1376688,Chest,56,70,-1,-3,-1,2,1,0,0,Damascus Mail R,6
+1376689,Chest,28,42,-1,-3,-1,2,1,1,0,Damascus Vest R,6
+1376696,Chest,60,74,1,-2,3,-2,2,0,1,Artian Mail S,6
+1376697,Chest,30,44,3,-2,3,-2,2,1,1,Artian Vest S,6
+1376698,Chest,56,70,1,-2,3,-2,2,0,1,Artian Mail R,6
+1376699,Chest,28,42,3,-2,3,-2,2,1,1,Artian Vest R,6
+1376700,Chest,60,74,-3,-2,5,4,-2,0,0,Seltas Mail,6
+1376701,Chest,30,44,-3,-2,6,4,-2,1,0,Seltas Vest,6
+1376702,Chest,58,72,4,-2,-4,0,0,0,1,Rathalos Mail S,6
+1376703,Chest,29,43,5,-2,-4,0,0,1,1,Rathalos Vest S,6
+1376704,Chest,62,76,4,-2,-4,0,0,0,1,EX Rathalos Mail,6
+1376705,Chest,31,45,5,-2,-4,0,0,1,1,EX Rathalos Vest,6
+1376706,Chest,54,68,4,-2,-4,0,0,0,0,Rathalos Mail R,6
+1376707,Chest,27,41,5,-2,-4,0,0,1,0,Rathalos Vest R,6
+1376708,Chest,58,72,-3,4,-2,2,-1,0,2,Lagiacrus Mail S,6
+1376709,Chest,29,43,-3,5,-2,2,-1,1,2,Lagiacrus Vest S,6
+1376710,Chest,54,68,-3,4,-2,2,-1,0,1,Lagiacrus Mail R,6
+1376711,Chest,27,41,-3,5,-2,2,-1,1,1,Lagiacrus Vest R,6
+1376712,Chest,58,72,0,4,1,-1,-4,0,0,Zinogre Mail S,6
+1376713,Chest,29,43,0,5,1,-1,-4,1,0,Zinogre Vest S,6
+1376714,Chest,62,76,0,4,1,-1,-4,0,0,EX Zinogre Mail,6
+1376715,Chest,31,45,0,5,1,-1,-4,1,0,EX Zinogre Vest,6
+1376716,Chest,50,64,0,-3,-1,2,1,0,1,Mizutsune Mail S,6
+1376717,Chest,25,39,0,-2,-1,2,1,1,1,Mizutsune Vest S,6
+1376718,Chest,58,72,0,3,2,-2,-3,0,0,Astalos Mail S,6
+1376719,Chest,29,43,0,4,2,-2,-3,1,0,Astalos Vest S,6
+1376720,Chest,66,80,-3,-1,2,1,3,0,0,Gammoth Mail S,6
+1376721,Chest,33,47,-3,-1,2,1,4,1,0,Gammoth Vest S,6
+1376722,Chest,60,74,3,1,-1,-3,0,0,0,Glavenus Mail S,6
+1376723,Chest,30,44,4,1,-1,-3,0,1,1,Glavenus Vest S,6
+1376724,Chest,60,74,4,0,0,-4,-1,0,0,Agnaktor Mail,6
+1376725,Chest,30,44,6,0,0,-4,-1,1,0,Agnaktor Vest,6
+1376726,Chest,60,74,-2,-1,-2,2,2,0,0,Gore Mail S,6
+1376727,Chest,30,44,-2,-1,-2,3,2,1,0,Gore Vest S,6
+1376728,Chest,64,78,-2,-1,-2,2,2,0,0,EX Gore Mail,6
+1376729,Chest,32,46,-2,-1,-2,3,2,1,0,EX Gore Vest,6
+1376730,Chest,56,70,-2,-1,-2,2,2,0,0,Gore Mail R,6
+1376731,Chest,28,42,-2,-1,-2,3,2,1,0,Gore Vest R,6
+1376732,Chest,60,74,2,-3,0,0,-2,0,0,Regios Mail S,6
+1376733,Chest,30,44,4,-3,0,0,-2,1,0,Regios Vest S,6
+1376734,Chest,66,80,-3,1,1,2,-2,0,0,Duramboros Mail,6
+1376735,Chest,33,47,-2,1,1,2,-2,1,0,Duramboros Vest,6
+1376736,Chest,60,74,2,-3,-2,0,0,0,0,Tigrex Mail S,6
+1376737,Chest,30,44,4,-3,-2,0,0,1,0,Tigrex Vest S,6
+1376738,Chest,64,78,2,-3,-2,0,0,0,0,EX Tigrex Mail,6
+1376739,Chest,32,46,4,-3,-2,0,0,1,0,EX Tigrex Vest,6
+1376740,Chest,56,70,2,-3,-2,0,0,0,2,Tigrex Mail R,6
+1376741,Chest,28,42,4,-3,-2,0,0,1,2,Tigrex Vest R,6
+1376742,Chest,64,78,-1,3,2,-1,0,0,1,Kirin Jacket S,6
+1376743,Chest,32,46,-1,4,2,-1,0,1,1,Kirin Cape S,6
+1376744,Chest,60,74,-1,3,2,-1,0,0,1,Kirin Jacket R,6
+1376745,Chest,30,44,-1,4,2,-1,0,1,1,Kirin Cape R,6
+1376746,Chest,62,76,2,0,0,-4,-2,0,2,Brachydios Mail S,6
+1376747,Chest,31,45,2,0,0,-3,-2,1,2,Brachydios Vest S,6
+1376748,Chest,66,80,2,0,0,-4,-2,0,1,EX Brachydios Mail,6
+1376749,Chest,33,47,2,0,0,-3,-2,1,1,EX Brachydios Vest,6
+1376750,Chest,66,80,2,3,2,1,-5,0,1,Golden Haori,6
+1376751,Chest,33,47,2,3,2,1,-4,1,1,Puppeteer Suit,6
+1376752,Chest,66,80,0,-4,-4,0,0,0,0,Vangis Mail,6
+1376753,Chest,33,47,0,-3,-4,0,0,1,0,Vangis Vest,6
+1376754,Chest,50,64,0,0,0,0,0,0,1,Guild Knight Suit,6
+1376755,Chest,25,39,0,0,0,0,0,1,1,Guild Knight Vest,6
+1376756,Chest,50,64,0,0,0,0,0,0,1,Maiden's Suit S,6
+1376757,Chest,25,39,0,0,0,0,0,1,1,French Maid Vest S,6
+1376758,Chest,50,64,0,0,0,0,0,0,1,Blue Guild Suit,6
+1376759,Chest,25,39,0,0,0,0,0,1,1,Blue Guild Vest,6
+1376760,Chest,50,64,0,0,0,0,0,0,1,Red Guild Suit,6
+1376761,Chest,25,39,0,0,0,0,0,1,1,Red Guild Vest,6
+1376762,Chest,50,64,0,0,0,0,0,0,1,Helper Suit S,6
+1376763,Chest,25,39,0,0,0,0,0,1,1,Healer Vest S,6
+1376764,Chest,50,64,0,0,0,0,0,0,0,Helper Suit U,6
+1376765,Chest,25,39,0,0,0,0,0,1,0,Healer Vest U,6
+1376766,Chest,50,64,0,0,0,0,0,0,1,Guild Bard Bolero S,6
+1376767,Chest,25,39,0,0,0,0,0,1,1,Guild Bard Vest S,6
+1376768,Chest,15,29,0,0,0,0,0,2,3,Chakra Necklace,6
+1376771,Chest,50,64,0,0,0,0,0,0,0,Dianthus Wealgown,6
+1376772,Chest,25,39,0,0,0,0,0,1,0,Campanile Wealgown,6
+1376773,Chest,50,64,0,0,0,0,0,0,0,Ace Mail,6
+1376774,Chest,25,39,0,0,0,0,0,1,0,Ace Vest,6
+1376775,Chest,50,64,0,0,0,0,0,0,0,Sororal Mail,6
+1376776,Chest,25,39,0,0,0,0,0,1,0,Sororal Vest,6
+1376777,Chest,50,64,0,0,0,0,0,0,0,Hawksuit,6
+1376778,Chest,25,39,0,0,0,0,0,1,0,Hawkjacket,6
+1376779,Chest,56,70,1,1,1,1,1,0,0,Gourmew Suit S,6
+1376780,Chest,28,42,1,1,1,1,1,1,0,Gourmew Vest S,6
+1376782,Chest,50,64,0,0,0,0,0,0,1,Scholarly Suit S,6
+1376783,Chest,25,39,0,0,0,0,0,1,1,Scholarly Vest S,6
+1376784,Chest,56,70,0,0,0,0,0,0,2,Ranger's Girdle,6
+1376785,Chest,28,42,0,0,0,0,0,1,2,Archer's Girdle,6
+1376786,Chest,56,70,2,2,1,-1,-1,0,0,Shinobi Heaven Suit,7
+1376787,Chest,28,42,2,2,2,-1,-1,1,0,Shinobi Land Suit,7
+1376788,Chest,60,74,2,2,1,-1,-1,0,0,Shinobi Sky Suit,7
+1376789,Chest,30,44,2,2,2,-1,-1,1,0,Shinobi Sea Suit,7
+1376790,Chest,66,80,2,-2,2,2,-2,0,0,Ancient Mail,7
+1376791,Chest,33,47,2,-2,3,2,-2,1,0,Ancient Vest,7
+1376792,Chest,66,80,2,2,2,-2,-2,0,0,Master's Mail,7
+1376793,Chest,33,47,3,2,2,-2,-2,1,0,Master's Vest,7
+1376794,Chest,66,80,2,2,-5,2,2,0,1,Black Hide S,7
+1376795,Chest,33,47,2,2,-5,2,3,1,1,Black Skin S,7
+1376796,Chest,66,80,-2,2,-2,2,2,0,0,Toka Doate,7
+1376797,Chest,33,47,-2,3,-2,2,2,1,0,Mitsuaoi Doate,7
+1376798,Chest,64,78,4,-3,-4,0,0,0,0,EX Rathian Mail S,7
+1376799,Chest,32,46,6,-3,-4,0,0,1,0,EX Rathian Vest S,7
+1376800,Chest,64,78,5,-4,-4,0,0,0,1,EX Rathalos Mail S,7
+1376801,Chest,32,46,6,-4,-4,0,0,1,1,EX Rathalos Vest S,7
+1376802,Chest,64,78,2,-4,-3,0,0,0,0,EX Tigrex Mail S,7
+1376803,Chest,32,46,4,-4,-3,0,0,1,0,EX Tigrex Vest S,7
+1376804,Chest,68,82,-2,0,-4,2,2,0,0,Arc Mail S,7
+1376805,Chest,68,82,-2,0,-4,2,2,0,0,Storge Mail S,7
+1376806,Chest,34,48,-2,0,-3,2,2,1,0,Arc Vest S,7
+1376807,Chest,34,48,-2,0,-3,2,2,1,0,Storge Vest S,7
+1376808,Chest,72,86,-2,0,-4,2,2,0,0,EX Arc Mail,7
+1376809,Chest,72,86,-2,0,-4,2,2,0,0,EX Storge Mail,7
+1376810,Chest,36,50,-2,0,-3,2,2,1,0,EX Arc Vest,7
+1376811,Chest,36,50,-2,0,-3,2,2,1,0,EX Storge Vest,7
+1376812,Chest,64,78,-2,0,-4,2,2,0,1,Arc Mail R,7
+1376813,Chest,64,78,-2,0,-4,2,2,0,1,Storge Mail R,7
+1376814,Chest,32,46,-2,0,-3,2,2,1,1,Arc Vest R,7
+1376815,Chest,32,46,-2,0,-3,2,2,1,1,Storge Vest R,7
+1376816,Chest,72,86,-1,-2,-3,2,3,0,0,Kushala Cista S,7
+1376817,Chest,36,50,-1,-2,-3,2,5,1,0,Kushala Vise S,7
+1376818,Chest,76,90,-1,-2,-3,2,3,0,0,EX Kushala Cista,7
+1376819,Chest,38,52,-1,-2,-3,2,5,1,0,EX Kushala Vise,7
+1376820,Chest,68,82,-1,-2,-3,2,3,0,0,Kushala Cista R,7
+1376821,Chest,34,48,-1,-2,-3,2,5,1,0,Kushala Vise R,7
+1376822,Chest,56,70,-5,0,-3,1,2,0,0,Mizuha Guards S,7
+1376823,Chest,28,42,-4,0,-3,1,2,1,0,Cham Camise S,7
+1376824,Chest,60,74,-5,0,-3,1,2,0,0,EX Mizuha Guards,7
+1376825,Chest,30,44,-4,0,-3,1,2,1,0,EX Cham Camise,7
+1376826,Chest,66,80,4,1,-3,-4,-1,0,0,Kaiser Mail S,7
+1376827,Chest,33,47,4,1,-3,-3,-1,1,0,Kaiser Vest S,7
+1376828,Chest,70,84,4,1,-3,-4,-1,0,0,EX Kaiser Mail,7
+1376829,Chest,35,49,4,1,-3,-3,-1,1,0,EX Kaiser Vest,7
+1376830,Chest,66,80,2,-4,4,-6,0,0,0,Silver Solmail,7
+1376831,Chest,33,47,2,-4,4,-5,0,1,0,Silver Solvest,7
+1376832,Chest,70,84,2,-4,4,-6,0,0,0,EX Silver Solmail,7
+1376833,Chest,35,49,2,-4,4,-5,0,1,0,EX Silver Solvest,7
+1376834,Chest,62,76,2,-4,4,-6,0,0,0,Silver Solmail R,7
+1376835,Chest,31,45,2,-4,4,-5,0,1,0,Silver Solvest R,7
+1376836,Chest,64,78,2,-6,4,-4,0,0,0,Golden Lunemail,7
+1376837,Chest,32,46,2,-5,4,-4,0,1,0,Golden Lunevest,7
+1376838,Chest,68,82,2,-6,4,-4,0,0,0,EX Golden Lunemail,7
+1376839,Chest,34,48,2,-5,4,-4,0,1,0,EX Golden Lunevest,7
+1376840,Chest,70,84,2,3,2,1,-6,0,1,Divine Ire Haori,7
+1376841,Chest,35,49,2,3,2,1,-5,1,1,Crusher Garb,7
+1376842,Chest,70,84,-2,-5,-2,-2,-2,0,0,Esurient Mail,7
+1376843,Chest,35,49,-2,-4,-2,-2,-2,1,1,Esurient Vest,7
+1376844,Chest,66,80,-2,-5,-2,-2,-2,0,2,Esurient Mail R,7
+1376845,Chest,33,47,-2,-4,-2,-2,-2,1,2,Esurient Vest R,7
+1376846,Chest,74,88,4,-3,-5,0,2,0,0,Akantor Aegis,7
+1376847,Chest,37,51,4,-3,-4,0,2,1,0,Akantor Plate,7
+1376848,Chest,70,84,4,-3,-5,0,2,0,0,Akantor Aegis R,7
+1376849,Chest,35,49,4,-3,-4,0,2,1,0,Akantor Plate R,7
+1376850,Chest,80,94,-4,-3,-2,0,4,0,0,Ukanlos Aegis,7
+1376851,Chest,40,54,-4,-3,-2,0,4,1,0,Ukanlos Plate,7
+1376852,Chest,70,84,-3,0,-5,4,0,0,0,Tempest Robe,7
+1376853,Chest,35,49,-3,0,-5,5,0,1,0,Welkin Robe,7
+1376854,Chest,66,80,-3,0,-5,4,0,0,0,Tempest Robe R,7
+1376855,Chest,33,47,-3,0,-5,5,0,1,0,Welkin Robe R,7
+1376856,Chest,70,84,-1,-1,-2,-1,-1,0,1,Skeletal Sternum R,7
+1376857,Chest,35,49,-1,-1,-1,-1,-1,1,1,Decayed Sternum R,7
+1376858,Chest,70,84,0,1,-4,2,1,0,1,Astral Suit,7
+1376859,Chest,35,49,0,1,-3,2,1,1,1,Astral Vest,7
+1376860,Chest,76,90,0,0,-4,0,0,0,0,Escadora Soul,7
+1376861,Chest,38,52,0,0,-4,0,0,1,0,Escadora Seele,7
+1376862,Chest,72,86,0,0,-4,0,0,0,0,Escadora Soul R,7
+1376863,Chest,36,50,0,0,-4,0,0,1,0,Escadora Seele R,7
+1376871,Chest,44,60,1,1,3,1,1,0,0,Strange Mail,5
+1376872,Chest,22,38,2,2,3,2,2,1,0,Strange Vest,5
+1376873,Chest,26,46,-2,1,0,2,-1,0,0,Redhelm Mail,8
+1376874,Chest,13,33,-2,1,0,3,-1,1,0,Redhelm Vest,8
+1376875,Chest,22,42,-4,-2,0,3,4,0,0,Snowbaron Mail,8
+1376876,Chest,11,31,-4,-2,0,3,5,1,0,Snowbaron Vest,8
+1376877,Chest,30,50,0,-4,0,4,0,0,0,Stonefist Mail,8
+1376878,Chest,15,35,0,-4,0,5,0,1,0,Stonefist Vest,8
+1376879,Chest,30,50,4,-1,-3,0,0,0,0,Dreadqueen Mail,8
+1376880,Chest,15,35,4,-1,-3,1,1,1,0,Dreadqueen Vest,8
+1376881,Chest,52,72,3,-2,0,-3,0,0,0,Drilltusk Mail,8
+1376882,Chest,26,46,4,-2,1,-3,1,1,0,Drilltusk Vest,8
+1376883,Chest,44,64,-2,-3,0,1,0,0,0,Silverwind Mail,8
+1376884,Chest,22,42,-2,-3,1,1,1,1,0,Silverwind Vest,8
+1376885,Chest,70,90,4,1,-2,-4,1,0,0,Crystalbeard Mail,8
+1376886,Chest,35,55,5,1,-2,-4,1,1,0,Crystalbeard Vest,8
+1376887,Chest,66,86,2,2,0,-4,-2,0,0,Deadeye Mail,8
+1376888,Chest,33,53,3,3,0,-4,-2,1,0,Deadeye Vest,8
+1376889,Chest,68,88,5,-2,-3,0,0,0,0,Dreadking Mail,8
+1376890,Chest,34,54,5,-2,-3,1,1,1,0,Dreadking Vest,8
+1376891,Chest,68,88,0,4,1,0,-3,0,0,Thunderlord Mail,8
+1376892,Chest,34,54,0,5,1,0,-3,1,0,Thunderlord Vest,8
+1376893,Chest,70,90,2,-4,-2,1,1,0,0,Grimclaw Mail,8
+1376894,Chest,35,55,3,-4,-2,1,1,1,0,Grimclaw Vest,8
+1376895,Chest,70,90,4,1,0,-3,-2,0,0,Hellblade Mail,8
+1376896,Chest,35,55,4,1,0,-3,-2,1,0,Hellblade Vest,8
+1376902,Chest,44,60,0,0,0,0,3,0,0,X Gammoth Jacket,5
+1376903,Chest,22,38,0,0,0,0,4,1,0,X Gammoth Jersey,5
+1376904,Chest,44,60,0,0,0,3,0,0,0,X Mizutsune Jacket,5
+1376905,Chest,22,38,0,0,0,4,0,1,0,X Mizutsune Jersey,5
+1376906,Chest,44,60,3,0,0,0,0,0,0,X Dino Jacket,5
+1376907,Chest,22,38,4,0,0,0,0,1,0,X Dino Jersey,5
+1376908,Chest,44,60,0,3,0,0,0,0,0,X Astalos Jacket,5
+1376909,Chest,22,38,0,4,0,0,0,1,0,X Astalos Jersey,5
+1376910,Chest,50,66,2,2,2,2,2,0,0,Booyah Jacket,5
+1376911,Chest,25,41,3,3,3,3,3,1,0,Booyah Bomber,5
+1376912,Chest,50,66,2,2,2,2,2,0,0,Biker Jacket,5
+1376913,Chest,25,41,3,3,3,3,3,1,0,Biker Leather,5
+1376914,Chest,70,84,4,4,4,4,4,0,0,Ultimate Garb,7
+1376915,Chest,35,49,5,5,5,5,5,1,0,Ultimate Attire,7
+1376916,Chest,66,80,4,4,4,4,4,0,0,Champion's Body,7
+1376917,Chest,33,47,5,5,5,5,5,1,0,Strongman's Body,7
+1376918,Chest,68,82,1,1,1,1,1,0,1,Zodias Mail,7
+1376919,Chest,34,48,2,2,2,2,2,1,1,Zodias Vest,7
+1376920,Chest,52,66,0,0,0,0,0,0,0,Pirate Suit J,6
+1376921,Chest,26,40,0,0,0,0,0,1,0,Pirate Jacket J,6
+1376922,Chest,56,70,-4,-4,-4,-4,-4,0,0,Buccaneer Suit J,6
+1376923,Chest,28,42,-3,-3,-3,-3,-3,1,0,Buccaneer Jacket J,6
+1376924,Chest,54,68,0,4,1,-1,-2,0,1,Dynaqlo Coat,6
+1376925,Chest,27,41,0,5,1,-1,-2,1,1,Dynaqlo Jacket,6
+1376926,Chest,24,44,1,1,1,1,1,0,0,Promising Plate,3
+1376927,Chest,12,32,2,2,2,2,2,1,0,Halcyon Plate,3
+1376928,Chest,56,70,1,1,1,1,1,0,2,Blue Star Suit,6
+1376929,Chest,28,42,2,2,2,2,2,1,2,Blue Star Jacket,6
+1376930,Chest,64,78,0,0,0,0,0,0,0,Star Rook Mail,7
+1376931,Chest,32,46,0,0,0,0,0,1,0,Star Rook Vest,7
+1376932,Chest,52,66,1,1,1,1,1,0,0,Star Knight Mail,6
+1376933,Chest,26,40,2,2,2,2,2,1,0,Star Knight Vest,6
+1376938,Chest,64,78,2,2,2,2,2,0,1,Hero's Clothes,7
+1376939,Chest,32,46,3,3,3,3,3,1,1,Hero's Tunic,7
+1376940,Chest,64,78,4,4,-4,4,4,0,0,Varia Suit Armor,6
+1376941,Chest,32,46,5,5,-3,5,5,1,0,Varia Suit Barrier,6
+1376942,Chest,48,62,4,4,-4,4,4,0,0,Zero Suit Body,6
+1376943,Chest,24,38,5,5,-3,5,5,1,0,Zero Suit Wear,6
+1376944,Chest,66,80,2,2,2,2,2,0,0,Mail of Rage,7
+1376945,Chest,33,47,3,3,3,3,3,1,0,Vest of Rage,7
+1376946,Chest,66,80,2,2,2,2,2,0,0,Mail of Anat,7
+1376947,Chest,33,47,3,3,3,3,3,1,0,Vest of Anat,7
+1376948,Chest,50,66,2,2,2,2,2,0,0,Rider Jacket,5
+1376949,Chest,25,41,3,3,3,3,3,1,0,Rider Leather,5
+1376950,Chest,14,34,-3,0,0,1,2,0,0,Mosgharl Ribplate,2
+1376951,Chest,7,27,-3,0,0,2,3,1,0,Mosgharl Ribguard,2
+1376952,Chest,26,46,-3,-1,2,1,3,0,0,Gammoth Mail,3
+1376953,Chest,13,33,-3,-1,2,1,4,1,0,Gammoth Vest,3
+1376954,Chest,22,42,1,1,1,1,1,0,0,Gourmew Suit,3
+1376955,Chest,11,31,1,1,1,1,1,1,0,Gourmew Vest,3
+1376956,Chest,12,28,0,1,0,1,0,1,0,Leather Vest S,4
+1376957,Chest,12,28,0,1,0,0,1,1,1,Chainmail Vest S,4
+1376958,Chest,36,52,-3,0,0,1,2,0,0,Mosgharl Ribplate S,4
+1376959,Chest,18,34,-3,0,0,2,3,1,0,Mosgharl Ribguard S,4
+1376960,Chest,66,80,-3,-1,2,1,3,0,0,Gammoth Mail S,6
+1376961,Chest,33,47,-3,-1,2,1,4,1,0,Gammoth Vest S,6
+1376962,Chest,50,64,0,0,0,0,0,0,1,Blue Guild Suit,6
+1376963,Chest,25,39,0,0,0,0,0,1,1,Blue Guild Vest,6
+1376964,Chest,50,64,0,0,0,0,0,0,1,Red Guild Suit,6
+1376965,Chest,25,39,0,0,0,0,0,1,1,Red Guild Vest,6
+1376966,Chest,56,70,1,1,1,1,1,0,0,Gourmew Suit S,6
+1376967,Chest,28,42,1,1,1,1,1,1,0,Gourmew Vest S,6
+1376968,Chest,64,78,1,1,1,1,1,0,0,Promising Archplate,7
+1376969,Chest,32,46,2,2,2,2,2,1,0,Halcyon Archplate,7
+1376970,Chest,24,44,1,1,1,1,1,0,1,Lucid Robe,3
+1376971,Chest,12,32,2,2,2,2,2,1,1,Dreamy Robe,3
+1376972,Chest,64,78,1,1,1,1,1,0,1,Lucid Archrobe,7
+1376973,Chest,32,46,2,2,2,2,2,1,1,Dreamy Archrobe,7
+1376974,Chest,60,74,2,2,2,2,2,0,1,Hiryu Sky Suit,7
+1376975,Chest,30,44,2,3,2,2,2,1,1,Hiryu Land Suit,7
+1376976,Chest,62,76,3,0,3,0,0,0,1,Lodestar Suit,7
+1376977,Chest,31,45,3,0,4,0,0,1,1,Lodestar Vest,7
+1376978,Chest,64,78,4,4,-4,4,4,0,0,Varia Suit Armor,6
+1376979,Chest,32,46,5,5,-3,5,5,1,0,Varia Suit Barrier,6
+1376980,Chest,48,62,4,4,-4,4,4,0,0,Zero Suit Body,6
+1376981,Chest,24,38,5,5,-3,5,5,1,0,Zero Suit Wear,6
 1441793,Arms,1,25,0,0,0,0,0,2,1,Leather Gloves,1
 1441794,Arms,2,26,0,1,0,0,0,2,1,Chainmail Gloves,1
 1441795,Arms,2,26,0,0,0,1,0,2,1,Bherna Braces,1

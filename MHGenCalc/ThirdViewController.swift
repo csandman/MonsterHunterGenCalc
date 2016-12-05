@@ -93,6 +93,20 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
             }
         }
         self.tableView.reloadData()
+        
+        appDelegate.addArmorPieceById(1311031)
+        appDelegate.addArmorPieceById(1376337)
+        appDelegate.addArmorPieceById(1441869)
+        appDelegate.addArmorPieceById(1507453)
+//        appDelegate.addArmorPieceById(1572902)
+        print(appDelegate.currentSet)
+        print(appDelegate.saveSet())
+        let set = appDelegate.loadExistingSet(name: "test1")
+        print(set)
+        appDelegate.totalStats(build: set)
+        
+        
+        
     }
     // MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView,
