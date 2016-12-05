@@ -13,10 +13,26 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var armors = [Armor]()
+    var displayStrings = [String]()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let managedContext = self.managedObjectContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let results = try! managedContext.fetch(fetchRequest)
+        self.armors = results as! [Armor]
+        
+        let db = self.preloadDb()
+        let lines = db.components(separatedBy: "\n")
+        for line in lines {
+            _ = self.saveArmor(line: line)
+        }
+        for armor in armors {
+            print (armor.name)
+        }
         return true
     }
 
@@ -126,7 +142,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let f0 = fields[0]
             if (f0 != "") {
-                print((fields[0] as String)+","+(fields[1] as String)+","+(fields[2] as String))
+//                print((fields[0] as String)+","+(fields[1] as String)+","+(fields[2] as String))
             }
         }
         
@@ -160,6 +176,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         return import_db()
+    }
+    func saveArmor(line: String) -> Armor
+    {
+        let managedContext = self.managedObjectContext
+        
+        let entity =  NSEntityDescription.entity(forEntityName: "Armor", in:managedContext)
+        let armor = Armor(entity: entity!, insertInto: managedContext)
+        
+        let fields = line.components(separatedBy: ",")
+        
+        armor.name = fields[11]
+        armor.id = Int(fields[0]) as NSNumber?
+        armor.slot = fields[1]
+        armor.defense = Int(fields[2]) as NSNumber?
+        armor.max_defense = Int(fields[3]) as NSNumber?
+        armor.fire_res = Int(fields[4]) as NSNumber?
+        armor.thunder_res = Int(fields[5]) as NSNumber?
+        armor.dragon_res = Int(fields[6]) as NSNumber?
+        armor.water_res = Int(fields[7]) as NSNumber?
+        armor.ice_res = Int(fields[8]) as NSNumber?
+        armor.hunter_type = Int(fields[9]) as NSNumber?
+        armor.num_slots = Int(fields[10]) as NSNumber?
+        armor.rarity = Int(fields[12]) as NSNumber?
+        
+        if (lookupArmor(name: armor.name!) == nil) {
+            do {
+                try managedContext.save()
+                armors.append(armor)
+            } catch let error as NSError  {
+                print("Could not save \(error), \(error.userInfo)")
+            }
+            
+        }
+        
+        self.displayStrings.append(armor.name!)
+        return armor
+    }
+    func lookupArmor(name: String) -> Armor? {
+        for a in armors {
+            if (name == a.name) { return a }
+        }
+        return nil
     }
 
 }

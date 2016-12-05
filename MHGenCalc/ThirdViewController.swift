@@ -31,7 +31,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                                             
                                       
                                             let name = alert.textFields![0].text
-                                            print(name!)
+//                                            print(name!)
                                             
                                             if (name != "") {
                                                 let predicate = NSPredicate(format: "%K CONTAINS[c] %@", "name", name!)
@@ -45,7 +45,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                                                     self.displayStrings.append(armor.name! + " has " + String(describing: armor.defense!) + " defense")
                                                     self.tableView.reloadData()
                                                 }
-                                                print(fetchedArmor)
+//                                                print(fetchedArmor)
                                             } catch {
                                                 fatalError("Failed to fetch armor: \(error)")
                                             }
@@ -73,58 +73,58 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
     }
 
     
-    func saveArmor(line: String) -> Armor
-     {
-     let appDelegate =
-     UIApplication.shared.delegate as! AppDelegate
-     
-     let managedContext = appDelegate.managedObjectContext
-     
-     let entity =  NSEntityDescription.entity(forEntityName: "Armor", in:managedContext)
-     let armor = Armor(entity: entity!, insertInto: managedContext)
-     
-        let fields = line.components(separatedBy: ",")
-     
-     armor.name = fields[11]
-     armor.id = Int(fields[0]) as NSNumber?
-     armor.slot = fields[1]
-     armor.defense = Int(fields[2]) as NSNumber?
-     armor.max_defense = Int(fields[3]) as NSNumber?
-     armor.fire_res = Int(fields[4]) as NSNumber?
-     armor.thunder_res = Int(fields[5]) as NSNumber?
-     armor.dragon_res = Int(fields[6]) as NSNumber?
-     armor.water_res = Int(fields[7]) as NSNumber?
-     armor.ice_res = Int(fields[8]) as NSNumber?
-     armor.hunter_type = Int(fields[9]) as NSNumber?
-     armor.num_slots = Int(fields[10]) as NSNumber?
-     armor.rarity = Int(fields[12]) as NSNumber?
-     
-     
-     do {
-     try managedContext.save()
-     armors.append(armor)
-     } catch let error as NSError  {
-     print("Could not save \(error), \(error.userInfo)")
-     }
-     self.displayStrings.append(armor.name! + " has " + String(describing: armor.ice_res!) + " ice resistance")
-     return armor
-     }
+//    func saveArmor(line: String) -> Armor
+//     {
+//     let appDelegate =
+//     UIApplication.shared.delegate as! AppDelegate
+//     
+//     let managedContext = appDelegate.managedObjectContext
+//     
+//     let entity =  NSEntityDescription.entity(forEntityName: "Armor", in:managedContext)
+//     let armor = Armor(entity: entity!, insertInto: managedContext)
+//     
+//        let fields = line.components(separatedBy: ",")
+//     
+//     armor.name = fields[11]
+//     armor.id = Int(fields[0]) as NSNumber?
+//     armor.slot = fields[1]
+//     armor.defense = Int(fields[2]) as NSNumber?
+//     armor.max_defense = Int(fields[3]) as NSNumber?
+//     armor.fire_res = Int(fields[4]) as NSNumber?
+//     armor.thunder_res = Int(fields[5]) as NSNumber?
+//     armor.dragon_res = Int(fields[6]) as NSNumber?
+//     armor.water_res = Int(fields[7]) as NSNumber?
+//     armor.ice_res = Int(fields[8]) as NSNumber?
+//     armor.hunter_type = Int(fields[9]) as NSNumber?
+//     armor.num_slots = Int(fields[10]) as NSNumber?
+//     armor.rarity = Int(fields[12]) as NSNumber?
+//     
+//     
+//     do {
+//     try managedContext.save()
+//     armors.append(armor)
+//     } catch let error as NSError  {
+////     print("Could not save \(error), \(error.userInfo)")
+//     }
+//     self.displayStrings.append(armor.name! + " has " + String(describing: armor.ice_res!) + " ice resistance")
+//     return armor
+//     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
   
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-        let appDelegate =
-            UIApplication.shared.delegate as! AppDelegate
+//        let appDelegate =
+//            UIApplication.shared.delegate as! AppDelegate
+//        
+//        let db = appDelegate.preloadDb()
+//        let lines = db.components(separatedBy: "\n")
+//        for line in lines {
+//            self.saveArmor(line: line)
+//            self.tableView.reloadData()
         
-        let db = appDelegate.preloadDb()
-        let lines = db.components(separatedBy: "\n")
-        for line in lines {
-            self.saveArmor(line: line)
-            self.tableView.reloadData()
-            
             
             //            if (fields[0] != "") {
             //                let nameField = String(fields[2])
@@ -143,7 +143,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
             //            }
             
             
-        }
+//        }
         
         /*let managedContext = appDelegate.managedObjectContext
         
