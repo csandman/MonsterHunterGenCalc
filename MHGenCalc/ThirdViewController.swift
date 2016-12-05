@@ -104,7 +104,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                    cellForRowAt
         indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellSearch")
         
         cell!.textLabel!.text = displayStrings[indexPath.row]
         

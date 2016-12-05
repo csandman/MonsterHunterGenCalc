@@ -31,11 +31,11 @@
                                     <constraint firstAttribute="height" constant="234" id="ZsZ-4l-Xx7"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="1Ls-sO-PKJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellSearch" id="1Ls-sO-PKJ">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Ls-sO-PKJ" id="Nd8-Nz-erB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -463,7 +463,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="376" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cjt-NS-nqr" id="XLN-iB-ulx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
@@ -500,7 +500,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="376" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RYX-3b-Tgn" id="LP9-sF-SKF">
-                                                    <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
