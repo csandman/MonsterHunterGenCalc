@@ -119,7 +119,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
         indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellSearch")
-        
+        cell!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
         cell!.textLabel!.text = displayStrings[indexPath.row]
         
         return cell!

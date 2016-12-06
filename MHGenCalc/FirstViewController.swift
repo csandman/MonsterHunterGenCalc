@@ -173,13 +173,14 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         {
         if tableView == savedTable{
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellSaved")
-        
+        cell!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
         cell!.textLabel!.text = namesSaved[indexPath.row]
         
         return cell!
         }
         else{
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "CellProgress")
+            cell2!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
              cell2!.textLabel!.text = namesProgress[indexPath.row]
             return cell2!
             }
