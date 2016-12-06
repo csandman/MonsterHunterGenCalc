@@ -213,7 +213,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.displayStrings.append(armor.name!)
             
         } else {
-            print(self.lookupArmor(name: fields[11]))
+            //print(self.lookupArmor(name: fields[11]))
         }
         
         
@@ -306,7 +306,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //save as new set
             build.setName = "test1"
             build.head = Int(tempSet["head"]!) as NSNumber?
-            build.chest = Int(tempSet["chest"]!) as NSNumber?
+            //build.chest = Int(tempSet["chest"]!) as NSNumber?
             build.arms = Int(tempSet["arms"]!) as NSNumber?
             build.waist = Int(tempSet["waist"]!) as NSNumber?
             build.legs = Int(tempSet["legs"]!) as NSNumber?
@@ -329,7 +329,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 build = fetchedBuilds[0]
                 //save as new set
                 build.head = Int(tempSet["head"]!) as NSNumber?
-                build.chest = Int(tempSet["chest"]!) as NSNumber?
+                //build.chest = Int(tempSet["chest"]!) as NSNumber?
                 build.arms = Int(tempSet["arms"]!) as NSNumber?
                 build.waist = Int(tempSet["waist"]!) as NSNumber?
                 build.legs = Int(tempSet["legs"]!) as NSNumber?
