@@ -21,8 +21,9 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var progressTable: UITableView!
     
     
-    @IBOutlet weak var startBuild: UIButton!
+  
     
+    @IBOutlet weak var startBuild: UIButton!
     
     //@IBOutlet weak var savedLabel: UILabel!
     
