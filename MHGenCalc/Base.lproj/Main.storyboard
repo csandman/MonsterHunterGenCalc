@@ -236,137 +236,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Full_Body" translatesAutoresizingMaskIntoConstraints="NO" id="iQH-Wq-SRm">
-                                <rect key="frame" x="35" y="139" width="250" height="250"/>
+                                <rect key="frame" x="35" y="159" width="250" height="250"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QrR-yR-tmf">
-                                <rect key="frame" x="135" y="96" width="50" height="190"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdA-RD-dUb" customClass="UIButtonHead">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="G4P-ey-lLf"/>
-                                            <constraint firstAttribute="width" constant="50" id="pt5-LS-Hhy"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="+modal">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-tz-bgM" customClass="UIButtonChest">
-                                        <rect key="frame" x="0.0" y="70" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="JeX-6i-ZHc"/>
-                                            <constraint firstAttribute="height" constant="50" id="KV9-jc-jRd"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5d-Ua-XqC" customClass="UIButtonWaist">
-                                        <rect key="frame" x="0.0" y="140" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="c8z-8J-Jz3"/>
-                                            <constraint firstAttribute="height" constant="50" id="vfi-Dy-vgc"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="+"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bPb-X9-VGl">
-                                <rect key="frame" x="100" y="363" width="120" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et9-21-Y8O" customClass="UIButtonLegs">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="d0q-zS-tiL"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="Olc-9d-sOp" kind="presentation" id="c5X-u6-Wcb"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJu-uU-4dl">
-                                        <rect key="frame" x="70" y="0.0" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="SBJ-cX-UgU"/>
-                                            <constraint firstAttribute="height" constant="50" id="X7Q-la-ZlX"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="s6d-Xn-vHQ">
-                                <rect key="frame" x="70" y="260" width="180" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPk-Ou-Hr7" customClass="UIButtonArms">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="mC8-3G-jzs"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="+push">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="avH-rr-c3G" kind="push" id="do4-Dt-QZG"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ua-Gl-XIf">
-                                        <rect key="frame" x="130" y="0.0" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="6z0-xp-fjc"/>
-                                            <constraint firstAttribute="height" constant="50" id="DEB-9z-7Ly"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Pg-RU-cdu">
                                 <rect key="frame" x="16" y="438" width="288" height="70"/>
                                 <subviews>
@@ -399,28 +270,115 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QrR-yR-tmf">
+                                <rect key="frame" x="135" y="119" width="50" height="290"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et9-21-Y8O" customClass="UIButtonLegs">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="abG-qi-2Oa"/>
+                                            <constraint firstAttribute="width" constant="50" id="d0q-zS-tiL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Olc-9d-sOp" kind="presentation" id="c5X-u6-Wcb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdA-RD-dUb" customClass="UIButtonHead">
+                                        <rect key="frame" x="0.0" y="60" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="G4P-ey-lLf"/>
+                                            <constraint firstAttribute="width" constant="50" id="pt5-LS-Hhy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="+modal">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-tz-bgM" customClass="UIButtonChest">
+                                        <rect key="frame" x="0.0" y="120" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="JeX-6i-ZHc"/>
+                                            <constraint firstAttribute="height" constant="50" id="KV9-jc-jRd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPk-Ou-Hr7" customClass="UIButtonArms">
+                                        <rect key="frame" x="0.0" y="180" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="mC8-3G-jzs"/>
+                                            <constraint firstAttribute="height" constant="50" id="wWz-xf-TaH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="+push">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="avH-rr-c3G" kind="push" id="do4-Dt-QZG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5d-Ua-XqC" customClass="UIButtonWaist">
+                                        <rect key="frame" x="0.0" y="240" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="c8z-8J-Jz3"/>
+                                            <constraint firstAttribute="height" constant="50" id="vfi-Dy-vgc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="+"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="bPb-X9-VGl" secondAttribute="trailing" constant="84" id="5e2-nC-Qo3"/>
-                            <constraint firstItem="bPb-X9-VGl" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="84" id="5ud-wD-Ntq"/>
                             <constraint firstItem="9Pg-RU-cdu" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Asn-rP-yjF"/>
-                            <constraint firstItem="QrR-yR-tmf" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="32" id="G8L-Gb-qpW"/>
-                            <constraint firstItem="bPb-X9-VGl" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="299" id="G9K-lR-5nE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iQH-Wq-SRm" secondAttribute="trailing" constant="19" id="Gx3-Rs-0AV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="s6d-Xn-vHQ" secondAttribute="trailing" constant="54" id="OIA-a9-nxM"/>
-                            <constraint firstItem="iQH-Wq-SRm" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="75" id="Q0v-q1-WxX"/>
-                            <constraint firstItem="iQH-Wq-SRm" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="19" id="SW0-Xy-cyq"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="bPb-X9-VGl" secondAttribute="bottom" constant="111" id="Ucv-00-5DG"/>
-                            <constraint firstItem="s6d-Xn-vHQ" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="196" id="WPz-8L-aqS"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="s6d-Xn-vHQ" secondAttribute="bottom" constant="214" id="bZm-gV-V7I"/>
-                            <constraint firstItem="QrR-yR-tmf" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="119" id="c0O-HW-KhP"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="iQH-Wq-SRm" secondAttribute="bottom" constant="135" id="cMq-7y-vGg"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="QrR-yR-tmf" secondAttribute="bottom" constant="238" id="dHT-O2-3o3"/>
+                            <constraint firstItem="iQH-Wq-SRm" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="95" id="Cch-wR-Du6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iQH-Wq-SRm" secondAttribute="trailing" constant="19" id="H7E-R7-P1d"/>
+                            <constraint firstItem="QrR-yR-tmf" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="119" id="UJD-P0-uhU"/>
+                            <constraint firstItem="QrR-yR-tmf" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="55" id="YSK-xi-1of"/>
                             <constraint firstItem="9Pg-RU-cdu" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="374" id="idw-zz-8Qa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QrR-yR-tmf" secondAttribute="trailing" constant="119" id="lxQ-5F-1gS"/>
-                            <constraint firstItem="s6d-Xn-vHQ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="54" id="oK0-KY-W9k"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="iQH-Wq-SRm" secondAttribute="bottom" constant="115" id="lJz-N3-9N0"/>
+                            <constraint firstItem="iQH-Wq-SRm" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="19" id="uRr-cR-yTg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Pg-RU-cdu" secondAttribute="trailing" id="wBF-JR-6PC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QrR-yR-tmf" secondAttribute="trailing" constant="119" id="yaO-p4-dF9"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="QrR-yR-tmf" secondAttribute="bottom" constant="115" id="ybD-Mc-8H5"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
