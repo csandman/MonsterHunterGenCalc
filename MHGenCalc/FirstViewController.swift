@@ -12,6 +12,7 @@ import CoreData
 class FirstViewController: UIViewController, UITableViewDataSource {
     
     
+    
     @IBOutlet weak var humanPalico: UISegmentedControl!
     
     
@@ -37,6 +38,8 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     var namesProgress = [String]()
     var namesProgressPal = [String]()
     
+   
+    
     //var people = [Person]()
     
     @IBAction func indexChange(_ sender: Any) {
@@ -61,12 +64,16 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+       
+        
         savedLabel.textAlignment = NSTextAlignment.center;
         progressLabel.textAlignment = NSTextAlignment.center;
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
         
         //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         let palText = "CATCATCAT"
@@ -131,6 +138,39 @@ class FirstViewController: UIViewController, UITableViewDataSource {
        }*/
     }
 
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            if(humanPalico.selectedSegmentIndex==0){
+                if tableView == savedTable{
+                    namesSaved.remove(at: indexPath.row)
+                     savedTable.deleteRows(at: [indexPath], with: .fade)
+                }
+                else{
+                    namesProgress.remove(at: indexPath.row)
+                    progressTable.deleteRows(at: [indexPath], with: .fade)                }
+               
+            }
+            else{
+                if tableView == savedTable{
+                    namesSavedPal.remove(at: indexPath.row)
+                    savedTable.deleteRows(at: [indexPath], with: .fade)
+                }
+                else{
+                    namesProgressPal.remove(at: indexPath.row)
+                    progressTable.deleteRows(at: [indexPath], with: .fade)
+                }
+            }
+        }
+    }
+    
+    // Override to support conditional editing of the table view.
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    
+    
+    
     
     // MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView,
@@ -173,15 +213,17 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         {
         if tableView == savedTable{
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellSaved")
-        cell!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
-        cell!.textLabel!.text = namesSaved[indexPath.row]
         
+        cell!.textLabel!.text = namesSaved[indexPath.row]
+         cell!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
+     
         return cell!
         }
         else{
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "CellProgress")
-            cell2!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
              cell2!.textLabel!.text = namesProgress[indexPath.row]
+             cell2!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
+       
             return cell2!
             }
         }
@@ -190,12 +232,15 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CellSaved")
                 
                 cell!.textLabel!.text = namesSavedPal[indexPath.row]
-                
+                 cell!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
+           
                 return cell!
             }
             else{
                 let cell2 = tableView.dequeueReusableCell(withIdentifier: "CellProgress")
                 cell2!.textLabel!.text = namesProgressPal[indexPath.row]
+                 cell2!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
+            
                 return cell2!
             }
         }
@@ -209,7 +254,17 @@ class FirstViewController: UIViewController, UITableViewDataSource {
             
             return cell!*/
         
+        
+        
     }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        self.savedTable.setEditing(editing, animated: animated)
+        self.progressTable.setEditing(editing, animated: animated)
+    }
+
+    
 
     
     var armors = [Armor]()
