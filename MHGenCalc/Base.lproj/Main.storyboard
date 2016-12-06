@@ -22,21 +22,18 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eIG-fz-1EK">
-                                <rect key="frame" x="0.0" y="94" width="375" height="234"/>
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eIG-fz-1EK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="0TW-jn-07c"/>
-                                    <constraint firstAttribute="height" constant="234" id="ZsZ-4l-Xx7"/>
-                                </constraints>
                                 <color key="separatorColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 <color key="sectionIndexBackgroundColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 <prototypes>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellSearch" id="1Ls-sO-PKJ">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Ls-sO-PKJ" id="Nd8-Nz-erB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                         </tableViewCellContentView>
@@ -47,16 +44,28 @@
                                     <outlet property="dataSource" destination="avH-rr-c3G" id="eDm-5E-KWE"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDD-gV-z0u">
-                                <rect key="frame" x="108" y="420" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gE-2l-zDd">
+                                <rect key="frame" x="16" y="422" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Advanced Search Options">
+                                    <color key="titleColor" red="0.99473684210000002" green="0.98947368420000004" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="cJp-DN-CCj" kind="show" id="kQy-RS-eLh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                         <constraints>
-                            <constraint firstItem="eIG-fz-1EK" firstAttribute="leading" secondItem="NX7-zN-cVa" secondAttribute="leading" id="iMv-Im-vqx"/>
-                            <constraint firstItem="eIG-fz-1EK" firstAttribute="top" secondItem="lWf-1Y-0vy" secondAttribute="bottom" constant="94" id="k90-ni-fDs"/>
+                            <constraint firstItem="Fxy-uY-4l9" firstAttribute="top" secondItem="0gE-2l-zDd" secondAttribute="bottom" constant="8" id="J51-Ez-P9i"/>
+                            <constraint firstItem="0gE-2l-zDd" firstAttribute="top" secondItem="lWf-1Y-0vy" secondAttribute="bottom" constant="422" id="KT0-te-cS7"/>
+                            <constraint firstItem="0gE-2l-zDd" firstAttribute="trailing" secondItem="NX7-zN-cVa" secondAttribute="trailingMargin" id="iQ8-3t-hTq"/>
+                            <constraint firstItem="0gE-2l-zDd" firstAttribute="leading" secondItem="NX7-zN-cVa" secondAttribute="leadingMargin" id="qmn-ay-snD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gbr-yr-oiw">
@@ -78,7 +87,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ga5-rb-kcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="2275"/>
+            <point key="canvasLocation" x="200.625" y="2274.2957746478874"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="ZgH-Db-STF">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="cJp-DN-CCj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="42f-y2-1X9"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t2B-jf-FjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759" y="2274"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="97F-VG-cmh">
@@ -166,7 +185,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tat-Ft-D60" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="IMg-9U-Mfe"/>
             </objects>
-            <point key="canvasLocation" x="1673" y="1240"/>
+            <point key="canvasLocation" x="2659" y="358"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -374,7 +393,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="359"/>
+            <point key="canvasLocation" x="1834" y="357"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -394,7 +413,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-1410" y="18"/>
         </scene>
         <!--In-Progress-->
         <scene sceneID="a4y-vo-6Jj">
@@ -415,7 +434,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQx-47-0hD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1071" y="765"/>
+            <point key="canvasLocation" x="870" y="357"/>
         </scene>
         <!--Builds-->
         <scene sceneID="MNs-eC-c9a">
@@ -597,7 +616,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHI-bR-vNE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808.125" y="-350.7042253521127"/>
+            <point key="canvasLocation" x="870" y="-346"/>
         </scene>
         <!--Search-->
         <scene sceneID="J1Q-UQ-Hfb">
@@ -633,7 +652,7 @@
         <image name="water" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="c5X-u6-Wcb"/>
-        <segue reference="XqP-az-g3g"/>
+        <segue reference="Uwe-Gu-RSG"/>
+        <segue reference="do4-Dt-QZG"/>
     </inferredMetricsTieBreakers>
 </document>
