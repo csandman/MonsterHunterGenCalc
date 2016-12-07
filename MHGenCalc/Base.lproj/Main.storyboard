@@ -365,14 +365,25 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Untitled" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mPa-DS-63a">
+                                <rect key="frame" x="16" y="75" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                         <constraints>
+                            <constraint firstItem="QrR-yR-tmf" firstAttribute="top" secondItem="mPa-DS-63a" secondAttribute="bottom" constant="14" id="0vz-q1-jGy"/>
+                            <constraint firstItem="mPa-DS-63a" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="3T2-Cf-827"/>
+                            <constraint firstItem="mPa-DS-63a" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="11" id="9CV-to-KQx"/>
                             <constraint firstItem="9Pg-RU-cdu" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Asn-rP-yjF"/>
                             <constraint firstItem="iQH-Wq-SRm" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="95" id="Cch-wR-Du6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iQH-Wq-SRm" secondAttribute="trailing" constant="19" id="H7E-R7-P1d"/>
                             <constraint firstItem="QrR-yR-tmf" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="119" id="UJD-P0-uhU"/>
                             <constraint firstItem="QrR-yR-tmf" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="55" id="YSK-xi-1of"/>
+                            <constraint firstItem="mPa-DS-63a" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="bTI-Lo-4GI"/>
                             <constraint firstItem="9Pg-RU-cdu" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="374" id="idw-zz-8Qa"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="iQH-Wq-SRm" secondAttribute="bottom" constant="115" id="lJz-N3-9N0"/>
                             <constraint firstItem="iQH-Wq-SRm" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="19" id="uRr-cR-yTg"/>
@@ -384,10 +395,13 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="qhH-1v-FdI"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="inProgressLabel" destination="mPa-DS-63a" id="rJW-dr-dgb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1853" y="409"/>
+            <point key="canvasLocation" x="1852.5" y="408.80281690140845"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -420,19 +434,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="UWf-2h-z6l">
-                                <rect key="frame" x="0.0" y="264" width="158" height="42"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56w-it-pdz">
-                                <rect key="frame" x="-18" y="313" width="195" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDa-AC-RpF">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <subviews>
@@ -567,12 +568,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oDa-AC-RpF" firstAttribute="leading" secondItem="PQ0-Qk-BfX" secondAttribute="leading" id="Axw-qw-uWp"/>
-                            <constraint firstItem="56w-it-pdz" firstAttribute="top" secondItem="UWf-2h-z6l" secondAttribute="bottom" constant="7" id="Dvz-sN-DAN"/>
-                            <constraint firstItem="UWf-2h-z6l" firstAttribute="centerX" secondItem="56w-it-pdz" secondAttribute="centerX" id="MWB-wL-DXy"/>
                             <constraint firstAttribute="trailing" secondItem="oDa-AC-RpF" secondAttribute="trailing" id="ReD-L4-Mry"/>
-                            <constraint firstItem="UWf-2h-z6l" firstAttribute="top" secondItem="SEd-1V-Hpw" secondAttribute="bottom" constant="200" id="Uob-pU-Fm8"/>
                             <constraint firstItem="oDa-AC-RpF" firstAttribute="top" secondItem="SEd-1V-Hpw" secondAttribute="bottom" id="o1g-DK-Mz1"/>
-                            <constraint firstItem="oDa-AC-RpF" firstAttribute="leading" secondItem="UWf-2h-z6l" secondAttribute="leading" id="svI-aT-MwU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qUj-my-m0r"/>
