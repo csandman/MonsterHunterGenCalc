@@ -96,8 +96,13 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         //progressTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-        //let appDelegate =
-           // UIApplication.shared.delegate as! AppDelegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        appDelegate.addArmorPieceById(1311031)
+        appDelegate.addArmorPieceById(1376337)
+        appDelegate.addArmorPieceById(1441869)
+        appDelegate.addArmorPieceById(1507453)
+        appDelegate.addArmorPieceById(1572902)
         
         //let managedContext = appDelegate.managedObjectContext
         

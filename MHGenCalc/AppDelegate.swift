@@ -12,15 +12,16 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
     
     var armors = [Armor]()
     var builds = [Builds]()
     var displayStrings = [String]()
-    var currentSet: [String: String] = ["setName":""]
-
-
+    var currentSetArr = [Builds]()
+    
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let managedContext = self.managedObjectContext
@@ -36,27 +37,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         for armor in armors {
             print (armor.name! as String)
         }
+        
+        
+        //let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
+        let currentSet = NSEntityDescription.insertNewObject(forEntityName: "Builds", into: managedContext) as! Builds
+        self.currentSetArr.append(currentSet)
+        self.currentSetArr[0].setName = ""
         return true
     }
-
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
     }
-
+    
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
-
+    
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
     }
-
+    
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
-
+    
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
@@ -145,7 +152,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let f0 = fields[0]
             if (f0 != "") {
-//                print((fields[0] as String)+","+(fields[1] as String)+","+(fields[2] as String))
+                //                print((fields[0] as String)+","+(fields[1] as String)+","+(fields[2] as String))
             }
         }
         
@@ -227,7 +234,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func createNewSet() {
-        self.currentSet = ["setName":""]
+        self.currentSetArr[0].setName = ""
+        self.currentSetArr[0].arms = nil
+        self.currentSetArr[0].chest = nil
+        self.currentSetArr[0].head = nil
+        self.currentSetArr[0].legs = nil
+        self.currentSetArr[0].waist = nil
         //switch to set page
     }
     
@@ -237,12 +249,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         buildFetch.predicate = predicate
         let fetchedBuilds = try! self.managedObjectContext.fetch(buildFetch) as! [Builds]
         let build = fetchedBuilds[0]
-        let chestString = String(describing: build.chest! as Int)
-        let headString = String(describing: build.head! as Int)
-        let legsString = String(describing: build.legs! as Int)
-        let armsString = String(describing: build.arms! as Int)
-        let waistString = String(describing: build.waist! as Int)
-        self.currentSet = ["setName":build.setName! as String,"head":headString,"chest":chestString,"arms":armsString,"legs":legsString, "waist":waistString]
+        //        let chestString = String(describing: build.chest! as Int)
+        //        let headString = String(describing: build.head! as Int)
+        //        let legsString = String(describing: build.legs! as Int)
+        //        let armsString = String(describing: build.arms! as Int)
+        //        let waistString = String(describing: build.waist! as Int)
+        //        self.currentSet = ["setName":build.setName! as String,"head":headString,"chest":chestString,"arms":armsString,"legs":legsString, "waist":waistString]
+        self.currentSetArr[0] = build
         return build
     }
     
@@ -250,8 +263,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let armorId = armorPiece.id
         let armorType = armorPiece.slot!.lowercased()
         
-        self.currentSet[armorType] = String(describing: armorId)
-        
+        switch armorType {
+        case "head":
+            self.currentSetArr[0].head = armorId
+        case "chest":
+            self.currentSetArr[0].chest = armorId
+        case "arms":
+            self.currentSetArr[0].arms = armorId
+        case "legs":
+            self.currentSetArr[0].legs = armorId
+        case "waist":
+            self.currentSetArr[0].waist = armorId
+        default:
+            print("error")
+        }
     }
     
     func addArmorPieceById(_ armorId: Int) {
@@ -261,92 +286,68 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         armorFetch.predicate = predicate
         let fetchedArmor = try! self.managedObjectContext.fetch(armorFetch) as! [Armor]
         let armor = fetchedArmor[0]
-        let armorType = armor.slot!.lowercased()
-        self.currentSet[armorType] = String(describing: armor.id!)
+        self.addArmorPiece(armor)
     }
     
     func saveSet() -> Builds {
         let managedContext = self.managedObjectContext
         let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
-        var build = Builds(entity: entity!, insertInto: managedContext)
         
-        var tempSet = self.currentSet
-        if (tempSet["setName"]! == "") {
+        var tempSet = self.currentSetArr[0]
+        
+        if (tempSet.setName == "" || tempSet.setName == nil ) {
             
-//            let alert = UIAlertController(title: "Enter Set Name",
-//                                          message: "Enter a name for the set",
-//                                          preferredStyle: .alert)
-//            let addTitleAction = UIAlertAction(title: "AddSetName",
-//                                               style: .default,
-//                                               handler: { (action:UIAlertAction) -> Void in
-//                                                
-//                                                let name = alert.textFields![0].text
-//                                                print(name)
-//                                                build.setName = name as NSString?
-//            })
-//            
-//            let cancelAction = UIAlertAction(title: "Cancel",
-//                                             style: .default,
-//                                             handler: { (action: UIAlertAction) -> Void in })
-//            
-//            alert.addTextField {
-//                (textField: UITextField) -> Void in
-//            }
-//            
-//            
-//            alert.addAction(addTitleAction)
-//            alert.addAction(cancelAction)
-//            
-//            present(alert,
-//                    animated: true,
-//                    completion: nil)
+            //            let alert = UIAlertController(title: "Enter Set Name",
+            //                                          message: "Enter a name for the set",
+            //                                          preferredStyle: .alert)
+            //            let addTitleAction = UIAlertAction(title: "AddSetName",
+            //                                               style: .default,
+            //                                               handler: { (action:UIAlertAction) -> Void in
+            //
+            //                                                let name = alert.textFields![0].text
+            //                                                print(name)
+            //                                                build.setName = name as NSString?
+            //            })
+            //
+            //            let cancelAction = UIAlertAction(title: "Cancel",
+            //                                             style: .default,
+            //                                             handler: { (action: UIAlertAction) -> Void in })
+            //
+            //            alert.addTextField {
+            //                (textField: UITextField) -> Void in
+            //            }
+            //
+            //
+            //            alert.addAction(addTitleAction)
+            //            alert.addAction(cancelAction)
+            //
+            //            present(alert,
+            //                    animated: true,
+            //                    completion: nil)
             
             
             
             //save as new set
-            build.setName = "test1"
-            build.head = Int(tempSet["head"]!) as NSNumber?
-            //build.chest = Int(tempSet["chest"]!) as NSNumber?
-            build.arms = Int(tempSet["arms"]!) as NSNumber?
-            build.waist = Int(tempSet["waist"]!) as NSNumber?
-            build.legs = Int(tempSet["legs"]!) as NSNumber?
-            
+            tempSet.setName = "test1"
             
             do {
                 try managedContext.save()
-                self.builds.append(build)
+                self.builds.append(tempSet)
             } catch let error as NSError  {
                 print("Could not save \(error), \(error.userInfo)")
             }
             
         } else {
             //check to see if set exists.  if it does, update it, if it does not, save it as new
-            let buildFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
-            let predicate = NSPredicate(format: "%K LIKE %@", "setName", tempSet["setName"]!)
-            buildFetch.predicate = predicate
             do {
-                var fetchedBuilds = try managedContext.fetch(buildFetch) as! [Builds]
-                build = fetchedBuilds[0]
-                //save as new set
-                build.head = Int(tempSet["head"]!) as NSNumber?
-                //build.chest = Int(tempSet["chest"]!) as NSNumber?
-                build.arms = Int(tempSet["arms"]!) as NSNumber?
-                build.waist = Int(tempSet["waist"]!) as NSNumber?
-                build.legs = Int(tempSet["legs"]!) as NSNumber?
-                
-                do {
-                    try managedContext.save()
-                    self.builds.append(build)
-                } catch let error as NSError  {
-                    print("Could not save \(error), \(error.userInfo)")
-                }
-            } catch {
-                fatalError("Failed to fetch armor: \(error)")
+                try managedContext.save()
+                self.builds.append(tempSet)
+            } catch let error as NSError  {
+                print("Could not save \(error), \(error.userInfo)")
             }
-            
         }
         
-        return build
+        return tempSet
     }
     
     func totalStats(build: Builds) {
@@ -398,6 +399,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let totalArr = ["defense":total_defense,"max_defense":total_max_defense,"dragon_res":total_dragon_res,"ice_res":total_ice_res,"fire_res":total_fire_res,"thunder_res":total_thunder_res,"water_res":total_water_res]
         print(totalArr)
     }
-
+    
 }
 
