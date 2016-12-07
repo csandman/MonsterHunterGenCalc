@@ -273,15 +273,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QrR-yR-tmf">
                                 <rect key="frame" x="135" y="55" width="50" height="290"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et9-21-Y8O" customClass="UIButtonLegs">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et9-21-Y8O">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="abG-qi-2Oa"/>
                                             <constraint firstAttribute="width" constant="50" id="d0q-zS-tiL"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="+">
+                                        <state key="normal" title="+" image="helm30">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -293,15 +292,14 @@
                                             <segue destination="Olc-9d-sOp" kind="presentation" id="c5X-u6-Wcb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdA-RD-dUb" customClass="UIButtonHead">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdA-RD-dUb">
                                         <rect key="frame" x="0.0" y="60" width="50" height="50"/>
                                         <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="G4P-ey-lLf"/>
                                             <constraint firstAttribute="width" constant="50" id="pt5-LS-Hhy"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="+modal">
+                                        <state key="normal" title="+modal" image="chest30">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -310,15 +308,14 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-tz-bgM" customClass="UIButtonChest">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-tz-bgM">
                                         <rect key="frame" x="0.0" y="120" width="50" height="50"/>
                                         <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="JeX-6i-ZHc"/>
                                             <constraint firstAttribute="height" constant="50" id="KV9-jc-jRd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="+">
+                                        <state key="normal" title="+" image="arms30">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -327,15 +324,14 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPk-Ou-Hr7" customClass="UIButtonArms">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPk-Ou-Hr7">
                                         <rect key="frame" x="0.0" y="180" width="50" height="50"/>
                                         <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="mC8-3G-jzs"/>
                                             <constraint firstAttribute="height" constant="50" id="wWz-xf-TaH"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="+push">
+                                        <state key="normal" title="+push" image="waist30">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -347,16 +343,15 @@
                                             <segue destination="avH-rr-c3G" kind="push" id="do4-Dt-QZG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5d-Ua-XqC" customClass="UIButtonWaist">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5d-Ua-XqC">
                                         <rect key="frame" x="0.0" y="240" width="50" height="50"/>
                                         <color key="backgroundColor" red="0.88802899390000001" green="0.89731781779999997" blue="0.99067408379999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="c8z-8J-Jz3"/>
                                             <constraint firstAttribute="height" constant="50" id="vfi-Dy-vgc"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="+"/>
+                                        <state key="normal" title="+" image="leg30"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="8"/>
@@ -470,8 +465,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w7d-Vv-dZN">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved Builds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGE-h9-iT4">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Saved Builds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGE-h9-iT4">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="320" id="49R-zZ-OJQ"/>
@@ -480,8 +475,8 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NKH-Mv-qQ9">
-                                                <rect key="frame" x="0.0" y="30.5" width="320" height="122"/>
+                                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NKH-Mv-qQ9">
+                                                <rect key="frame" x="0.0" y="30" width="320" height="122"/>
                                                 <color key="backgroundColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="dUO-f7-qV6"/>
@@ -504,8 +499,8 @@
                                                     <outlet property="dataSource" destination="GFU-fR-yEs" id="ilt-zE-gon"/>
                                                 </connections>
                                             </tableView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-progress Builds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6w3-zA-I4D">
-                                                <rect key="frame" x="0.0" y="162.5" width="320" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="In-progress Builds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6w3-zA-I4D">
+                                                <rect key="frame" x="0.0" y="162" width="320" height="21"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="320" id="8Fj-4I-6HQ"/>
@@ -601,7 +596,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="usz-jF-kEZ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Builds" image="builds" id="xNA-KU-2NM"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="zVV-zn-mZv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zVV-zn-mZv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
@@ -621,9 +616,14 @@
         <image name="Full_Body" width="250" height="250"/>
         <image name="Ice" width="20" height="20"/>
         <image name="Thunder" width="20" height="20"/>
+        <image name="arms30" width="50" height="50"/>
         <image name="builds" width="30" height="30"/>
+        <image name="chest30" width="50" height="50"/>
         <image name="fire" width="20" height="20"/>
+        <image name="helm30" width="50" height="50"/>
+        <image name="leg30" width="50" height="50"/>
         <image name="search" width="30" height="30"/>
+        <image name="waist30" width="50" height="50"/>
         <image name="water" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
