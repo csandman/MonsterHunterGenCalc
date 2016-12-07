@@ -41,7 +41,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     
    
     
-    //var people = [Person]()
+    var builds = [Builds]()
     
     @IBAction func indexChange(_ sender: Any) {
         switch humanPalico.selectedSegmentIndex
@@ -77,7 +77,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         
         //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        let palText = "CATCATCAT"
+        /*let palText = "CATCATCAT"
         self.namesSavedPal.append(palText)
         let textField = "Wheee"
         self.namesSaved.append(textField)
@@ -90,23 +90,24 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         let text5 = "i dunno"
         self.namesProgress.append(text5)
         let text6 = "yeah!!!"
-        self.namesProgressPal.append(text6)
-        self.savedTable.reloadData()
+        self.namesProgressPal.append(text6)*/
+        //self.savedTable.reloadData()
         
         //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         //progressTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
-        appDelegate.addArmorPieceById(1311031)
-        appDelegate.addArmorPieceById(1376337)
-        appDelegate.addArmorPieceById(1441869)
-        appDelegate.addArmorPieceById(1507453)
-        appDelegate.addArmorPieceById(1572902)
+        //appDelegate.addArmorPieceById(1311031)
+        //appDelegate.addArmorPieceById(1376337)
+        //appDelegate.addArmorPieceById(1441869)
+        //appDelegate.addArmorPieceById(1507453)
+        //appDelegate.addArmorPieceById(1572902)
+       
         
-        //let managedContext = appDelegate.managedObjectContext
+        let managedContext = appDelegate.managedObjectContext
         
-        //let entity =  NSEntityDescription.entity(forEntityName: "Person", in:managedContext)
+        //let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
         //let person = Person(entity: entity!, insertInto: managedContext)
         
         /*person.name = "aaaaaa"
@@ -116,57 +117,124 @@ class FirstViewController: UIViewController, UITableViewDataSource {
            people.append(person)
     } catch let error as NSError  {
           print("Could not save \(error), \(error.userInfo)")
-    }
+    }*/
         
-        //let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
         
         do {
             let results =
              try managedContext.fetch(fetchRequest)
-            people = results as! [Person]
+            builds = results as! [Builds]
             
             
             
-          for p in people
+           for b in builds
            {
-               people.append(p)
-                self.namesSaved.append(p.name!)
+                /*if saved build{
+                    if human build{
+                        self.namesSaved.append(b.name!)
+                    }
+                    else{
+                        self.namesSavedPal.append(b.name!)
+                    }
+                }
+             
+                else{
+                    if human build{
+                        self.namesProgress.append(b.name!)
+                    }
+                    else{
+                        self.namesProgressPal.append(b.name!)
+                }
+             }
+ 
+            */
             
             }
             
            self.savedTable.reloadData()
+           self.progressTable.reloadData()
             
             
                 
         
        } catch let error as NSError {
         print("fetch or save failed \(error), \(error.userInfo)")
-       }*/
+       }
     }
 
+    //Delete function
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        //theoretically saves names of deleted builds in this array
+        var tempNames = [String]()
+        
         if editingStyle == .delete {
             if(humanPalico.selectedSegmentIndex==0){
                 if tableView == savedTable{
+                    
+                    //puts name of build to be deleted in the temp array
+                    tempNames.append(namesSaved[indexPath.row])
+                    
+                    //removes from name array and table
                     namesSaved.remove(at: indexPath.row)
                      savedTable.deleteRows(at: [indexPath], with: .fade)
                 }
                 else{
+                    tempNames.append(namesProgress[indexPath.row])
                     namesProgress.remove(at: indexPath.row)
-                    progressTable.deleteRows(at: [indexPath], with: .fade)                }
+                    progressTable.deleteRows(at: [indexPath], with: .fade)
+                }
                
             }
             else{
                 if tableView == savedTable{
+                    tempNames.append(namesSavedPal[indexPath.row])
                     namesSavedPal.remove(at: indexPath.row)
                     savedTable.deleteRows(at: [indexPath], with: .fade)
                 }
                 else{
+                    tempNames.append(namesProgressPal[indexPath.row])
                     namesProgressPal.remove(at: indexPath.row)
                     progressTable.deleteRows(at: [indexPath], with: .fade)
                 }
             }
+            
+            
+            
+            var names = [Builds]()
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            
+            let managedContext = appDelegate.managedObjectContext
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
+            
+            do {
+                let results =
+                    try managedContext.fetch(fetchRequest)
+                names = results as! [Builds]
+                
+                
+                //Iterates through the builds, and if one has a name matching one of the deleted sets, deletes from coredata
+                for n in names
+                {
+                    for temp in tempNames{
+                        if n.setName! as String == temp{
+                            managedContext.delete(n)
+                            
+                        }
+                    }
+                }
+                try managedContext.save()
+                
+            } catch let error as NSError {
+                print("delete failed \(error), \(error.userInfo)")
+            }
+
         }
+        
+        
+        
     }
     
     // Override to support conditional editing of the table view.
@@ -273,9 +341,9 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     
 
     
-    var armors = [Armor]()
-    var builds = [Builds]()
-    var displayStrings = [String]()
+    //var armors = [Armor]()
+    //var builds = [Builds]()
+    //var displayStrings = [String]()
     
     
     

@@ -47,7 +47,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                                                 self.displayStrings.removeAll()
                                                 for armor in fetchedArmor {
                                                     self.displayStrings.append(armor.name! as String!)
-                                                    print(armor.name! as String)
+                                                    //print(armor.name! as String)
                                                 }
                                                 self.tableView.reloadData()
                                                 

@@ -19,7 +19,6 @@
 		3F34E5AE1DEF57A20002BD90 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */; };
 		3F58CE331DF61AD7003DA47F /* armorTable.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3F58CE321DF61AD7003DA47F /* armorTable.csv */; };
 		3F5D91C91DF321AD00B9CE2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5D91C81DF321AD00B9CE2B /* Images.xcassets */; };
-		3F65DB7F1DF76DCD00D00BB3 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65DB7E1DF76DCD00D00BB3 /* PageViewController.swift */; };
 		3F88F1B31DDE4D080044EE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1B21DDE4D080044EE49 /* AppDelegate.swift */; };
 		3F88F1B51DDE4D080044EE49 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1B41DDE4D080044EE49 /* FirstViewController.swift */; };
 		3F88F1B71DDE4D080044EE49 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1B61DDE4D080044EE49 /* SecondViewController.swift */; };
@@ -60,7 +59,6 @@
 		3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3F58CE321DF61AD7003DA47F /* armorTable.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = armorTable.csv; sourceTree = "<group>"; };
 		3F5D91C81DF321AD00B9CE2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3F65DB7E1DF76DCD00D00BB3 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		3F88F1AF1DDE4D080044EE49 /* MHGenCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHGenCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88F1B21DDE4D080044EE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F88F1B41DDE4D080044EE49 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 				3F34E5A21DEF51190002BD90 /* Shoes+CoreDataProperties.swift */,
 				3F88F1B61DDE4D080044EE49 /* SecondViewController.swift */,
 				3F88F1B81DDE4D080044EE49 /* Main.storyboard */,
-				3F65DB7E1DF76DCD00D00BB3 /* PageViewController.swift */,
 				3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */,
 				3F88F1BB1DDE4D080044EE49 /* Assets.xcassets */,
 				3F88F1BD1DDE4D080044EE49 /* LaunchScreen.storyboard */,
@@ -304,7 +301,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F34E5A61DEF51190002BD90 /* Builds+CoreDataProperties.swift in Sources */,
-				3F65DB7F1DF76DCD00D00BB3 /* PageViewController.swift in Sources */,
 				3F34E59A1DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld in Sources */,
 				3F34E5A31DEF51190002BD90 /* Armor.swift in Sources */,
 				3F88F1B71DDE4D080044EE49 /* SecondViewController.swift in Sources */,
