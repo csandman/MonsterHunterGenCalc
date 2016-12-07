@@ -34,6 +34,10 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
 //                                            print(name!)
                                             
                                             if (name != "") {
+                                                let sortDescriptor1 = NSSortDescriptor(key: "slot", ascending: true)
+                                                let sortDescriptor2 = NSSortDescriptor(key: "name", ascending: true)
+                                                let sortDescriptors = [sortDescriptor1,sortDescriptor2]
+                                                armorFetch.sortDescriptors = sortDescriptors
                                                 let predicate = NSPredicate(format: "%K CONTAINS[c] %@", "name", name!)
                                                 armorFetch.predicate = predicate
                                             }
@@ -102,7 +106,8 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
         print(appDelegate.currentSetArr[0])
         print(appDelegate.saveSet())
         let set = appDelegate.loadExistingSet(name: "test1")
-        print(set)
+        print(set.legs!)
+        print(set.arms!)
         appDelegate.totalStats(build: set)
         
         
