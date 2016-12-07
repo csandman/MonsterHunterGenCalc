@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F08A72B1DF8C61700F289B5 /* AdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08A72A1DF8C61700F289B5 /* AdvancedViewController.swift */; };
+		3F08A72D1DF8C63B00F289B5 /* AdvancedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08A72C1DF8C63B00F289B5 /* AdvancedPageViewController.swift */; };
 		3F34E59A1DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5981DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld */; };
 		3F34E5A31DEF51190002BD90 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59B1DEF51190002BD90 /* Armor.swift */; };
 		3F34E5A41DEF51190002BD90 /* Armor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59C1DEF51190002BD90 /* Armor+CoreDataProperties.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F08A72A1DF8C61700F289B5 /* AdvancedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedViewController.swift; sourceTree = "<group>"; };
+		3F08A72C1DF8C63B00F289B5 /* AdvancedPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedPageViewController.swift; sourceTree = "<group>"; };
 		3F34E5991DEF4FB50002BD90 /* CS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CS.xcdatamodel; sourceTree = "<group>"; };
 		3F34E59B1DEF51190002BD90 /* Armor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		3F34E59C1DEF51190002BD90 /* Armor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Armor+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -136,8 +140,10 @@
 				3F34E5A11DEF51190002BD90 /* Shoes.swift */,
 				3F34E5A21DEF51190002BD90 /* Shoes+CoreDataProperties.swift */,
 				3F88F1B61DDE4D080044EE49 /* SecondViewController.swift */,
-				3F88F1B81DDE4D080044EE49 /* Main.storyboard */,
 				3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */,
+				3F08A72A1DF8C61700F289B5 /* AdvancedViewController.swift */,
+				3F08A72C1DF8C63B00F289B5 /* AdvancedPageViewController.swift */,
+				3F88F1B81DDE4D080044EE49 /* Main.storyboard */,
 				3F88F1BB1DDE4D080044EE49 /* Assets.xcassets */,
 				3F88F1BD1DDE4D080044EE49 /* LaunchScreen.storyboard */,
 				3F88F1C01DDE4D080044EE49 /* Info.plist */,
@@ -308,9 +314,11 @@
 				3F88F1B51DDE4D080044EE49 /* FirstViewController.swift in Sources */,
 				3F34E5A81DEF51190002BD90 /* Person+CoreDataProperties.swift in Sources */,
 				3F34E5A91DEF51190002BD90 /* Shoes.swift in Sources */,
+				3F08A72B1DF8C61700F289B5 /* AdvancedViewController.swift in Sources */,
 				3F34E5A71DEF51190002BD90 /* Person.swift in Sources */,
 				3F34E5A41DEF51190002BD90 /* Armor+CoreDataProperties.swift in Sources */,
 				3F34E5AA1DEF51190002BD90 /* Shoes+CoreDataProperties.swift in Sources */,
+				3F08A72D1DF8C63B00F289B5 /* AdvancedPageViewController.swift in Sources */,
 				3F34E5A51DEF51190002BD90 /* Builds.swift in Sources */,
 				3F34E5AE1DEF57A20002BD90 /* ThirdViewController.swift in Sources */,
 			);
