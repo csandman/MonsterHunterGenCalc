@@ -1,5 +1,5 @@
 //
-//  FilterViewController.swift
+//  Filter5ViewController.swift
 //  MHGenCalc
 //
 //  Created by Student on 12/8/16.
@@ -8,14 +8,10 @@
 
 import UIKit
 
-class FilterViewController: UIViewController {
+class Filter5ViewController: UIViewController {
 
-    @IBOutlet weak var armorLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        armorLabel.textAlignment = NSTextAlignment.center;
 
         // Do any additional setup after loading the view.
     }

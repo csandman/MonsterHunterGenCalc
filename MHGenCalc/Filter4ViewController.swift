@@ -1,5 +1,5 @@
 //
-//  FilterViewController.swift
+//  Filter4ViewController.swift
 //  MHGenCalc
 //
 //  Created by Student on 12/8/16.
@@ -8,18 +8,23 @@
 
 import UIKit
 
-class FilterViewController: UIViewController {
+class Filter4ViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var armorLabel: UILabel!
+    
+    @IBOutlet weak var defenseLabel: UILabel!
+    @IBOutlet weak var minValueField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        armorLabel.textAlignment = NSTextAlignment.center;
-
-        // Do any additional setup after loading the view.
+        defenseLabel.textAlignment = NSTextAlignment.center;
+        
     }
 
+    @IBAction func resultDisplay(_ sender: Any) {
+        resultLabel.text = minValueField.text
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
