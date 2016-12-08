@@ -70,12 +70,14 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        humanPalico.setTitle("Hunter", forSegmentAt: 0)
+        
         savedLabel.textAlignment = NSTextAlignment.center;
         progressLabel.textAlignment = NSTextAlignment.center;
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         
-        //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        /*let palText = "CATCATCAT"
+        savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        let palText = "CATCATCAT"
         self.namesSavedPal.append(palText)
         let textField = "Wheee"
         self.namesSaved.append(textField)
@@ -88,11 +90,11 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         let text5 = "i dunno"
         self.namesProgress.append(text5)
         let text6 = "yeah!!!"
-        self.namesProgressPal.append(text6)*/
-        //self.savedTable.reloadData()
+        self.namesProgressPal.append(text6)
+        self.savedTable.reloadData()
         
-        //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        //progressTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        progressTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
