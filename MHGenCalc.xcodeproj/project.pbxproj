@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3F08A72B1DF8C61700F289B5 /* AdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08A72A1DF8C61700F289B5 /* AdvancedViewController.swift */; };
 		3F08A72D1DF8C63B00F289B5 /* AdvancedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08A72C1DF8C63B00F289B5 /* AdvancedPageViewController.swift */; };
+		3F0F24FD1DFA139F0084DF34 /* PalicoArmor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F24FB1DFA139F0084DF34 /* PalicoArmor.swift */; };
+		3F0F24FE1DFA139F0084DF34 /* PalicoArmor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F24FC1DFA139F0084DF34 /* PalicoArmor+CoreDataProperties.swift */; };
+		3F0F25001DFA15630084DF34 /* PalicoArmor.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F24FF1DFA15630084DF34 /* PalicoArmor.csv */; };
 		3F34E59A1DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5981DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld */; };
 		3F34E5A31DEF51190002BD90 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59B1DEF51190002BD90 /* Armor.swift */; };
 		3F34E5A41DEF51190002BD90 /* Armor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59C1DEF51190002BD90 /* Armor+CoreDataProperties.swift */; };
@@ -56,6 +59,9 @@
 /* Begin PBXFileReference section */
 		3F08A72A1DF8C61700F289B5 /* AdvancedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedViewController.swift; sourceTree = "<group>"; };
 		3F08A72C1DF8C63B00F289B5 /* AdvancedPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedPageViewController.swift; sourceTree = "<group>"; };
+		3F0F24FB1DFA139F0084DF34 /* PalicoArmor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalicoArmor.swift; sourceTree = "<group>"; };
+		3F0F24FC1DFA139F0084DF34 /* PalicoArmor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PalicoArmor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F0F24FF1DFA15630084DF34 /* PalicoArmor.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PalicoArmor.csv; sourceTree = "<group>"; };
 		3F34E5991DEF4FB50002BD90 /* CS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CS.xcdatamodel; sourceTree = "<group>"; };
 		3F34E59B1DEF51190002BD90 /* Armor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		3F34E59C1DEF51190002BD90 /* Armor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Armor+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -139,11 +145,14 @@
 			children = (
 				3F58CE321DF61AD7003DA47F /* armorTable.csv */,
 				3F34E5981DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld */,
+				3F0F24FF1DFA15630084DF34 /* PalicoArmor.csv */,
 				3F88F1B21DDE4D080044EE49 /* AppDelegate.swift */,
 				3F88F1B41DDE4D080044EE49 /* FirstViewController.swift */,
 				3F34E59B1DEF51190002BD90 /* Armor.swift */,
 				3F34E59C1DEF51190002BD90 /* Armor+CoreDataProperties.swift */,
 				3F34E59D1DEF51190002BD90 /* Builds.swift */,
+				3F0F24FB1DFA139F0084DF34 /* PalicoArmor.swift */,
+				3F0F24FC1DFA139F0084DF34 /* PalicoArmor+CoreDataProperties.swift */,
 				3F34E59E1DEF51190002BD90 /* Builds+CoreDataProperties.swift */,
 				3F34E59F1DEF51190002BD90 /* Person.swift */,
 				3F34E5A01DEF51190002BD90 /* Person+CoreDataProperties.swift */,
@@ -296,6 +305,7 @@
 				3F5D91C91DF321AD00B9CE2B /* Images.xcassets in Resources */,
 				3F88F1BC1DDE4D080044EE49 /* Assets.xcassets in Resources */,
 				3F88F1BA1DDE4D080044EE49 /* Main.storyboard in Resources */,
+				3F0F25001DFA15630084DF34 /* PalicoArmor.csv in Resources */,
 				3F58CE331DF61AD7003DA47F /* armorTable.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,11 +336,13 @@
 				3F34E5A31DEF51190002BD90 /* Armor.swift in Sources */,
 				3F88F1B71DDE4D080044EE49 /* SecondViewController.swift in Sources */,
 				3FB316161DF9E9FA0036D611 /* Filter5ViewController.swift in Sources */,
+				3F0F24FE1DFA139F0084DF34 /* PalicoArmor+CoreDataProperties.swift in Sources */,
 				3F88F1B31DDE4D080044EE49 /* AppDelegate.swift in Sources */,
 				3F88F1B51DDE4D080044EE49 /* FirstViewController.swift in Sources */,
 				3F34E5A81DEF51190002BD90 /* Person+CoreDataProperties.swift in Sources */,
 				3F34E5A91DEF51190002BD90 /* Shoes.swift in Sources */,
 				3F08A72B1DF8C61700F289B5 /* AdvancedViewController.swift in Sources */,
+				3F0F24FD1DFA139F0084DF34 /* PalicoArmor.swift in Sources */,
 				3FB316141DF9E9EC0036D611 /* Filter4ViewController.swift in Sources */,
 				3F34E5A71DEF51190002BD90 /* Person.swift in Sources */,
 				3FB3160F1DF9E9AC0036D611 /* Filter2ViewController.swift in Sources */,

@@ -16,8 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     var armors = [Armor]()
+    var palicoArmors = [PalicoArmor]()
     var builds = [Builds]()
     var displayStrings = [String]()
+    var palicoDisplayStrings = [String]()
     var currentSetArr = [Builds]()
     
     
@@ -28,13 +30,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
         let results = try! managedContext.fetch(fetchRequest)
         self.armors = results as! [Armor]
+        let palicoFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PalicoArmor")
+        let palicoResults = try! managedContext.fetch(palicoFetchRequest)
+        self.palicoArmors = palicoResults as! [PalicoArmor]
         
         let db = self.preloadDb()
         let lines = db.components(separatedBy: "\n")
         for line in lines {
             self.saveArmor(line: line)
         }
-        for armor in armors {
+        let palicoDb = self.preloadPalicoDb()
+        let palicoLines = palicoDb.components(separatedBy: "\n")
+        for line in palicoLines {
+            self.savePalicoArmor(line: line)
+        }
+        for armor in palicoArmors {
             print (armor.name! as String)
         }
         
@@ -133,66 +143,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func preloadDb () -> NSString {
-        
-        // name of the database file, with newline-separated records
-        let dbfile = "ArmorFile.csv"
-        // record field delimeter (is a comma for csv)
-        let delimeter = ","
-        
-        /*
-         process_fields takes as input an array of strings which are the raw field
-         values for a given record. If one wants to save the field values in
-         persistent memory, this is where the Core Data logic should go.
-         
-         Note that if field values need to be interpreted as non-String datatypes,
-         e.g. as numeric or boolean values, explicit type conversion needs to be
-         performed here as well.
-         */
-        func process_fields(fields : [NSString])
-        {
+        do {
+            let fileUrl = Bundle.main.url(forResource: "armorTable", withExtension:"csv")
+            let db = try! NSString(contentsOf: fileUrl!, encoding: String.Encoding.utf8.rawValue)
             
-            let f0 = fields[0]
-            if (f0 != "") {
-                //                print((fields[0] as String)+","+(fields[1] as String)+","+(fields[2] as String))
-            }
+            return db
         }
-        
-        /*
-         import_db processes the input database file-- it iterates through each line,
-         splits the line into delimeter-separated fields, and applies process_fields to
-         the fields.
-         */
-        func import_db() -> NSString
-        {
-            do
-            {
-                let fileUrl = Bundle.main.url(forResource: "armorTable", withExtension:"csv")
-                let db = try NSString(contentsOf: fileUrl!, encoding: String.Encoding.utf8.rawValue)
-                
-                return db
-                //                let lines = db.componentsSeparatedByString("\n")
-                //
-                //                return lines
-                //                for line in lines
-                //                {
-                //                    let fields = line.componentsSeparatedByString(delimeter)
-                //                    process_fields(fields)
-                //                }
-            }
-            catch let error as NSError
-            {
-                print("file \(dbfile) input failed \(error), \(error.userInfo)")
-            }
-            return NSString()
-        }
-        
-        return import_db()
     }
+    
+    func preloadPalicoDb () -> NSString {
+        do {
+            let fileUrl = Bundle.main.url(forResource: "PalicoArmor", withExtension:"csv")
+            let db = try! NSString(contentsOf: fileUrl!, encoding: String.Encoding.utf8.rawValue)
+            
+            return db
+        }
+    }
+    
     func saveArmor(line: String)
     {
         let fields = line.components(separatedBy: ",")
         
-        if (self.lookupArmor(name: fields[11]) == nil) {
+        if (self.lookupPalicoArmor(name: fields[11]) == nil) {
             let managedContext = self.managedObjectContext
             
             let entity =  NSEntityDescription.entity(forEntityName: "Armor", in:managedContext)
@@ -213,7 +185,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             armor.hunter_type = Int(fields[9]) as NSNumber?
             armor.num_slots = Int(fields[10]) as NSNumber?
             armor.rarity = Int(fields[12]) as NSNumber?
-
+            
             do {
                 try managedContext.save()
                 armors.append(armor)
@@ -227,8 +199,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    
+    func savePalicoArmor(line: String)
+    {
+        let fields = line.components(separatedBy: ",")
+        
+        if (self.lookupArmor(name: fields[0]) == nil && fields.count == 8) {
+            let managedContext = self.managedObjectContext
+            
+            let entity =  NSEntityDescription.entity(forEntityName: "PalicoArmor", in:managedContext)
+            let armor = PalicoArmor(entity: entity!, insertInto: managedContext)
+            
+            
+            
+            armor.name = fields[0]
+            armor.slot = fields[1]
+            armor.defense = Int(fields[2]) as NSNumber?
+            armor.fire_res = Int(fields[3]) as NSNumber?
+            armor.thunder_res = Int(fields[5]) as NSNumber?
+            armor.dragon_res = Int(fields[7]) as NSNumber?
+            armor.water_res = Int(fields[4]) as NSNumber?
+            armor.ice_res = Int(fields[6]) as NSNumber?
+            
+            do {
+                try managedContext.save()
+                palicoArmors.append(armor)
+            } catch let error as NSError  {
+                print("Could not save \(error), \(error.userInfo)")
+            }
+            self.palicoDisplayStrings.append(armor.name!)
+            
+        } else {
+            //print(self.lookupArmor(name: fields[11]))
+        }
+    }
+    
     func lookupArmor(name: String) -> Armor? {
         for a in self.armors {
+            if (name == a.name!) { return a }
+        }
+        return nil
+    }
+    
+    func lookupPalicoArmor(name: String) -> PalicoArmor? {
+        for a in self.palicoArmors {
             if (name == a.name!) { return a }
         }
         return nil

@@ -342,6 +342,9 @@ class FirstViewController: UIViewController, UITableViewDataSource {
             if let indexPath = self.savedTable.indexPathForSelectedRow{
                 let controller = segue.destination as! SecondViewController
                 controller.passedValue = namesSaved[indexPath.row]
+                let appDelegate =
+                    UIApplication.shared.delegate as! AppDelegate
+                _ = appDelegate.loadExistingSet(name: controller.passedValue!)
             }
             
         }
