@@ -9,6 +9,9 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    var passedValue: String?
+    
     @IBAction func addArmorInProgress(_ sender: UIButton) {
     }
 
@@ -24,6 +27,9 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        inProgressLabel.text = passedValue
     }
 
     override func didReceiveMemoryWarning() {

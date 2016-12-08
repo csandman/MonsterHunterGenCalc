@@ -332,6 +332,21 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "savedSegue" {
+            
+            /*let selectedIndex = sender as! NSIndexPath
+             let currentCell =  savedTable.cellForRow(at: selectedIndex as IndexPath)! as UITableViewCell
+             self.valueToPass = currentCell.textLabel!.text!*/
+            
+            if let indexPath = self.savedTable.indexPathForSelectedRow{
+                let controller = segue.destination as! SecondViewController
+                controller.passedValue = namesSaved[indexPath.row]
+            }
+            
+        }
+    }
+    
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         self.savedTable.setEditing(editing, animated: animated)
