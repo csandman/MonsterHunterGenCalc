@@ -70,8 +70,6 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-       
-        
         savedLabel.textAlignment = NSTextAlignment.center;
         progressLabel.textAlignment = NSTextAlignment.center;
         self.navigationItem.leftBarButtonItem = self.editButtonItem

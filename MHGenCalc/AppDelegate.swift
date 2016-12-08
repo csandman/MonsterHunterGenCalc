@@ -43,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let currentSet = NSEntityDescription.insertNewObject(forEntityName: "Builds", into: managedContext) as! Builds
         self.currentSetArr.append(currentSet)
         self.currentSetArr[0].setName = ""
+        
         return true
     }
     

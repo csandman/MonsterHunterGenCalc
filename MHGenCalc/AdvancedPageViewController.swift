@@ -16,7 +16,9 @@ class AdvancedPageViewController: UIPageViewController {
         // The view controllers will be shown in this order
         return [self.newColoredViewController("Advanced1"),
                 self.newColoredViewController("Advanced2"),
-                self.newColoredViewController("Advanced3")]
+                self.newColoredViewController("Advanced3"),
+                self.newColoredViewController("Advanced4"),
+                self.newColoredViewController("Advanced5")]
     }()
     
     
