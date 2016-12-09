@@ -370,7 +370,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return tempSet
     }
     
-    func totalStats(build: Builds) {
+    func totalStats(build: Builds) -> Dictionary<String, Int>{
         let headId = build.head as! Int
         let chestId = build.chest as! Int
         let legsId = build.legs as! Int
@@ -417,7 +417,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let total_thunder_res = Int(head.thunder_res!) + Int(chest.thunder_res!) + Int(arms.thunder_res!) + Int(legs.thunder_res!) + Int(waist.thunder_res!)
         let total_water_res = Int(head.water_res!) + Int(chest.water_res!) + Int(arms.water_res!) + Int(legs.water_res!) + Int(waist.water_res!)
         let totalArr = ["defense":total_defense,"max_defense":total_max_defense,"dragon_res":total_dragon_res,"ice_res":total_ice_res,"fire_res":total_fire_res,"thunder_res":total_thunder_res,"water_res":total_water_res]
-        print(totalArr)
+        return(totalArr)
     }
     
 }

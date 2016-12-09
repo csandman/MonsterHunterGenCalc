@@ -16,6 +16,7 @@
 		3F0F25041DFA40360084DF34 /* DatabaseLoaded+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F25031DFA40360084DF34 /* DatabaseLoaded+CoreDataProperties.swift */; };
 		3F298B2D1DFA227700C17C8E /* ArmorSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F298B2C1DFA227700C17C8E /* ArmorSearchViewController.swift */; };
 		3F298B2F1DFA2A8200C17C8E /* ArmorResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F298B2E1DFA2A8200C17C8E /* ArmorResultViewController.swift */; };
+		3F298B351DFA5F1A00C17C8E /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F298B341DFA5F1A00C17C8E /* StatsViewController.swift */; };
 		3F34E59A1DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5981DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld */; };
 		3F34E5A31DEF51190002BD90 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59B1DEF51190002BD90 /* Armor.swift */; };
 		3F34E5A41DEF51190002BD90 /* Armor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59C1DEF51190002BD90 /* Armor+CoreDataProperties.swift */; };
@@ -70,6 +71,7 @@
 		3F0F25031DFA40360084DF34 /* DatabaseLoaded+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatabaseLoaded+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F298B2C1DFA227700C17C8E /* ArmorSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmorSearchViewController.swift; sourceTree = "<group>"; };
 		3F298B2E1DFA2A8200C17C8E /* ArmorResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmorResultViewController.swift; sourceTree = "<group>"; };
+		3F298B341DFA5F1A00C17C8E /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		3F34E5991DEF4FB50002BD90 /* CS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CS.xcdatamodel; sourceTree = "<group>"; };
 		3F34E59B1DEF51190002BD90 /* Armor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		3F34E59C1DEF51190002BD90 /* Armor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Armor+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				3FB316131DF9E9EC0036D611 /* Filter4ViewController.swift */,
 				3FB316151DF9E9FA0036D611 /* Filter5ViewController.swift */,
 				3F88F1B81DDE4D080044EE49 /* Main.storyboard */,
+				3F298B341DFA5F1A00C17C8E /* StatsViewController.swift */,
 				3F298B2C1DFA227700C17C8E /* ArmorSearchViewController.swift */,
 				3F88F1BB1DDE4D080044EE49 /* Assets.xcassets */,
 				3F5D91C81DF321AD00B9CE2B /* Images.xcassets */,
@@ -359,6 +362,7 @@
 				3F08A72B1DF8C61700F289B5 /* AdvancedViewController.swift in Sources */,
 				3F0F24FD1DFA139F0084DF34 /* PalicoArmor.swift in Sources */,
 				3FB316141DF9E9EC0036D611 /* Filter4ViewController.swift in Sources */,
+				3F298B351DFA5F1A00C17C8E /* StatsViewController.swift in Sources */,
 				3F34E5A71DEF51190002BD90 /* Person.swift in Sources */,
 				3FB3160F1DF9E9AC0036D611 /* Filter2ViewController.swift in Sources */,
 				3FC6BBF51DF9C452007809F3 /* FilterViewController.swift in Sources */,
