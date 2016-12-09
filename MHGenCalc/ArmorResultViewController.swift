@@ -12,29 +12,26 @@ class ArmorResultViewController: UIViewController {
     
     var armorValue: String?
     
-    @IBAction func addArmorInProgress(_ sender: UIButton) {
-    }
+    
 
     @IBOutlet weak var armorLabel: UILabel!
-    @IBOutlet weak var inProgressLabel: UITextField!
+   
+    @IBOutlet weak var defenseLabel: UILabel!
     
     @IBAction func addArmorToSet(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.addArmorPieceByName(self.armorValue!)
     }
     
-    @IBAction func PalicoInProgress(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0{
-        }
-        else{
-        }
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         
         armorLabel.text = armorValue
+        
+        defenseLabel.text = armorValue
     }
 
     override func didReceiveMemoryWarning() {

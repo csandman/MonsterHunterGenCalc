@@ -18,7 +18,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var savedTable: UITableView!
     
-    @IBOutlet weak var progressTable: UITableView!
+    //@IBOutlet weak var progressTable: UITableView!
     
     
   
@@ -32,7 +32,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     //@IBOutlet weak var progressLabel: UILabel!
     
    
-    @IBOutlet weak var progressLabel: UILabel!
+    //@IBOutlet weak var progressLabel: UILabel!
     
     var namesSaved = [String]()
     var namesSavedPal = [String]()
@@ -48,12 +48,12 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         {
         case 0:
             self.savedTable.reloadData()
-            self.progressTable.reloadData()
+            //self.progressTable.reloadData()
             break;
         
         case 1:
             self.savedTable.reloadData()
-            self.progressTable.reloadData()
+            //self.progressTable.reloadData()
             break;
             
         default:
@@ -107,7 +107,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         humanPalico.setTitle("Hunter", forSegmentAt: 0)
         
         savedLabel.textAlignment = NSTextAlignment.center;
-        progressLabel.textAlignment = NSTextAlignment.center;
+        //progressLabel.textAlignment = NSTextAlignment.center;
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         
         savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
@@ -128,7 +128,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         self.savedTable.reloadData()
         
         //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        progressTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        //progressTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
         //let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
@@ -217,7 +217,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                 else{
                     tempNames.append(namesProgress[indexPath.row])
                     namesProgress.remove(at: indexPath.row)
-                    progressTable.deleteRows(at: [indexPath], with: .fade)
+                    //progressTable.deleteRows(at: [indexPath], with: .fade)
                 }
                
             }
@@ -230,7 +230,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                 else{
                     tempNames.append(namesProgressPal[indexPath.row])
                     namesProgressPal.remove(at: indexPath.row)
-                    progressTable.deleteRows(at: [indexPath], with: .fade)
+                    //progressTable.deleteRows(at: [indexPath], with: .fade)
                 }
             }
             
@@ -285,22 +285,22 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                    numberOfRowsInSection section: Int) -> Int {
         if(humanPalico.selectedSegmentIndex == 0)
         {
-            if tableView == savedTable{
+            //if tableView == savedTable{
         
                 return self.namesSaved.count
             
-            }
-            else{
-                return self.namesProgress.count
-            }
+            //}
+            //else{
+                //return self.namesProgress.count
+            //}
         }
         else{
-                if tableView == savedTable{
+                //if tableView == savedTable{
                     return self.namesSavedPal.count
-                }
-                else{
-                    return self.namesProgressPal.count
-                }
+                //}
+                //e//lse{
+                    //return self.namesProgressPal.count
+                //}
             }
         
         //coredata
@@ -319,38 +319,38 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath:IndexPath) -> UITableViewCell {
         if(humanPalico.selectedSegmentIndex == 0)
         {
-        if tableView == savedTable{
+        //if tableView == savedTable{
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellSaved")
         
         cell!.textLabel!.text = namesSaved[indexPath.row]
          cell!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
      
         return cell!
+        //}
+        //else{
+            //let cell2 = tableView.dequeueReusableCell(withIdentifier: "CellProgress")
+            // cell2!.textLabel!.text = namesProgress[indexPath.row]
+            // cell2!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
+       //
+           // return cell2!
+          //  }
         }
         else{
-            let cell2 = tableView.dequeueReusableCell(withIdentifier: "CellProgress")
-             cell2!.textLabel!.text = namesProgress[indexPath.row]
-             cell2!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
-       
-            return cell2!
-            }
-        }
-        else{
-            if tableView == savedTable{
+           //if tableView == savedTable{
                 let cell = tableView.dequeueReusableCell(withIdentifier: "CellSaved")
                 
                 cell!.textLabel!.text = namesSavedPal[indexPath.row]
                  cell!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
            
                 return cell!
-            }
-            else{
-                let cell2 = tableView.dequeueReusableCell(withIdentifier: "CellProgress")
-                cell2!.textLabel!.text = namesProgressPal[indexPath.row]
-                 cell2!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
+           // }
+            //else{
+               // let cell2 = tableView.dequeueReusableCell(withIdentifier: "CellProgress")
+              //  cell2!.textLabel!.text = namesProgressPal[indexPath.row]
+              //   cell2!.textLabel!.textColor=UIColor.white; //changes the text color for a //cell
             
-                return cell2!
-            }
+             //   return cell2!
+            //}
         }
         
         //coredata
@@ -387,7 +387,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         self.savedTable.setEditing(editing, animated: animated)
-        self.progressTable.setEditing(editing, animated: animated)
+       // self.progressTable.setEditing(editing, animated: animated)
     }
 
     
