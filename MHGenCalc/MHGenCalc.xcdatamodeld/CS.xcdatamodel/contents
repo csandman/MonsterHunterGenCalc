@@ -23,6 +23,9 @@
         <attribute name="setName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="waist" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
     </entity>
+    <entity name="DatabaseLoaded" representedClassName=".DatabaseLoaded" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="PalicoArmor" representedClassName=".PalicoArmor" syncable="YES">
         <attribute name="defense" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="dragon_res" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
@@ -44,8 +47,9 @@
     <elements>
         <element name="Armor" positionX="-27" positionY="45" width="128" height="240"/>
         <element name="Builds" positionX="-27" positionY="117" width="128" height="135"/>
+        <element name="PalicoArmor" positionX="-18" positionY="126" width="128" height="165"/>
         <element name="Person" positionX="-45" positionY="0" width="128" height="75"/>
         <element name="Shoes" positionX="-18" positionY="36" width="128" height="75"/>
-        <element name="PalicoArmor" positionX="-18" positionY="126" width="128" height="165"/>
+        <element name="DatabaseLoaded" positionX="-9" positionY="144" width="128" height="60"/>
     </elements>
 </model>

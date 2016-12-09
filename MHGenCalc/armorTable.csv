@@ -1,4 +1,3 @@
-_id,slot,defense,max_defense,fire_res,thunder_res,dragon_res,water_res,ice_res,hunter_type,num_slots,name,rarity
 1310721,Head,1,25,0,0,0,0,0,2,1,Leather Headgear,1
 1310722,Head,2,26,0,1,0,0,0,2,3,Chainmail Headgear,1
 1310723,Head,2,26,0,0,0,1,0,2,1,Bherna Turban,1

@@ -63,12 +63,46 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         
     }
     
+    @IBAction func startNewBuild(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.createNewSet()
+    }
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        appDelegate.addArmorPieceById(1311031)
+        appDelegate.addArmorPieceById(1376337)
+        appDelegate.addArmorPieceById(1441869)
+        appDelegate.addArmorPieceById(1507453)
+        appDelegate.addArmorPieceById(1572902)
+        //print(appDelegate.currentSetArr[0])
+        print(appDelegate.saveSet(name: "test2"))
+//        _ = appDelegate.loadExistingSet(name: "test1")
+        //print(set.legs!)
+        //print(set.arms!)
+        //appDelegate.totalStats(build: set)
+        
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
+        
+        do {
+            let results = try! managedContext.fetch(fetchRequest)
+            let buildsList = results as! [Builds]
+            self.namesSaved.removeAll()
+            for build in buildsList {
+                self.namesSaved.append(build.setName as! String)
+            }
+        }
+        self.savedTable.reloadData()
+        
         
         humanPalico.setTitle("Hunter", forSegmentAt: 0)
         
@@ -77,26 +111,26 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         
         savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        let palText = "CATCATCAT"
-        self.namesSavedPal.append(palText)
-        let textField = "Wheee"
-        self.namesSaved.append(textField)
-        let text2 = "asasas"
-        self.namesSaved.append(text2)
-        let text3 = "sasdasdasds"
-        self.namesSaved.append(text3)
-        let text4 = "asdads"
-        self.namesSaved.append(text4)
-        let text5 = "i dunno"
-        self.namesProgress.append(text5)
-        let text6 = "yeah!!!"
-        self.namesProgressPal.append(text6)
+        //        let palText = "CATCATCAT"
+        //        self.namesSavedPal.append(palText)
+        //        let textField = "Wheee"
+        //        self.namesSaved.append(textField)
+        //        let text2 = "asasas"
+        //        self.namesSaved.append(text2)
+        //        let text3 = "sasdasdasds"
+        //        self.namesSaved.append(text3)
+        //        let text4 = "asdads"
+        //        self.namesSaved.append(text4)
+        //        let text5 = "i dunno"
+        //        self.namesProgress.append(text5)
+        //        let text6 = "yeah!!!"
+        //        self.namesProgressPal.append(text6)
         self.savedTable.reloadData()
         
-        savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         progressTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        //let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         //appDelegate.addArmorPieceById(1311031)
         //appDelegate.addArmorPieceById(1376337)
@@ -105,7 +139,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         //appDelegate.addArmorPieceById(1572902)
        
         
-        let managedContext = appDelegate.managedObjectContext
+        //let managedContext = appDelegate.managedObjectContext
         
         //let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
         //let person = Person(entity: entity!, insertInto: managedContext)
@@ -119,17 +153,17 @@ class FirstViewController: UIViewController, UITableViewDataSource {
           print("Could not save \(error), \(error.userInfo)")
     }*/
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
-        
-        do {
-            let results =
-             try managedContext.fetch(fetchRequest)
-            builds = results as! [Builds]
-            
-            
-            
-           for b in builds
-           {
+//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
+//        
+//        do {
+//            let results =
+//             try managedContext.fetch(fetchRequest)
+//            builds = results as! [Builds]
+//            
+//            
+//            
+//           for b in builds
+//           {
                 /*if saved build{
                     if human build{
                         self.namesSaved.append(b.name!)
@@ -150,17 +184,17 @@ class FirstViewController: UIViewController, UITableViewDataSource {
  
             */
             
-            }
-            
-           self.savedTable.reloadData()
-           self.progressTable.reloadData()
-            
-            
-                
+//            }
         
-       } catch let error as NSError {
-        print("fetch or save failed \(error), \(error.userInfo)")
-       }
+//           self.savedTable.reloadData()
+//           self.progressTable.reloadData()
+//            
+//            
+//                
+//        
+//       } catch let error as NSError {
+//        print("fetch or save failed \(error), \(error.userInfo)")
+//       }
     }
 
     //Delete function
@@ -344,7 +378,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                 controller.passedValue = namesSaved[indexPath.row]
                 let appDelegate =
                     UIApplication.shared.delegate as! AppDelegate
-                //_ = appDelegate.loadExistingSet(name: controller.passedValue!)
+                _ = appDelegate.loadExistingSet(name: controller.passedValue!)
             }
             
         }

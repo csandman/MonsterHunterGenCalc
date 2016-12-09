@@ -27,26 +27,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let managedContext = self.managedObjectContext
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
-        let results = try! managedContext.fetch(fetchRequest)
-        self.armors = results as! [Armor]
-        let palicoFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PalicoArmor")
-        let palicoResults = try! managedContext.fetch(palicoFetchRequest)
-        self.palicoArmors = palicoResults as! [PalicoArmor]
         
-        let db = self.preloadDb()
-        let lines = db.components(separatedBy: "\n")
-        for line in lines {
-            self.saveArmor(line: line)
+        let initialFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "DatabaseLoaded")
+        let initialResults = try! managedContext.fetch(initialFetchRequest)
+        let initArr = initialResults as! [DatabaseLoaded]
+        if (initArr.count == 0) {
+            let entity =  NSEntityDescription.entity(forEntityName: "DatabaseLoaded", in:managedContext)
+            let isLoaded = DatabaseLoaded(entity: entity!, insertInto: managedContext)
+            isLoaded.name = "loaded"
+            try! managedContext.save()
+            
+            let db = self.preloadDb()
+            let lines = db.components(separatedBy: "\n")
+            for line in lines {
+                self.saveArmor(line: line)
+            }
+            let palicoDb = self.preloadPalicoDb()
+            let palicoLines = palicoDb.components(separatedBy: "\n")
+            for line in palicoLines {
+                self.savePalicoArmor(line: line)
+            }
+        } else {
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let results = try! managedContext.fetch(fetchRequest)
+            self.armors = results as! [Armor]
+            let palicoFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PalicoArmor")
+            let palicoResults = try! managedContext.fetch(palicoFetchRequest)
+            self.palicoArmors = palicoResults as! [PalicoArmor]
         }
-        let palicoDb = self.preloadPalicoDb()
-        let palicoLines = palicoDb.components(separatedBy: "\n")
-        for line in palicoLines {
-            self.savePalicoArmor(line: line)
-        }
+        
         for armor in palicoArmors {
             print (armor.name! as String)
+            print ("")
         }
+        for armor in armors {
+            print (armor.name! as String)
+            print ("")
+        }
+        
         
         
         //let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
@@ -163,39 +181,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func saveArmor(line: String)
     {
         let fields = line.components(separatedBy: ",")
-        
-        if (self.lookupPalicoArmor(name: fields[11]) == nil) {
-            let managedContext = self.managedObjectContext
-            
-            let entity =  NSEntityDescription.entity(forEntityName: "Armor", in:managedContext)
-            let armor = Armor(entity: entity!, insertInto: managedContext)
-            
-            
-            
-            armor.name = fields[11]
-            armor.id = Int(fields[0]) as NSNumber?
-            armor.slot = fields[1]
-            armor.defense = Int(fields[2]) as NSNumber?
-            armor.max_defense = Int(fields[3]) as NSNumber?
-            armor.fire_res = Int(fields[4]) as NSNumber?
-            armor.thunder_res = Int(fields[5]) as NSNumber?
-            armor.dragon_res = Int(fields[6]) as NSNumber?
-            armor.water_res = Int(fields[7]) as NSNumber?
-            armor.ice_res = Int(fields[8]) as NSNumber?
-            armor.hunter_type = Int(fields[9]) as NSNumber?
-            armor.num_slots = Int(fields[10]) as NSNumber?
-            armor.rarity = Int(fields[12]) as NSNumber?
-            
-            do {
-                try managedContext.save()
-                armors.append(armor)
-            } catch let error as NSError  {
-                print("Could not save \(error), \(error.userInfo)")
+        if (fields.count == 13) {
+            if (self.lookupArmor(name: fields[11]) == nil) {
+                let managedContext = self.managedObjectContext
+                
+                let entity =  NSEntityDescription.entity(forEntityName: "Armor", in:managedContext)
+                let armor = Armor(entity: entity!, insertInto: managedContext)
+                
+                
+                
+                armor.name = fields[11]
+                armor.id = Int(fields[0]) as NSNumber?
+                armor.slot = fields[1]
+                armor.defense = Int(fields[2]) as NSNumber?
+                armor.max_defense = Int(fields[3]) as NSNumber?
+                armor.fire_res = Int(fields[4]) as NSNumber?
+                armor.thunder_res = Int(fields[5]) as NSNumber?
+                armor.dragon_res = Int(fields[6]) as NSNumber?
+                armor.water_res = Int(fields[7]) as NSNumber?
+                armor.ice_res = Int(fields[8]) as NSNumber?
+                armor.hunter_type = Int(fields[9]) as NSNumber?
+                armor.num_slots = Int(fields[10]) as NSNumber?
+                armor.rarity = Int(fields[12]) as NSNumber?
+                
+                do {
+                    try managedContext.save()
+                    armors.append(armor)
+                } catch let error as NSError  {
+                    print("Could not save \(error), \(error.userInfo)")
+                }
+                self.displayStrings.append(armor.name!)
+                
+            } else {
+                //print(self.lookupArmor(name: fields[11]))
             }
-            self.displayStrings.append(armor.name!)
-            
-        } else {
-            //print(self.lookupArmor(name: fields[11]))
         }
     }
     
@@ -204,7 +223,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         let fields = line.components(separatedBy: ",")
         
-        if (self.lookupArmor(name: fields[0]) == nil && fields.count == 8) {
+        if (self.lookupPalicoArmor(name: fields[0]) == nil && fields.count == 8) {
             let managedContext = self.managedObjectContext
             
             let entity =  NSEntityDescription.entity(forEntityName: "PalicoArmor", in:managedContext)
@@ -305,7 +324,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.addArmorPiece(armor)
     }
     
-    func saveSet() -> Builds {
+    func saveSet(name: String) -> Builds {
         let managedContext = self.managedObjectContext
         let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
         
@@ -313,39 +332,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if (tempSet.setName == "" || tempSet.setName == nil ) {
             
-            //            let alert = UIAlertController(title: "Enter Set Name",
-            //                                          message: "Enter a name for the set",
-            //                                          preferredStyle: .alert)
-            //            let addTitleAction = UIAlertAction(title: "AddSetName",
-            //                                               style: .default,
-            //                                               handler: { (action:UIAlertAction) -> Void in
-            //
-            //                                                let name = alert.textFields![0].text
-            //                                                print(name)
-            //                                                build.setName = name as NSString?
-            //            })
-            //
-            //            let cancelAction = UIAlertAction(title: "Cancel",
-            //                                             style: .default,
-            //                                             handler: { (action: UIAlertAction) -> Void in })
-            //
-            //            alert.addTextField {
-            //                (textField: UITextField) -> Void in
-            //            }
-            //
-            //
-            //            alert.addAction(addTitleAction)
-            //            alert.addAction(cancelAction)
-            //
-            //            present(alert,
-            //                    animated: true,
-            //                    completion: nil)
-            
-            
-            
             //save as new set
-            tempSet.setName = "test1"
-            
+            tempSet.setName = name as NSString
             do {
                 try managedContext.save()
                 self.builds.append(tempSet)
