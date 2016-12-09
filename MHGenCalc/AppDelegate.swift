@@ -371,6 +371,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func totalStats(build: Builds) -> Dictionary<String, Int>{
+//        let managedContext = self.managedObjectContext
+//        let entity =  NSEntityDescription.entity(forEntityName: "Armor", in:managedContext)
+//        let dummyArmor = Armor(entity: entity!, insertInto: managedContext)
+//        
+//        dummyArmor.name = "Dummy Armor"
+//        dummyArmor.id = 00000000
+//        dummyArmor.defense = 0 as NSNumber?
+//        dummyArmor.max_defense = 0 as NSNumber?
+//        dummyArmor.fire_res = 0 as NSNumber?
+//        dummyArmor.thunder_res = 0 as NSNumber?
+//        dummyArmor.dragon_res = 0 as NSNumber?
+//        dummyArmor.water_res = 0 as NSNumber?
+//        dummyArmor.ice_res = 0 as NSNumber?
+        
+        
         let headId = build.head as! Int
         let chestId = build.chest as! Int
         let legsId = build.legs as! Int

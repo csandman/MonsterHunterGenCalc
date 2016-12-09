@@ -277,6 +277,7 @@
 				TargetAttributes = {
 					3F88F1AE1DDE4D080044EE49 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = F5D895GB5K;
 						ProvisioningStyle = Automatic;
 					};
 					3F88F1C41DDE4D080044EE49 = {
@@ -525,6 +526,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = F5D895GB5K;
 				INFOPLIST_FILE = MHGenCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UVM.MHGenCalc;
@@ -538,6 +541,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = F5D895GB5K;
 				INFOPLIST_FILE = MHGenCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UVM.MHGenCalc;

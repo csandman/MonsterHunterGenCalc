@@ -31,6 +31,24 @@ class ArmorResultViewController: UIViewController {
     @IBAction func addArmorToSet(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.addArmorPieceByName(self.armorValue!)
+        let alert = UIAlertController(title: "Armor Added",
+                                      message: "You have added this item to your current set",
+                                      preferredStyle: .alert)
+        let searchAction = UIAlertAction(title: "OK",
+                                         style: .default,
+                                         handler: { (action:UIAlertAction) -> Void in
+                                            
+                                            
+        })
+        
+        
+        
+        alert.addAction(searchAction)
+        
+        present(alert,
+                animated: true,
+                completion: nil)
+    
     }
     
     
