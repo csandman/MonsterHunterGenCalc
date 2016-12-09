@@ -17,6 +17,10 @@ class SecondViewController: UIViewController {
 
     @IBOutlet weak var inProgressLabel: UITextField!
     
+    @IBAction func loadStats(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.totalStats(build: appDelegate.currentSetArr[0])
+    }
     @IBAction func saveBuild(_ sender: Any) {
         print("working")
         

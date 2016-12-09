@@ -324,6 +324,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.addArmorPiece(armor)
     }
     
+    func addArmorPieceByName(_ armorName: String) {
+        
+        let armorFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let predicate = NSPredicate(format: "%K == %@", "name", armorName)
+        armorFetch.predicate = predicate
+        let fetchedArmor = try! self.managedObjectContext.fetch(armorFetch) as! [Armor]
+        let armor = fetchedArmor[0]
+        self.addArmorPiece(armor)
+    }
+    
+    
     func saveSet(name: String) -> Builds {
         let managedContext = self.managedObjectContext
         let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
@@ -350,6 +361,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("Could not save \(error), \(error.userInfo)")
             }
         }
+        print(tempSet.arms ?? "arms")
+        print(tempSet.chest ?? "chest")
+        print(tempSet.head ?? "head")
+        print(tempSet.legs ?? "legs")
+        print(tempSet.waist ?? "waist")
         
         return tempSet
     }

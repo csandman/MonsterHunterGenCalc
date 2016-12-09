@@ -568,6 +568,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="loadStats:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="oZo-N4-NSV"/>
                                             <segue destination="EA7-0O-fGq" kind="show" id="RGl-kX-aMc"/>
                                         </connections>
                                     </button>
@@ -985,6 +986,9 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addArmorToSet:" destination="fb8-hI-3ln" eventType="touchUpInside" id="QzM-7Y-wZ1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.08235294118" green="0.08235294118" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>

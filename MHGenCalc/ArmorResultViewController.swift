@@ -18,6 +18,10 @@ class ArmorResultViewController: UIViewController {
     @IBOutlet weak var armorLabel: UILabel!
     @IBOutlet weak var inProgressLabel: UITextField!
     
+    @IBAction func addArmorToSet(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.addArmorPieceByName(self.armorValue!)
+    }
     
     @IBAction func PalicoInProgress(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0{
