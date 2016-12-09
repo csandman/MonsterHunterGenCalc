@@ -12,6 +12,13 @@ class SecondViewController: UIViewController {
     
     var passedValue: String?
     
+    //chris, outlets for the labels that should appear when an armor slot is filled in
+    @IBOutlet weak var headFilledLabel: UILabel!
+    @IBOutlet weak var chestFilledLabel: UILabel!
+    @IBOutlet weak var armsFilledLabel: UILabel!
+    @IBOutlet weak var waistFilledLabel: UILabel!
+    @IBOutlet weak var legsFilledLabel: UILabel!
+    
     @IBAction func addArmorInProgress(_ sender: UIButton) {
     }
 
