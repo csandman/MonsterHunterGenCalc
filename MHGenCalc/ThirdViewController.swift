@@ -103,12 +103,12 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
 //        appDelegate.addArmorPieceById(1441869)
 //        appDelegate.addArmorPieceById(1507453)
 //        appDelegate.addArmorPieceById(1572902)
-        print(appDelegate.currentSetArr[0])
-        print(appDelegate.saveSet())
-        let set = appDelegate.loadExistingSet(name: "test1")
-        print(set.legs!)
-        print(set.arms!)
-        appDelegate.totalStats(build: set)
+        //print(appDelegate.currentSetArr[0])
+        //print(appDelegate.saveSet())
+        //let set = appDelegate.loadExistingSet(name: "test1")
+        //print(set.legs!)
+        //print(set.arms!)
+        //appDelegate.totalStats(build: set)
         
         
         
@@ -128,5 +128,23 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
         cell!.textLabel!.text = displayStrings[indexPath.row]
         
         return cell!
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "searchSegue" {
+            
+            /*let selectedIndex = sender as! NSIndexPath
+             let currentCell =  savedTable.cellForRow(at: selectedIndex as IndexPath)! as UITableViewCell
+             self.valueToPass = currentCell.textLabel!.text!*/
+            
+            if let indexPath = self.tableView.indexPathForSelectedRow{
+                let controller = segue.destination as! ArmorResultViewController
+                controller.armorValue = displayStrings[indexPath.row]
+                let appDelegate =
+                    UIApplication.shared.delegate as! AppDelegate
+                //_ = appDelegate.loadExistingSet(name: controller.passedValue!)
+            }
+            
+        }
     }
 }

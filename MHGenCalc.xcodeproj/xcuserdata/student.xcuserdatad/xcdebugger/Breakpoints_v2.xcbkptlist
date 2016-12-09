@@ -136,13 +136,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MHGenCalc/ThirdViewController.swift"
-            timestampString = "502763866.956679"
+            timestampString = "502932323.592312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "ThirdViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

@@ -344,7 +344,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                 controller.passedValue = namesSaved[indexPath.row]
                 let appDelegate =
                     UIApplication.shared.delegate as! AppDelegate
-                _ = appDelegate.loadExistingSet(name: controller.passedValue!)
+                //_ = appDelegate.loadExistingSet(name: controller.passedValue!)
             }
             
         }
