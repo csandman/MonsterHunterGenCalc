@@ -19,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Fxy-uY-4l9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NX7-zN-cVa">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gE-2l-zDd">
-                                <rect key="frame" x="16" y="422" width="288" height="25"/>
+                                <rect key="frame" x="16" y="422" width="288" height="30"/>
                                 <color key="backgroundColor" red="0.015686274510000001" green="0.75294117650000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 <state key="normal" title="Advanced Search Options">
                                     <color key="titleColor" red="0.99473684210000002" green="0.98947368420000004" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
@@ -102,17 +102,17 @@
                         <viewControllerLayoutGuide type="bottom" id="13E-wu-r92"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WZm-6d-M8h">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAA-NI-Kr4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="410"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="415"/>
                                 <connections>
                                     <segue destination="cJp-DN-CCj" kind="embed" id="9YE-JL-WUE"/>
                                 </connections>
                             </containerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="tEy-UZ-CSs">
-                                <rect key="frame" x="141" y="423" width="39" height="32"/>
+                                <rect key="frame" x="141" y="423" width="39" height="37"/>
                                 <color key="backgroundColor" red="0.015686274510000001" green="0.75294117650000003" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                             </pageControl>
                         </subviews>
@@ -897,7 +897,7 @@
                         <viewControllerLayoutGuide type="bottom" id="TMA-N5-F51"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="edi-6F-RWp">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fill in with armor name for cell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS2-hl-AlH">
@@ -969,6 +969,19 @@
                                 <rect key="frame" x="29" y="195" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZt-ue-g6y">
+                                <rect key="frame" x="16" y="409" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.29411764709999999" green="0.74901960779999999" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.99473684210000002" green="0.98947368420000004" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.08235294118" green="0.08235294118" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
@@ -1131,7 +1144,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="JOg-Lo-arT"/>
-        <segue reference="XqP-az-g3g"/>
+        <segue reference="jHN-IY-ZmB"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274510000001" green="0.75294117650000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
 </document>
