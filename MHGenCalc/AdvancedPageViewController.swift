@@ -17,8 +17,7 @@ class AdvancedPageViewController: UIPageViewController {
         return [self.newColoredViewController("Advanced1"),
                 self.newColoredViewController("Advanced2"),
                 self.newColoredViewController("Advanced3"),
-                self.newColoredViewController("Advanced4"),
-                self.newColoredViewController("Advanced5")]
+                self.newColoredViewController("Advanced4")]
     }()
     
     

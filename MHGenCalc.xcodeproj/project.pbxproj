@@ -40,7 +40,6 @@
 		3FB3160F1DF9E9AC0036D611 /* Filter2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3160E1DF9E9AC0036D611 /* Filter2ViewController.swift */; };
 		3FB316121DF9E9BF0036D611 /* Filter3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB316111DF9E9BF0036D611 /* Filter3ViewController.swift */; };
 		3FB316141DF9E9EC0036D611 /* Filter4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB316131DF9E9EC0036D611 /* Filter4ViewController.swift */; };
-		3FB316161DF9E9FA0036D611 /* Filter5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB316151DF9E9FA0036D611 /* Filter5ViewController.swift */; };
 		3FC6BBF51DF9C452007809F3 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC6BBF41DF9C452007809F3 /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,7 +100,6 @@
 		3FB3160E1DF9E9AC0036D611 /* Filter2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter2ViewController.swift; sourceTree = "<group>"; };
 		3FB316111DF9E9BF0036D611 /* Filter3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter3ViewController.swift; sourceTree = "<group>"; };
 		3FB316131DF9E9EC0036D611 /* Filter4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter4ViewController.swift; sourceTree = "<group>"; };
-		3FB316151DF9E9FA0036D611 /* Filter5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter5ViewController.swift; sourceTree = "<group>"; };
 		3FC6BBF41DF9C452007809F3 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterViewController.swift; path = ../FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,7 +177,6 @@
 				3FB3160E1DF9E9AC0036D611 /* Filter2ViewController.swift */,
 				3FB316111DF9E9BF0036D611 /* Filter3ViewController.swift */,
 				3FB316131DF9E9EC0036D611 /* Filter4ViewController.swift */,
-				3FB316151DF9E9FA0036D611 /* Filter5ViewController.swift */,
 				3F88F1B81DDE4D080044EE49 /* Main.storyboard */,
 				3F298B341DFA5F1A00C17C8E /* StatsViewController.swift */,
 				3F298B2C1DFA227700C17C8E /* ArmorSearchViewController.swift */,
@@ -352,7 +349,6 @@
 				3F34E59A1DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld in Sources */,
 				3F34E5A31DEF51190002BD90 /* Armor.swift in Sources */,
 				3F88F1B71DDE4D080044EE49 /* SecondViewController.swift in Sources */,
-				3FB316161DF9E9FA0036D611 /* Filter5ViewController.swift in Sources */,
 				3F0F24FE1DFA139F0084DF34 /* PalicoArmor+CoreDataProperties.swift in Sources */,
 				3F0F25021DFA40190084DF34 /* DatabaseLoaded.swift in Sources */,
 				3F88F1B31DDE4D080044EE49 /* AppDelegate.swift in Sources */,

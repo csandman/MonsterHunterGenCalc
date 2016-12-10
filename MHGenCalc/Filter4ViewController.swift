@@ -13,6 +13,7 @@ class Filter4ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var defenseLabel: UILabel!
     @IBOutlet weak var minValueField: UITextField!
+    @IBOutlet weak var maxValueField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
@@ -22,9 +23,35 @@ class Filter4ViewController: UIViewController, UITextFieldDelegate {
         
     }
 
-    @IBAction func resultDisplay(_ sender: Any) {
-        resultLabel.text = minValueField.text
+    @IBAction func checkValue(_ sender: Any) {
+        var minValueInt = Int(minValueField.text!)
+        var maxValueInt = Int(maxValueField.text!)
+        
+        if (minValueInt! < 1 || minValueInt! > 100)
+        {
+            let alertController = UIAlertController(title: "Error", message: "Min value must be between 1 and 100.", preferredStyle: UIAlertControllerStyle.alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+                print("OK")
+            }
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        else if (maxValueInt! < minValueInt! || maxValueInt! > 100)
+        {
+            let alertController = UIAlertController(title: "Error", message: "Max value must be between min value and 100.", preferredStyle: UIAlertControllerStyle.alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+                print("OK")
+            }
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        else
+        {
+            resultLabel.text = "sick"
+        }
     }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
