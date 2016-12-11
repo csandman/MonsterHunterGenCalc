@@ -826,6 +826,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="generateSetId:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="PJ8-hU-6KN"/>
                                     <action selector="loadStats:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="WxT-wV-tqQ"/>
                                 </connections>
                             </button>
@@ -1186,7 +1187,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Olc-9d-sOp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="search" id="bNY-pX-NiK"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7LF-KO-vkv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="7LF-KO-vkv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
@@ -1208,7 +1209,7 @@
                     <tabBarItem key="tabBarItem" title="Builds" image="builds" id="xNA-KU-2NM"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zVV-zn-mZv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="zVV-zn-mZv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>

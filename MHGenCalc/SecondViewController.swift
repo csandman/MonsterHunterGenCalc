@@ -26,6 +26,36 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var waistFilledLabel: UILabel!
     @IBOutlet weak var legsFilledLabel: UILabel!
     
+    @IBAction func generateSetId(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let setId = appDelegate.outputString()
+        let alert = UIAlertController(title: "ID Generated",
+                                      message: "Copy this code to share your current set with friends/n"+setId,
+                                      preferredStyle: .alert)
+        let searchAction = UIAlertAction(title: "Copy",
+                                         style: .default,
+                                         handler: { (action:UIAlertAction) -> Void in
+                                            
+                                            UIPasteboard.general.string = setId
+                                            NotificationCenter.default.post(name: .reload, object: nil)
+                                            //self.performSegue(withIdentifier: "saveCurrentSegue", sender: nil)
+                                            
+        })
+        
+        
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .default,
+                                         handler: { (action: UIAlertAction) -> Void in })
+        
+        
+        alert.addAction(searchAction)
+        alert.addAction(cancelAction)
+        
+        present(alert,
+                animated: true,
+                completion: nil)
+    }
     @IBAction func addArmorInProgress(_ sender: UIButton) {
     }
 
