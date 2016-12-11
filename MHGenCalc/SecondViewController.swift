@@ -6,8 +6,15 @@
 //  Copyright © 2016 Student. All rights reserved.
 //
 
+//  TODO**
+// If you make a build thru save stats go back without clicking save build, it still saves the build maybe the armor
+// Edit needs to be off before you click start a new build
+//
 import UIKit
 
+extension Notification.Name {
+    static let reload = Notification.Name("reload")
+}
 class SecondViewController: UIViewController {
     
     var passedValue: String?
@@ -18,15 +25,52 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var armsFilledLabel: UILabel!
     @IBOutlet weak var waistFilledLabel: UILabel!
     @IBOutlet weak var legsFilledLabel: UILabel!
-    
+
+    @IBOutlet weak var armorInProgressName: UILabel!
     @IBAction func addArmorInProgress(_ sender: UIButton) {
     }
 
     @IBOutlet weak var inProgressLabel: UITextField!
     
     @IBAction func loadStats(_ sender: Any) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        //let appDelegate = UIApplication.shared.delegate as! AppDelegate
         //appDelegate.totalStats(build: appDelegate.currentSetArr[0])
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let setName = appDelegate.currentSetArr[0].setName
+        
+        if (setName == "" || setName == nil) {
+            let alert = UIAlertController(title: "Set Name",
+                                          message: "Please enter a name for the set first",
+                                          preferredStyle: .alert)
+            let searchAction = UIAlertAction(title: "Save",
+                                             style: .default,
+                                             handler: { (action:UIAlertAction) -> Void in
+                                                
+                                                
+                                                let name = alert.textFields![0].text
+                                                let
+                                                
+                                                _ = appDelegate.saveSet(name: name!)
+                                                NotificationCenter.default.post(name: .reload, object: nil)
+                                                self.performSegue(withIdentifier: "statSegue", sender: nil)
+                                                
+            })
+            
+            
+            
+            alert.addTextField {
+                (textField: UITextField) -> Void in
+            }
+            
+            
+            alert.addAction(searchAction)
+            
+            present(alert,
+                    animated: true,
+                    completion: nil)
+        }
+        
     }
     @IBAction func saveBuild(_ sender: Any) {
         print("working")
@@ -44,9 +88,11 @@ class SecondViewController: UIViewController {
                                             
                                             
                                             let name = alert.textFields![0].text
-                                            
-                                            
+                                            let armorInPLabel = self.armorInProgressName.name
                                             _ = appDelegate.saveSet(name: name!)
+                                            
+                                        NotificationCenter.default.post(name: .reload, object: nil)
+                                            //self.performSegue(withIdentifier: "saveCurrentSegue", sender: nil)
                                             
         })
         
@@ -71,6 +117,8 @@ class SecondViewController: UIViewController {
                                              handler: { (action:UIAlertAction) -> Void in
                                                 
                                                 _ = appDelegate.saveSet(name: setName as! String)
+                                                NotificationCenter.default.post(name: .reload, object: nil)
+                                                //self.performSegue(withIdentifier: "saveCurrentSegue", sender: nil)
                                                 
             })
             
@@ -80,9 +128,13 @@ class SecondViewController: UIViewController {
             present(alert,
                     animated: true,
                     completion: nil)
+            
         }
+        //self.performSegue(withIdentifier: "saveCurrentSegue", sender: nil)
         
     }
+    
+    
     
     @IBAction func PalicoInProgress(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0{

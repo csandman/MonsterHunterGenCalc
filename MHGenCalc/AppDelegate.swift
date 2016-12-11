@@ -385,7 +385,112 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        dummyArmor.water_res = 0 as NSNumber?
 //        dummyArmor.ice_res = 0 as NSNumber?
         
+        //var totalArr = [String: Int]()
         
+        var total_defense = 0
+        var total_max_defense = 0
+        var total_dragon_res = 0
+        var total_fire_res = 0
+        var total_thunder_res = 0
+        var total_ice_res = 0
+        var total_water_res = 0
+      
+        if(build.head != nil){
+            let headId = build.head as! Int
+            
+            let headFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let headPredicate = NSPredicate(format: "%K == %d", "id", headId)
+            headFetch.predicate = headPredicate
+            var fetchedHead = try! self.managedObjectContext.fetch(headFetch) as! [Armor]
+            let head = fetchedHead[0]
+            
+            total_defense += Int(head.defense!)
+            total_max_defense += Int(head.max_defense!)
+            total_dragon_res += Int(head.dragon_res!)
+            total_fire_res += Int(head.fire_res!)
+            total_thunder_res += Int(head.thunder_res!)
+            total_ice_res += Int(head.ice_res!)
+            total_water_res += Int(head.water_res!)
+            
+        }
+        
+        if(build.chest != nil){
+            
+            let chestId = build.chest as! Int
+            
+            let chestFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let chestPredicate = NSPredicate(format: "%K == %d", "id", chestId)
+            chestFetch.predicate = chestPredicate
+            var fetchedChest = try! self.managedObjectContext.fetch(chestFetch) as! [Armor]
+            let chest = fetchedChest[0]
+            
+            total_defense += Int(chest.defense!)
+            total_max_defense += Int(chest.max_defense!)
+            total_dragon_res += Int(chest.dragon_res!)
+            total_fire_res += Int(chest.fire_res!)
+            total_thunder_res += Int(chest.thunder_res!)
+            total_ice_res += Int(chest.ice_res!)
+            total_water_res += Int(chest.water_res!)
+        }
+        
+        if(build.arms != nil){
+            
+            let armsId = build.arms as! Int
+            
+            let armsFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let armsPredicate = NSPredicate(format: "%K == %d", "id", armsId)
+            armsFetch.predicate = armsPredicate
+            var fetchedArms = try! self.managedObjectContext.fetch(armsFetch) as! [Armor]
+            let arms = fetchedArms[0]
+            
+            total_defense += Int(arms.defense!)
+            total_max_defense += Int(arms.max_defense!)
+            total_dragon_res += Int(arms.dragon_res!)
+            total_fire_res += Int(arms.fire_res!)
+            total_thunder_res += Int(arms.thunder_res!)
+            total_ice_res += Int(arms.ice_res!)
+            total_water_res += Int(arms.water_res!)
+        }
+        
+        if(build.legs != nil){
+            
+            let legsId = build.legs as! Int
+            
+            let legsFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let legsPredicate = NSPredicate(format: "%K == %d", "id", legsId)
+            legsFetch.predicate = legsPredicate
+            var fetchedLegs = try! self.managedObjectContext.fetch(legsFetch) as! [Armor]
+            let legs = fetchedLegs[0]
+            
+            total_defense += Int(legs.defense!)
+            total_max_defense += Int(legs.max_defense!)
+            total_dragon_res += Int(legs.dragon_res!)
+            total_fire_res += Int(legs.fire_res!)
+            total_thunder_res += Int(legs.thunder_res!)
+            total_ice_res += Int(legs.ice_res!)
+            total_water_res += Int(legs.water_res!)
+        }
+        
+        if(build.waist != nil){
+            
+            let waistId = build.waist as! Int
+            
+            let waistFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let waistPredicate = NSPredicate(format: "%K == %d", "id", waistId)
+            waistFetch.predicate = waistPredicate
+            var fetchedWaist = try! self.managedObjectContext.fetch(waistFetch) as! [Armor]
+            let waist = fetchedWaist[0]
+            
+            total_defense += Int(waist.defense!)
+            total_max_defense += Int(waist.max_defense!)
+            total_dragon_res += Int(waist.dragon_res!)
+            total_fire_res += Int(waist.fire_res!)
+            total_thunder_res += Int(waist.thunder_res!)
+            total_ice_res += Int(waist.ice_res!)
+            total_water_res += Int(waist.water_res!)
+            
+        }
+       /* if((build.head != nil) && (build.chest != nil) && (build.arms != nil) && (build.legs != nil) && (build.waist != nil)){
         let headId = build.head as! Int
         let chestId = build.chest as! Int
         let legsId = build.legs as! Int
@@ -431,8 +536,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let total_fire_res = Int(head.fire_res!) + Int(chest.fire_res!) + Int(arms.fire_res!) + Int(legs.fire_res!) + Int(waist.fire_res!)
         let total_thunder_res = Int(head.thunder_res!) + Int(chest.thunder_res!) + Int(arms.thunder_res!) + Int(legs.thunder_res!) + Int(waist.thunder_res!)
         let total_water_res = Int(head.water_res!) + Int(chest.water_res!) + Int(arms.water_res!) + Int(legs.water_res!) + Int(waist.water_res!)
+       let totalArr = ["defense":total_defense,"max_defense":total_max_defense,"dragon_res":total_dragon_res,"ice_res":total_ice_res,"fire_res":total_fire_res,"thunder_res":total_thunder_res,"water_res":total_water_res]
+        }
+        */
+        
         let totalArr = ["defense":total_defense,"max_defense":total_max_defense,"dragon_res":total_dragon_res,"ice_res":total_ice_res,"fire_res":total_fire_res,"thunder_res":total_thunder_res,"water_res":total_water_res]
         return(totalArr)
+        
     }
     
 }

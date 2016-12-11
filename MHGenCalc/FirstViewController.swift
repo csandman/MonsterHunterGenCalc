@@ -77,7 +77,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         let managedContext = appDelegate.managedObjectContext
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData(_:)), name: .reload, object: nil)
         appDelegate.addArmorPieceById(1311031)
         appDelegate.addArmorPieceById(1376337)
         appDelegate.addArmorPieceById(1441869)
@@ -195,6 +195,10 @@ class FirstViewController: UIViewController, UITableViewDataSource {
 //       } catch let error as NSError {
 //        print("fetch or save failed \(error), \(error.userInfo)")
 //       }
+    }
+    
+    func reloadTableData(_ notification: Notification){
+        savedTable.reloadData()
     }
 
     //Delete function
@@ -403,6 +407,24 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData(_:)), name: .reload, object: nil)
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
+        
+        do {
+            let results = try! managedContext.fetch(fetchRequest)
+            let buildsList = results as! [Builds]
+            self.namesSaved.removeAll()
+            for build in buildsList {
+                self.namesSaved.append(build.setName as! String)
+            }
+        }
+        self.savedTable.reloadData()
+        
         
     }
     

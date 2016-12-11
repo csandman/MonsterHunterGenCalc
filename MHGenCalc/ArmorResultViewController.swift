@@ -14,6 +14,7 @@ class ArmorResultViewController: UIViewController {
     var armorValue: String?
     
     
+    @IBOutlet weak var armorImage: UIImageView!
 
     @IBOutlet weak var armorLabel: UILabel!
    
@@ -37,6 +38,8 @@ class ArmorResultViewController: UIViewController {
         let searchAction = UIAlertAction(title: "OK",
                                          style: .default,
                                          handler: { (action:UIAlertAction) -> Void in
+                                            
+                                            self.performSegue(withIdentifier: "searchAddSegue", sender: nil)
                                             
                                             
         })
@@ -76,6 +79,35 @@ class ArmorResultViewController: UIViewController {
                         dragonLabel.text = "\(armor.dragon_res!)"
                         waterLabel.text = "\(armor.water_res!)"
                         fireLabel.text = "\(armor.fire_res!)"
+                    
+                    var imageArmor : UIImage
+                        if(armor.slot == "Chest"){
+                            
+                            imageArmor = UIImage(named: "chest")!
+                            armorImage.image = imageArmor
+                        }
+                        else if(armor.slot == "Arms"){
+                            
+                            imageArmor = UIImage(named: "arms")!
+                            armorImage.image = imageArmor
+                        }
+                        else if(armor.slot == "Legs"){
+                            
+                            imageArmor = UIImage(named: "leg")!
+                            armorImage.image = imageArmor
+                        }
+                        else if(armor.slot == "Waist"){
+                            
+                            imageArmor = UIImage(named: "wait")!
+                            armorImage.image = imageArmor
+                                                    }
+                        else if(armor.slot == "Head"){
+                            
+                            imageArmor = UIImage(named: "Helm")!
+                            armorImage.image = imageArmor
+                        }
+                    
+
 
                 }
             }

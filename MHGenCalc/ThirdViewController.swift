@@ -16,6 +16,10 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
     var displayStrings = [String]()
     var people = [Person]()
     var armors = [Armor]()
+    
+
+    
+    
     @IBOutlet weak var tableView: UITableView!
     @IBAction func SearchFunc(sender: AnyObject) {
         let alert = UIAlertController(title: "Find Armor",
@@ -126,6 +130,54 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellSearch")
         cell!.textLabel!.textColor=UIColor.white; //changes the text color for a cell
         cell!.textLabel!.text = displayStrings[indexPath.row]
+        
+        
+    
+        
+        
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let name = displayStrings[indexPath.row]
+        do {
+            let results = try! managedContext.fetch(fetchRequest)
+            armors = results as! [Armor]
+        
+            var imageArmor : UIImage
+            for armor in armors {
+                if(name == armor.name){
+                    if(armor.slot == "Chest"){
+                   
+                         imageArmor = UIImage(named: "chest")!
+                        cell?.imageView?.image = imageArmor
+                    }
+                    if(armor.slot == "Arms"){
+                     
+                        imageArmor = UIImage(named: "arms")!
+                        cell?.imageView?.image = imageArmor
+                    }
+                    if(armor.slot == "Legs"){
+                        
+                        imageArmor = UIImage(named: "leg")!
+                        cell?.imageView?.image = imageArmor
+                    }
+                    if(armor.slot == "Waist"){
+                        
+                        imageArmor = UIImage(named: "wait")!
+                        cell?.imageView?.image = imageArmor
+                    }
+                    if(armor.slot == "Head"){
+                        
+                        imageArmor = UIImage(named: "Helm")!
+                        cell?.imageView?.image = imageArmor
+                    }
+                }
+                
+            }
+        }
         
         return cell!
     }

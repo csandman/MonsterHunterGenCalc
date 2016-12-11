@@ -32,6 +32,7 @@ class StatsViewController: UIViewController {
         
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
         let stats = appDelegate.totalStats(build: appDelegate.currentSetArr[0])
 
         totalDefenseLabel.text = String(stats["max_defense"]!)
