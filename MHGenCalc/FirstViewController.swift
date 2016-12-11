@@ -11,8 +11,10 @@ import CoreData
 
 class FirstViewController: UIViewController, UITableViewDataSource {
     
+    @IBAction func loadSetId(_ sender: Any) {
+    }
     
-    
+
     @IBOutlet weak var humanPalico: UISegmentedControl!
     
     
