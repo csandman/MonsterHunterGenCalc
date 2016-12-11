@@ -696,7 +696,7 @@
                                             <constraint firstAttribute="width" constant="50" id="JeX-6i-ZHc"/>
                                             <constraint firstAttribute="height" constant="50" id="KV9-jc-jRd"/>
                                         </constraints>
-                                        <state key="normal" title="+" image="arms30" backgroundImage="Full_Body2">
+                                        <state key="normal" title="+" image="arms30">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -810,7 +810,27 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="qhH-1v-FdI"/>
+                    <navigationItem key="navigationItem" id="qhH-1v-FdI">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="oka-YF-6Cl">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nxs-Tv-0vw">
+                                <rect key="frame" x="218" y="6" width="86" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.015686274510000001" green="0.75294117650000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Generate Set ID">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loadStats:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="WxT-wV-tqQ"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="armsFilledLabel" destination="3Il-Kx-aua" id="XaS-Zl-pdg"/>
