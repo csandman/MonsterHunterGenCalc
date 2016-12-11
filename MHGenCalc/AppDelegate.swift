@@ -544,6 +544,80 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return(totalArr)
         
     }
+    func outputString() -> String {
+        let set = self.currentSetArr[0]
+        var setString = "mhgc-"
+        if (set.head != nil) {
+            let armorInt = set.head as! Int
+            setString += String(armorInt)+"-"
+        } else {
+            setString += "0-"
+        }
+        if (set.chest != nil) {
+            let armorInt = set.chest as! Int
+            setString += String(armorInt)+"-"
+        } else {
+            setString += "0-"
+        }
+        if (set.arms != nil) {
+            let armorInt = set.arms as! Int
+            setString += String(armorInt)+"-"
+        } else {
+            setString += "0-"
+        }
+        if (set.waist != nil) {
+            let armorInt = set.waist as! Int
+            setString += String(armorInt)+"-"
+        } else {
+            setString += "0-"
+        }
+        if (set.legs != nil) {
+            let armorInt = set.legs as! Int
+            setString += String(armorInt)
+        } else {
+            setString += "0"
+        }
+        print(setString)
+        return setString
+    }
+    func parseOutputString(setString: String) -> Builds {
+        print(setString)
+        let setFields = setString.components(separatedBy: "-")
+        let headCode = Int(setFields[1])
+        let chestCode = Int(setFields[2])
+        let armsCode = Int(setFields[3])
+        let waistCode = Int(setFields[4])
+        let legsCode = Int(setFields[5])
+        if (headCode == 0) {
+            self.currentSetArr[0].head = nil
+        } else {
+            self.currentSetArr[0].head = (headCode! as NSNumber)
+        }
+        if (chestCode == 0) {
+            self.currentSetArr[0].chest = nil
+        } else {
+            self.currentSetArr[0].chest = (chestCode! as NSNumber)
+        }
+        if (armsCode == 0) {
+            self.currentSetArr[0].arms = nil
+        } else {
+            self.currentSetArr[0].arms = (armsCode! as NSNumber)
+        }
+        if (waistCode == 0) {
+            self.currentSetArr[0].waist = nil
+        } else {
+            self.currentSetArr[0].waist = (waistCode! as NSNumber)
+        }
+        if (legsCode == 0) {
+            self.currentSetArr[0].legs = nil
+        } else {
+            self.currentSetArr[0].legs = (legsCode! as NSNumber)
+        }
+        
+        self.currentSetArr[0].setName = ""
+        print(self.currentSetArr[0])
+        return self.currentSetArr[0]
+    }
     
 }
 
