@@ -609,8 +609,8 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Full_Body" translatesAutoresizingMaskIntoConstraints="NO" id="iQH-Wq-SRm">
-                                <rect key="frame" x="35" y="95" width="250" height="250"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="Full_Body2" translatesAutoresizingMaskIntoConstraints="NO" id="rwP-hN-D8W">
+                                <rect key="frame" x="20" y="71" width="281" height="310"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Pg-RU-cdu">
                                 <rect key="frame" x="16" y="374" width="288" height="70"/>
@@ -696,7 +696,7 @@
                                             <constraint firstAttribute="width" constant="50" id="JeX-6i-ZHc"/>
                                             <constraint firstAttribute="height" constant="50" id="KV9-jc-jRd"/>
                                         </constraints>
-                                        <state key="normal" title="+" image="arms30">
+                                        <state key="normal" title="+" image="arms30" backgroundImage="Full_Body2">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -794,16 +794,16 @@
                         <constraints>
                             <constraint firstItem="QrR-yR-tmf" firstAttribute="top" secondItem="mPa-DS-63a" secondAttribute="bottom" constant="14" id="0vz-q1-jGy"/>
                             <constraint firstItem="mPa-DS-63a" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="3T2-Cf-827"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="rwP-hN-D8W" secondAttribute="bottom" constant="79" id="4eA-ag-Cx9"/>
                             <constraint firstItem="mPa-DS-63a" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="11" id="9CV-to-KQx"/>
                             <constraint firstItem="9Pg-RU-cdu" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Asn-rP-yjF"/>
-                            <constraint firstItem="iQH-Wq-SRm" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="95" id="Cch-wR-Du6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iQH-Wq-SRm" secondAttribute="trailing" constant="19" id="H7E-R7-P1d"/>
+                            <constraint firstItem="rwP-hN-D8W" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="71" id="BlT-fw-SYz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rwP-hN-D8W" secondAttribute="trailing" id="KeC-Iw-pj1"/>
                             <constraint firstItem="QrR-yR-tmf" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="119" id="UJD-P0-uhU"/>
                             <constraint firstItem="QrR-yR-tmf" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="55" id="YSK-xi-1of"/>
                             <constraint firstItem="mPa-DS-63a" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="bTI-Lo-4GI"/>
                             <constraint firstItem="9Pg-RU-cdu" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="374" id="idw-zz-8Qa"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="iQH-Wq-SRm" secondAttribute="bottom" constant="115" id="lJz-N3-9N0"/>
-                            <constraint firstItem="iQH-Wq-SRm" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="19" id="uRr-cR-yTg"/>
+                            <constraint firstItem="rwP-hN-D8W" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="p5R-fs-74o"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Pg-RU-cdu" secondAttribute="trailing" id="wBF-JR-6PC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QrR-yR-tmf" secondAttribute="trailing" constant="119" id="yaO-p4-dF9"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="QrR-yR-tmf" secondAttribute="bottom" constant="115" id="ybD-Mc-8H5"/>
@@ -866,7 +866,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w7d-Vv-dZN">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Saved Builds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGE-h9-iT4">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Builds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGE-h9-iT4">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
                                                 <color key="backgroundColor" red="0.08235294118" green="0.08235294118" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                                 <constraints>
@@ -1275,7 +1275,7 @@
     </scenes>
     <resources>
         <image name="Dragon" width="20" height="20"/>
-        <image name="Full_Body" width="250" height="250"/>
+        <image name="Full_Body2" width="661" height="661"/>
         <image name="Helm" width="50" height="50"/>
         <image name="Ice" width="20" height="20"/>
         <image name="Thunder" width="20" height="20"/>
