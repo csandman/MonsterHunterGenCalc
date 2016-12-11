@@ -12,6 +12,41 @@ import CoreData
 class FirstViewController: UIViewController, UITableViewDataSource {
     
     @IBAction func loadSetId(_ sender: Any) {
+        let alert = UIAlertController(title: "Load Set from ID",
+                                      message: "Paste a set code to load a premade set",
+                                      preferredStyle: .alert)
+        let searchAction = UIAlertAction(title: "Load",
+                                         style: .default,
+                                         handler: { (action:UIAlertAction) -> Void in
+                                            
+                                            
+                                            let id = alert.textFields![0].text
+                                            
+                                            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                                            _ = appDelegate.parseOutputString(setString: id!)
+                                            
+                                            NotificationCenter.default.post(name: .reload, object: nil)
+                                            //self.performSegue(withIdentifier: "saveCurrentSegue", sender: nil)
+                                            
+        })
+        
+        
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .default,
+                                         handler: { (action: UIAlertAction) -> Void in })
+        
+        alert.addTextField {
+            (textField: UITextField) -> Void in
+        }
+        
+        
+        alert.addAction(searchAction)
+        alert.addAction(cancelAction)
+        
+        present(alert,
+                animated: true,
+                completion: nil)
     }
     
 
