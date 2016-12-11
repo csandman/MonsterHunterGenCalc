@@ -747,6 +747,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Untitled" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mPa-DS-63a">
+                                <rect key="frame" x="16" y="11" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqo-zy-LXr">
                                 <rect key="frame" x="65" y="55" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -782,21 +789,18 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkt-yI-74t">
-                                <rect key="frame" x="44" y="20" width="232" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                         <constraints>
+                            <constraint firstItem="QrR-yR-tmf" firstAttribute="top" secondItem="mPa-DS-63a" secondAttribute="bottom" constant="14" id="0vz-q1-jGy"/>
+                            <constraint firstItem="mPa-DS-63a" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="3T2-Cf-827"/>
+                            <constraint firstItem="mPa-DS-63a" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="11" id="9CV-to-KQx"/>
                             <constraint firstItem="9Pg-RU-cdu" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Asn-rP-yjF"/>
                             <constraint firstItem="iQH-Wq-SRm" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="95" id="Cch-wR-Du6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iQH-Wq-SRm" secondAttribute="trailing" constant="19" id="H7E-R7-P1d"/>
                             <constraint firstItem="QrR-yR-tmf" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="119" id="UJD-P0-uhU"/>
                             <constraint firstItem="QrR-yR-tmf" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="55" id="YSK-xi-1of"/>
+                            <constraint firstItem="mPa-DS-63a" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="bTI-Lo-4GI"/>
                             <constraint firstItem="9Pg-RU-cdu" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="374" id="idw-zz-8Qa"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="iQH-Wq-SRm" secondAttribute="bottom" constant="115" id="lJz-N3-9N0"/>
                             <constraint firstItem="iQH-Wq-SRm" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="19" id="uRr-cR-yTg"/>
@@ -809,10 +813,10 @@
                     <navigationItem key="navigationItem" id="qhH-1v-FdI"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="armorInProgressName" destination="gkt-yI-74t" id="D6I-tV-Amn"/>
                         <outlet property="armsFilledLabel" destination="3Il-Kx-aua" id="XaS-Zl-pdg"/>
                         <outlet property="chestFilledLabel" destination="ZYg-vr-9fs" id="IJh-7i-gaB"/>
                         <outlet property="headFilledLabel" destination="Wqo-zy-LXr" id="VP1-Qs-sbq"/>
+                        <outlet property="inProgressLabel" destination="mPa-DS-63a" id="rJW-dr-dgb"/>
                         <outlet property="legsFilledLabel" destination="9OG-UC-hv3" id="iMB-NG-9TU"/>
                         <outlet property="waistFilledLabel" destination="Rpi-D5-qRA" id="1RI-GM-lVd"/>
                     </connections>
@@ -976,7 +980,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fill in with armor name for cell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS2-hl-AlH">
                                 <rect key="frame" x="29" y="33" width="288" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

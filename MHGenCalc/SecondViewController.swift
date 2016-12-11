@@ -6,7 +6,7 @@
 //  Copyright © 2016 Student. All rights reserved.
 //
 
-//  TODO**
+//TODO
 // If you make a build thru save stats go back without clicking save build, it still saves the build maybe the armor
 // Edit needs to be off before you click start a new build
 //
@@ -25,8 +25,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var armsFilledLabel: UILabel!
     @IBOutlet weak var waistFilledLabel: UILabel!
     @IBOutlet weak var legsFilledLabel: UILabel!
-
-    @IBOutlet weak var armorInProgressName: UILabel!
+    
     @IBAction func addArmorInProgress(_ sender: UIButton) {
     }
 
@@ -49,7 +48,7 @@ class SecondViewController: UIViewController {
                                                 
                                                 
                                                 let name = alert.textFields![0].text
-                                                let
+                                                
                                                 
                                                 _ = appDelegate.saveSet(name: name!)
                                                 NotificationCenter.default.post(name: .reload, object: nil)
@@ -88,7 +87,8 @@ class SecondViewController: UIViewController {
                                             
                                             
                                             let name = alert.textFields![0].text
-                                            let armorInPLabel = self.armorInProgressName.name
+                                            
+                                            
                                             _ = appDelegate.saveSet(name: name!)
                                             
                                         NotificationCenter.default.post(name: .reload, object: nil)
