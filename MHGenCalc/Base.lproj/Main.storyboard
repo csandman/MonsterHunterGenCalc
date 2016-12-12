@@ -747,7 +747,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Untitled" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mPa-DS-63a">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Untitled" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mPa-DS-63a">
                                 <rect key="frame" x="16" y="11" width="288" height="30"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -978,6 +978,7 @@
                                 <connections>
                                     <action selector="loadSetId:" destination="GFU-fR-yEs" eventType="touchUpInside" id="z3N-Nc-Yxy"/>
                                     <action selector="startNewBuild:" destination="GFU-fR-yEs" eventType="touchUpInside" id="ASJ-J4-DqO"/>
+                                    <segue destination="8rJ-Kc-sve" kind="push" identifier="setIdSeque" id="rO2-fB-wKH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1187,7 +1188,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Olc-9d-sOp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="search" id="bNY-pX-NiK"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="7LF-KO-vkv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7LF-KO-vkv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
@@ -1209,7 +1210,7 @@
                     <tabBarItem key="tabBarItem" title="Builds" image="builds" id="xNA-KU-2NM"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="zVV-zn-mZv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zVV-zn-mZv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
@@ -1328,8 +1329,8 @@
         <image name="water" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JOg-Lo-arT"/>
         <segue reference="jHN-IY-ZmB"/>
+        <segue reference="rO2-fB-wKH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274510000001" green="0.75294117650000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
 </document>

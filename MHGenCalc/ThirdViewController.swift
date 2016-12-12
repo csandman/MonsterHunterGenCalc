@@ -14,7 +14,6 @@ let RESET = false
 class ThirdViewController: UIViewController, UITableViewDataSource{
     
     var displayStrings = [String]()
-    var people = [Person]()
     var armors = [Armor]()
     
 

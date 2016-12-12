@@ -66,11 +66,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         
+        self.createNewSet()
         
-        //let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
-        let currentSet = NSEntityDescription.insertNewObject(forEntityName: "Builds", into: managedContext) as! Builds
-        self.currentSetArr.append(currentSet)
-        self.currentSetArr[0].setName = ""
+        print (currentSetArr[0])
         
         return true
     }
@@ -268,12 +266,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func createNewSet() {
-        self.currentSetArr[0].setName = ""
-        self.currentSetArr[0].arms = nil
-        self.currentSetArr[0].chest = nil
-        self.currentSetArr[0].head = nil
-        self.currentSetArr[0].legs = nil
-        self.currentSetArr[0].waist = nil
+        let childContext =
+            NSManagedObjectContext(
+                concurrencyType: .mainQueueConcurrencyType)
+        childContext.parent = self.managedObjectContext
+        let currentSet = NSEntityDescription.insertNewObject(forEntityName: "Builds", into: childContext) as! Builds
+        currentSet.setName = ""
+        currentSet.arms = 0
+        currentSet.chest = 0
+        currentSet.head = 0
+        currentSet.legs = 0
+        currentSet.waist = 0
+        if (self.currentSetArr.count == 0) {
+            self.currentSetArr.append(currentSet)
+        } else {
+            self.currentSetArr[0] = currentSet
+        }
+        
+        
+//        self.currentSetArr[0].setName = ""
+//        self.currentSetArr[0].arms = nil
+//        self.currentSetArr[0].chest = nil
+//        self.currentSetArr[0].head = nil
+//        self.currentSetArr[0].legs = nil
+//        self.currentSetArr[0].waist = nil
+        print(currentSet)
+        
         //switch to set page
     }
     
@@ -290,7 +308,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //        let waistString = String(describing: build.waist! as Int)
         //        self.currentSet = ["setName":build.setName! as String,"head":headString,"chest":chestString,"arms":armsString,"legs":legsString, "waist":waistString]
         print(build)
-        self.currentSetArr[0] = build
+        self.currentSetArr[0].setName = build.setName
+        self.currentSetArr[0].head = build.head
+        self.currentSetArr[0].chest = build.chest
+        self.currentSetArr[0].arms = build.arms
+        self.currentSetArr[0].waist = build.waist
+        self.currentSetArr[0].legs = build.legs
         return build
     }
     
@@ -337,15 +360,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func saveSet(name: String) -> Builds {
         let managedContext = self.managedObjectContext
-        let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
+        //let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
         
         var tempSet = self.currentSetArr[0]
+        print(tempSet)
         
         if (tempSet.setName == "" || tempSet.setName == nil ) {
             
             //save as new set
-            tempSet.setName = name as NSString
+            //tempSet.setName = name as NSString
+            self.currentSetArr[0].setName = name as NSString?
             do {
+                let build = NSEntityDescription.insertNewObject(forEntityName: "Builds", into: managedContext) as! Builds
+                build.setName = name as NSString?
+                build.head = tempSet.head
+                build.chest = tempSet.chest
+                build.arms = tempSet.arms
+                build.legs = tempSet.legs
+                build.waist = tempSet.waist
                 try managedContext.save()
                 self.builds.append(tempSet)
             } catch let error as NSError  {
@@ -355,8 +387,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             //check to see if set exists.  if it does, update it, if it does not, save it as new
             do {
+                let buildFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
+                let predicate = NSPredicate(format: "%K == %@", "setName", tempSet.setName!)
+                buildFetch.predicate = predicate
+                let fetchedBuilds = try! self.managedObjectContext.fetch(buildFetch) as! [Builds]
+                let build = fetchedBuilds[0]
+                build.arms = tempSet.arms
+                build.chest = tempSet.chest
+                build.head = tempSet.head
+                build.legs = tempSet.legs
+                build.waist = tempSet.waist
+                self.currentSetArr[0] = build
+
                 try managedContext.save()
-                self.builds.append(tempSet)
+                self.builds.append(build)
             } catch let error as NSError  {
                 print("Could not save \(error), \(error.userInfo)")
             }
@@ -395,7 +439,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var total_ice_res = 0
         var total_water_res = 0
       
-        if(build.head != nil){
+        if(build.head != 0){
             let headId = build.head as! Int
             
             let headFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
@@ -414,7 +458,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         
-        if(build.chest != nil){
+        if(build.chest != 0){
             
             let chestId = build.chest as! Int
             
@@ -433,7 +477,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             total_water_res += Int(chest.water_res!)
         }
         
-        if(build.arms != nil){
+        if(build.arms != 0){
             
             let armsId = build.arms as! Int
             
@@ -452,7 +496,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             total_water_res += Int(arms.water_res!)
         }
         
-        if(build.legs != nil){
+        if(build.legs != 0){
             
             let legsId = build.legs as! Int
             
@@ -471,7 +515,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             total_water_res += Int(legs.water_res!)
         }
         
-        if(build.waist != nil){
+        if(build.waist != 0){
             
             let waistId = build.waist as! Int
             

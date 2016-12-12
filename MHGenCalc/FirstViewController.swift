@@ -26,7 +26,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                                             _ = appDelegate.parseOutputString(setString: id!)
                                             
                                             NotificationCenter.default.post(name: .reload, object: nil)
-                                            //self.performSegue(withIdentifier: "saveCurrentSegue", sender: nil)
+                                            //self.performSegue(withIdentifier: "setIdSegue", sender: nil)
                                             
         })
         
@@ -115,18 +115,6 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         
         let managedContext = appDelegate.managedObjectContext
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData(_:)), name: .reload, object: nil)
-        appDelegate.addArmorPieceById(1311031)
-        appDelegate.addArmorPieceById(1376337)
-        appDelegate.addArmorPieceById(1441869)
-        appDelegate.addArmorPieceById(1507453)
-        appDelegate.addArmorPieceById(1572902)
-        //print(appDelegate.currentSetArr[0])
-        print(appDelegate.saveSet(name: "test2"))
-//        _ = appDelegate.loadExistingSet(name: "test1")
-        //print(set.legs!)
-        //print(set.arms!)
-        //appDelegate.totalStats(build: set)
-        
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
         
@@ -148,90 +136,14 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         
         savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        //        let palText = "CATCATCAT"
-        //        self.namesSavedPal.append(palText)
-        //        let textField = "Wheee"
-        //        self.namesSaved.append(textField)
-        //        let text2 = "asasas"
-        //        self.namesSaved.append(text2)
-        //        let text3 = "sasdasdasds"
-        //        self.namesSaved.append(text3)
-        //        let text4 = "asdads"
-        //        self.namesSaved.append(text4)
-        //        let text5 = "i dunno"
-        //        self.namesProgress.append(text5)
-        //        let text6 = "yeah!!!"
-        //        self.namesProgressPal.append(text6)
+
         self.savedTable.reloadData()
         
         //savedTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         //progressTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
         //let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        
-        //appDelegate.addArmorPieceById(1311031)
-        //appDelegate.addArmorPieceById(1376337)
-        //appDelegate.addArmorPieceById(1441869)
-        //appDelegate.addArmorPieceById(1507453)
-        //appDelegate.addArmorPieceById(1572902)
        
-        
-        //let managedContext = appDelegate.managedObjectContext
-        
-        //let entity =  NSEntityDescription.entity(forEntityName: "Builds", in:managedContext)
-        //let person = Person(entity: entity!, insertInto: managedContext)
-        
-        /*person.name = "aaaaaa"
-        
-        do {
-           try managedContext.save()
-           people.append(person)
-    } catch let error as NSError  {
-          print("Could not save \(error), \(error.userInfo)")
-    }*/
-        
-//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
-//        
-//        do {
-//            let results =
-//             try managedContext.fetch(fetchRequest)
-//            builds = results as! [Builds]
-//            
-//            
-//            
-//           for b in builds
-//           {
-                /*if saved build{
-                    if human build{
-                        self.namesSaved.append(b.name!)
-                    }
-                    else{
-                        self.namesSavedPal.append(b.name!)
-                    }
-                }
-             
-                else{
-                    if human build{
-                        self.namesProgress.append(b.name!)
-                    }
-                    else{
-                        self.namesProgressPal.append(b.name!)
-                }
-             }
- 
-            */
-            
-//            }
-        
-//           self.savedTable.reloadData()
-//           self.progressTable.reloadData()
-//            
-//            
-//                
-//        
-//       } catch let error as NSError {
-//        print("fetch or save failed \(error), \(error.userInfo)")
-//       }
     }
     
     func reloadTableData(_ notification: Notification){

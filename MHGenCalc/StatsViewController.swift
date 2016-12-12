@@ -44,8 +44,8 @@ class StatsViewController: UIViewController {
         waterLabel.text = String(stats["water_res"]!)
         
         //let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        _ = appDelegate.outputString()
-        _ = appDelegate.parseOutputString(setString: "mhgc-1310727-0-0-0-0")
+        //_ = appDelegate.outputString()
+        //_ = appDelegate.parseOutputString(setString: "mhgc-1310727-0-0-0-0")
         
         
         // Do any additional setup after loading the view.

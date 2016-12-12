@@ -30,7 +30,7 @@ class SecondViewController: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let setId = appDelegate.outputString()
         let alert = UIAlertController(title: "ID Generated",
-                                      message: "Copy this code to share your current set with friends/n"+setId,
+                                      message: "Copy this code to share your current set with friends\n"+setId,
                                       preferredStyle: .alert)
         let searchAction = UIAlertAction(title: "Copy",
                                          style: .default,
@@ -175,8 +175,8 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        _ = appDelegate.outputString()
+        //let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        //_ = appDelegate.outputString()
         //_ = appDelegate.parseOutputString(setString: "mhgc-1310727-0-0-0-0")
         inProgressLabel.text = passedValue
     }
