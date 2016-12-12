@@ -24,10 +24,32 @@ class Filter4ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func checkValue(_ sender: Any) {
+        
         var minValueInt = Int(minValueField.text!)
         var maxValueInt = Int(maxValueField.text!)
         
-        if (minValueInt! < 1 || minValueInt! > 100)
+        //if both fields are empty, make them default to 1 and 100
+        if (minValueField.text!.isEmpty && maxValueField.text!.isEmpty)
+        {
+            minValueInt = 1
+            maxValueInt = 100
+            //print label jut to test, if it prints it works
+            resultLabel.text = String(minValueInt! + maxValueInt!)
+        }
+        //if only one is empty
+        else if (minValueField.text!.isEmpty)
+        {
+            minValueInt = 1
+            resultLabel.text = String(minValueInt! + maxValueInt!)
+        }
+        else if (maxValueField.text!.isEmpty)
+        {
+            maxValueInt = 100
+            resultLabel.text = String(minValueInt! + maxValueInt!)
+        }
+        
+        //otherwise, if the numbers are out of range, alerts them
+        else if (minValueInt! < 1 || minValueInt! > 100)
         {
             let alertController = UIAlertController(title: "Error", message: "Min value must be between 1 and 100.", preferredStyle: UIAlertControllerStyle.alert)
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
@@ -45,9 +67,10 @@ class Filter4ViewController: UIViewController, UITextFieldDelegate {
             alertController.addAction(okAction)
             self.present(alertController, animated: true, completion: nil)
         }
+        //if it says sick, then you good
         else
         {
-            resultLabel.text = "sick"
+            resultLabel.text = String(minValueInt! + maxValueInt!)
         }
     }
     

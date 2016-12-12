@@ -12,6 +12,13 @@ class FilterViewController: UIViewController {
 
     @IBOutlet weak var armorLabel: UILabel!
     
+    
+    @IBOutlet weak var headSwitch: UISwitch!
+    @IBOutlet weak var chestSwitch: UISwitch!
+    @IBOutlet weak var armsSwitch: UISwitch!
+    @IBOutlet weak var waistSwitch: UISwitch!
+    @IBOutlet weak var legsSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

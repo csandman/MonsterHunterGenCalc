@@ -22,13 +22,13 @@
 		3F34E5A41DEF51190002BD90 /* Armor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59C1DEF51190002BD90 /* Armor+CoreDataProperties.swift */; };
 		3F34E5A51DEF51190002BD90 /* Builds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59D1DEF51190002BD90 /* Builds.swift */; };
 		3F34E5A61DEF51190002BD90 /* Builds+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59E1DEF51190002BD90 /* Builds+CoreDataProperties.swift */; };
-		3F34E5A71DEF51190002BD90 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E59F1DEF51190002BD90 /* Person.swift */; };
-		3F34E5A81DEF51190002BD90 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5A01DEF51190002BD90 /* Person+CoreDataProperties.swift */; };
-		3F34E5A91DEF51190002BD90 /* Shoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5A11DEF51190002BD90 /* Shoes.swift */; };
-		3F34E5AA1DEF51190002BD90 /* Shoes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5A21DEF51190002BD90 /* Shoes+CoreDataProperties.swift */; };
 		3F34E5AE1DEF57A20002BD90 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */; };
 		3F58CE331DF61AD7003DA47F /* armorTable.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3F58CE321DF61AD7003DA47F /* armorTable.csv */; };
 		3F5D91C91DF321AD00B9CE2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5D91C81DF321AD00B9CE2B /* Images.xcassets */; };
+		3F7EBC4B1DFEF4C200F92FC7 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EBC4A1DFEF4C200F92FC7 /* FilterViewController.swift */; };
+		3F7EBC4D1DFEF53800F92FC7 /* Filter2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EBC4C1DFEF53800F92FC7 /* Filter2ViewController.swift */; };
+		3F7EBC4F1DFEF55100F92FC7 /* Filter3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EBC4E1DFEF55100F92FC7 /* Filter3ViewController.swift */; };
+		3F7EBC511DFEF56800F92FC7 /* Filter4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EBC501DFEF56800F92FC7 /* Filter4ViewController.swift */; };
 		3F88F1B31DDE4D080044EE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1B21DDE4D080044EE49 /* AppDelegate.swift */; };
 		3F88F1B51DDE4D080044EE49 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1B41DDE4D080044EE49 /* FirstViewController.swift */; };
 		3F88F1B71DDE4D080044EE49 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1B61DDE4D080044EE49 /* SecondViewController.swift */; };
@@ -37,10 +37,6 @@
 		3F88F1BF1DDE4D080044EE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F88F1BD1DDE4D080044EE49 /* LaunchScreen.storyboard */; };
 		3F88F1CA1DDE4D080044EE49 /* MHGenCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1C91DDE4D080044EE49 /* MHGenCalcTests.swift */; };
 		3F88F1D51DDE4D090044EE49 /* MHGenCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1D41DDE4D090044EE49 /* MHGenCalcUITests.swift */; };
-		3FB3160F1DF9E9AC0036D611 /* Filter2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3160E1DF9E9AC0036D611 /* Filter2ViewController.swift */; };
-		3FB316121DF9E9BF0036D611 /* Filter3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB316111DF9E9BF0036D611 /* Filter3ViewController.swift */; };
-		3FB316141DF9E9EC0036D611 /* Filter4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB316131DF9E9EC0036D611 /* Filter4ViewController.swift */; };
-		3FC6BBF51DF9C452007809F3 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC6BBF41DF9C452007809F3 /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,13 +72,13 @@
 		3F34E59C1DEF51190002BD90 /* Armor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Armor+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F34E59D1DEF51190002BD90 /* Builds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builds.swift; sourceTree = "<group>"; };
 		3F34E59E1DEF51190002BD90 /* Builds+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Builds+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3F34E59F1DEF51190002BD90 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		3F34E5A01DEF51190002BD90 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3F34E5A11DEF51190002BD90 /* Shoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shoes.swift; sourceTree = "<group>"; };
-		3F34E5A21DEF51190002BD90 /* Shoes+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shoes+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3F58CE321DF61AD7003DA47F /* armorTable.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = armorTable.csv; sourceTree = "<group>"; };
 		3F5D91C81DF321AD00B9CE2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F7EBC4A1DFEF4C200F92FC7 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = SOURCE_ROOT; };
+		3F7EBC4C1DFEF53800F92FC7 /* Filter2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter2ViewController.swift; sourceTree = "<group>"; };
+		3F7EBC4E1DFEF55100F92FC7 /* Filter3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter3ViewController.swift; sourceTree = "<group>"; };
+		3F7EBC501DFEF56800F92FC7 /* Filter4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter4ViewController.swift; sourceTree = "<group>"; };
 		3F88F1AF1DDE4D080044EE49 /* MHGenCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHGenCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88F1B21DDE4D080044EE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F88F1B41DDE4D080044EE49 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -97,10 +93,6 @@
 		3F88F1D01DDE4D090044EE49 /* MHGenCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHGenCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88F1D41DDE4D090044EE49 /* MHGenCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHGenCalcUITests.swift; sourceTree = "<group>"; };
 		3F88F1D61DDE4D090044EE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FB3160E1DF9E9AC0036D611 /* Filter2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter2ViewController.swift; sourceTree = "<group>"; };
-		3FB316111DF9E9BF0036D611 /* Filter3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter3ViewController.swift; sourceTree = "<group>"; };
-		3FB316131DF9E9EC0036D611 /* Filter4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter4ViewController.swift; sourceTree = "<group>"; };
-		3FC6BBF41DF9C452007809F3 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterViewController.swift; path = ../FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,19 +156,15 @@
 				3F0F24FB1DFA139F0084DF34 /* PalicoArmor.swift */,
 				3F0F24FC1DFA139F0084DF34 /* PalicoArmor+CoreDataProperties.swift */,
 				3F34E59E1DEF51190002BD90 /* Builds+CoreDataProperties.swift */,
-				3F34E59F1DEF51190002BD90 /* Person.swift */,
-				3F34E5A01DEF51190002BD90 /* Person+CoreDataProperties.swift */,
-				3F34E5A11DEF51190002BD90 /* Shoes.swift */,
-				3F34E5A21DEF51190002BD90 /* Shoes+CoreDataProperties.swift */,
 				3F88F1B61DDE4D080044EE49 /* SecondViewController.swift */,
 				3F298B2E1DFA2A8200C17C8E /* ArmorResultViewController.swift */,
 				3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */,
 				3F08A72A1DF8C61700F289B5 /* AdvancedViewController.swift */,
 				3F08A72C1DF8C63B00F289B5 /* AdvancedPageViewController.swift */,
-				3FC6BBF41DF9C452007809F3 /* FilterViewController.swift */,
-				3FB3160E1DF9E9AC0036D611 /* Filter2ViewController.swift */,
-				3FB316111DF9E9BF0036D611 /* Filter3ViewController.swift */,
-				3FB316131DF9E9EC0036D611 /* Filter4ViewController.swift */,
+				3F7EBC4A1DFEF4C200F92FC7 /* FilterViewController.swift */,
+				3F7EBC4C1DFEF53800F92FC7 /* Filter2ViewController.swift */,
+				3F7EBC4E1DFEF55100F92FC7 /* Filter3ViewController.swift */,
+				3F7EBC501DFEF56800F92FC7 /* Filter4ViewController.swift */,
 				3F88F1B81DDE4D080044EE49 /* Main.storyboard */,
 				3F298B341DFA5F1A00C17C8E /* StatsViewController.swift */,
 				3F298B2C1DFA227700C17C8E /* ArmorSearchViewController.swift */,
@@ -345,27 +333,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F34E5A61DEF51190002BD90 /* Builds+CoreDataProperties.swift in Sources */,
+				3F7EBC4D1DFEF53800F92FC7 /* Filter2ViewController.swift in Sources */,
 				3F298B2F1DFA2A8200C17C8E /* ArmorResultViewController.swift in Sources */,
 				3F34E59A1DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld in Sources */,
 				3F34E5A31DEF51190002BD90 /* Armor.swift in Sources */,
 				3F88F1B71DDE4D080044EE49 /* SecondViewController.swift in Sources */,
 				3F0F24FE1DFA139F0084DF34 /* PalicoArmor+CoreDataProperties.swift in Sources */,
+				3F7EBC511DFEF56800F92FC7 /* Filter4ViewController.swift in Sources */,
 				3F0F25021DFA40190084DF34 /* DatabaseLoaded.swift in Sources */,
 				3F88F1B31DDE4D080044EE49 /* AppDelegate.swift in Sources */,
 				3F88F1B51DDE4D080044EE49 /* FirstViewController.swift in Sources */,
-				3F34E5A81DEF51190002BD90 /* Person+CoreDataProperties.swift in Sources */,
 				3F298B2D1DFA227700C17C8E /* ArmorSearchViewController.swift in Sources */,
-				3F34E5A91DEF51190002BD90 /* Shoes.swift in Sources */,
 				3F08A72B1DF8C61700F289B5 /* AdvancedViewController.swift in Sources */,
+				3F7EBC4F1DFEF55100F92FC7 /* Filter3ViewController.swift in Sources */,
 				3F0F24FD1DFA139F0084DF34 /* PalicoArmor.swift in Sources */,
-				3FB316141DF9E9EC0036D611 /* Filter4ViewController.swift in Sources */,
 				3F298B351DFA5F1A00C17C8E /* StatsViewController.swift in Sources */,
-				3F34E5A71DEF51190002BD90 /* Person.swift in Sources */,
-				3FB3160F1DF9E9AC0036D611 /* Filter2ViewController.swift in Sources */,
-				3FC6BBF51DF9C452007809F3 /* FilterViewController.swift in Sources */,
 				3F34E5A41DEF51190002BD90 /* Armor+CoreDataProperties.swift in Sources */,
-				3F34E5AA1DEF51190002BD90 /* Shoes+CoreDataProperties.swift in Sources */,
-				3FB316121DF9E9BF0036D611 /* Filter3ViewController.swift in Sources */,
+				3F7EBC4B1DFEF4C200F92FC7 /* FilterViewController.swift in Sources */,
 				3F08A72D1DF8C63B00F289B5 /* AdvancedPageViewController.swift in Sources */,
 				3F34E5A51DEF51190002BD90 /* Builds.swift in Sources */,
 				3F34E5AE1DEF57A20002BD90 /* ThirdViewController.swift in Sources */,

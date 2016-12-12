@@ -12,6 +12,9 @@ class Filter3ViewController: UIViewController {
 
     @IBOutlet weak var hunterLabel: UILabel!
     
+    @IBOutlet weak var bladeMasterSwitch: UISwitch!
+    @IBOutlet weak var gunnerSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

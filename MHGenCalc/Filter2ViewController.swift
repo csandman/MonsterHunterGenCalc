@@ -12,6 +12,12 @@ class Filter2ViewController: UIViewController {
 
     @IBOutlet weak var elementLabel: UILabel!
     
+    @IBOutlet weak var fireSwitch: UISwitch!
+    @IBOutlet weak var waterSwitch: UISwitch!
+    @IBOutlet weak var iceSwitch: UISwitch!
+    @IBOutlet weak var thunderSwitch: UISwitch!
+    @IBOutlet weak var dragonSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
