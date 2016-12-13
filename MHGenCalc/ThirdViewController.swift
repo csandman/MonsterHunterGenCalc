@@ -108,12 +108,12 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
             let firstFilterArr = appDelegate.filterOneArr
             let secondFilterArr = appDelegate.filterTwoArr
             //let thirdFilterArr = appDelegate.filterThreeArr
-            //let fourthFilterArr = appDelegate.filterFourArr
+            let fourthFilterArr = appDelegate.filterFourArr
             print(firstFilterArr)
             var shouldUseFirstFilter = false
             var shouldUseSecondFilter = false
             //var shouldUseThirdFilter = false
-            //var shouldUseFourthFilter = false
+            var shouldUseFourthFilter = false
             for filter in firstFilterArr {
                 if (filter != 0) {
                     shouldUseFirstFilter = true
@@ -129,9 +129,9 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
 //                    shouldUseThirdFilter = true
 //                }
 //            }
-//            if (fourthFilterArr[0] != 1 || fourthFilterArr[1] != 100) {
-//                shouldUseFourthFilter = true
-//            }
+            if (fourthFilterArr[0] != 1 || fourthFilterArr[1] != 100) {
+                shouldUseFourthFilter = true
+            }
             
             
             
@@ -187,7 +187,21 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                 let secondPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: predicateArr)
                 totalPredicateArr.append(secondPredicate)
             }
+            if (shouldUseFourthFilter) {
+                var predicateArr = [NSPredicate]()
+                predicateArr.append(NSPredicate(format: "%K > %d", "defense", fourthFilterArr[0]))
+                predicateArr.append(NSPredicate(format: "%K < %d", "defense", fourthFilterArr[1]))
+                let fourthPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: predicateArr)
+                totalPredicateArr.append(fourthPredicate)
+            }
+            
+            
+            
             let totalPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: totalPredicateArr)
+            
+            
+            
+            
             armorFetch.predicate = totalPredicate
             print(armorFetch)
             
