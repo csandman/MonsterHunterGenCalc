@@ -53,16 +53,37 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                                             let name = alert.textFields![0].text
 //                                            print(name!)
                                             
+                                            
+                                            var armorPredicates = [NSPredicate]()
+                                            
+                                            if (appDelegate.slotSelectedForSearch == 0) {
+                                                armorPredicates.append(NSPredicate(format: "%K LIKE %@", "slot", "Head"))
+                                            } else if (appDelegate.slotSelectedForSearch == 1) {
+                                                armorPredicates.append(NSPredicate(format: "%K LIKE %@", "slot", "Chest"))
+                                            } else if (appDelegate.slotSelectedForSearch == 2) {
+                                                armorPredicates.append(NSPredicate(format: "%K LIKE %@", "slot", "Arms"))
+                                            } else if (appDelegate.slotSelectedForSearch == 3) {
+                                                armorPredicates.append(NSPredicate(format: "%K LIKE %@", "slot", "Waist"))
+                                            } else if (appDelegate.slotSelectedForSearch == 4) {
+                                                armorPredicates.append(NSPredicate(format: "%K LIKE %@", "slot", "Legs"))
+                                            }
+                                            
+                                            
                                             if (name != "") {
+                                                
                                                 let sortDescriptor1 = NSSortDescriptor(key: "slot", ascending: true)
                                                 let sortDescriptor2 = NSSortDescriptor(key: "name", ascending: true)
                                                 let sortDescriptors = [sortDescriptor1,sortDescriptor2]
                                                 armorFetch.sortDescriptors = sortDescriptors
                                                 palicoFetch.sortDescriptors = sortDescriptors
                                                 let predicate = NSPredicate(format: "%K CONTAINS[c] %@", "name", name!)
+                                                armorPredicates.append(predicate)
                                                 palicoFetch.predicate = predicate
-                                                armorFetch.predicate = predicate
+                                                
                                             }
+                                            let totalPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: armorPredicates)
+                                            armorFetch.predicate = totalPredicate
+                                            print(armorFetch)
                                             
                                             do {
                                                 let fetchedArmor = try moc.fetch(armorFetch) as! [Armor]
@@ -71,10 +92,10 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                                                     self.displayStrings.append(armor.name! as String!)
                                                     //print(armor.name! as String)
                                                 }
-                                                let fetchPal = try moc.fetch(palicoFetch) as! [PalicoArmor]
-                                                for palico in fetchPal{
-                                                    self.displayStrings.append(palico.name! as String!)
-                                                }
+//                                                let fetchPal = try moc.fetch(palicoFetch) as! [PalicoArmor]
+//                                                for palico in fetchPal{
+//                                                    self.displayStrings.append(palico.name! as String!)
+//                                                }
                                                 self.tableView.reloadData()
                                                 
                                             } catch {
@@ -222,6 +243,98 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
             
             //let predicateOne = NSPredicate(format: "%K CONTAINS[c] %@", "name", name!)
             
+            let fetchedArmor = try! moc.fetch(armorFetch) as! [Armor]
+            self.displayStrings.removeAll()
+            for armor in fetchedArmor {
+                self.displayStrings.append(armor.name! as String!)
+                //print(armor.name! as String)
+            }
+            self.tableView.reloadData()
+            
+            appDelegate.shouldPerformAdvSearch = false
+            
+        } else if (appDelegate.slotSelectedForSearch == 0) {
+            let moc = appDelegate.managedObjectContext
+            let armorFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let sortDescriptor1 = NSSortDescriptor(key: "slot", ascending: true)
+            let sortDescriptor2 = NSSortDescriptor(key: "name", ascending: true)
+            let sortDescriptors = [sortDescriptor1,sortDescriptor2]
+            armorFetch.sortDescriptors = sortDescriptors
+            armorFetch.predicate = NSPredicate(format: "%K LIKE %@", "slot", "Head")
+            let fetchedArmor = try! moc.fetch(armorFetch) as! [Armor]
+            self.displayStrings.removeAll()
+            for armor in fetchedArmor {
+                self.displayStrings.append(armor.name! as String!)
+                //print(armor.name! as String)
+            }
+            self.tableView.reloadData()
+        } else if (appDelegate.slotSelectedForSearch == 1) {
+            let moc = appDelegate.managedObjectContext
+            let armorFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let sortDescriptor1 = NSSortDescriptor(key: "slot", ascending: true)
+            let sortDescriptor2 = NSSortDescriptor(key: "name", ascending: true)
+            let sortDescriptors = [sortDescriptor1,sortDescriptor2]
+            armorFetch.sortDescriptors = sortDescriptors
+            armorFetch.predicate = NSPredicate(format: "%K LIKE %@", "slot", "Chest")
+            let fetchedArmor = try! moc.fetch(armorFetch) as! [Armor]
+            self.displayStrings.removeAll()
+            for armor in fetchedArmor {
+                self.displayStrings.append(armor.name! as String!)
+                //print(armor.name! as String)
+            }
+            self.tableView.reloadData()
+        } else if (appDelegate.slotSelectedForSearch == 2) {
+            let moc = appDelegate.managedObjectContext
+            let armorFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let sortDescriptor1 = NSSortDescriptor(key: "slot", ascending: true)
+            let sortDescriptor2 = NSSortDescriptor(key: "name", ascending: true)
+            let sortDescriptors = [sortDescriptor1,sortDescriptor2]
+            armorFetch.sortDescriptors = sortDescriptors
+            armorFetch.predicate = NSPredicate(format: "%K LIKE %@", "slot", "Arms")
+            let fetchedArmor = try! moc.fetch(armorFetch) as! [Armor]
+            self.displayStrings.removeAll()
+            for armor in fetchedArmor {
+                self.displayStrings.append(armor.name! as String!)
+                //print(armor.name! as String)
+            }
+            self.tableView.reloadData()
+        } else if (appDelegate.slotSelectedForSearch == 3) {
+            let moc = appDelegate.managedObjectContext
+            let armorFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let sortDescriptor1 = NSSortDescriptor(key: "slot", ascending: true)
+            let sortDescriptor2 = NSSortDescriptor(key: "name", ascending: true)
+            let sortDescriptors = [sortDescriptor1,sortDescriptor2]
+            armorFetch.sortDescriptors = sortDescriptors
+            armorFetch.predicate = NSPredicate(format: "%K LIKE %@", "slot", "Waist")
+            let fetchedArmor = try! moc.fetch(armorFetch) as! [Armor]
+            self.displayStrings.removeAll()
+            for armor in fetchedArmor {
+                self.displayStrings.append(armor.name! as String!)
+                //print(armor.name! as String)
+            }
+            self.tableView.reloadData()
+        } else if (appDelegate.slotSelectedForSearch == 4) {
+            let moc = appDelegate.managedObjectContext
+            let armorFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let sortDescriptor1 = NSSortDescriptor(key: "slot", ascending: true)
+            let sortDescriptor2 = NSSortDescriptor(key: "name", ascending: true)
+            let sortDescriptors = [sortDescriptor1,sortDescriptor2]
+            armorFetch.sortDescriptors = sortDescriptors
+            armorFetch.predicate = NSPredicate(format: "%K LIKE %@", "slot", "Legs")
+            let fetchedArmor = try! moc.fetch(armorFetch) as! [Armor]
+            self.displayStrings.removeAll()
+            for armor in fetchedArmor {
+                self.displayStrings.append(armor.name! as String!)
+                //print(armor.name! as String)
+            }
+            self.tableView.reloadData()
+        } else {
+            let moc = appDelegate.managedObjectContext
+            let armorFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let sortDescriptor1 = NSSortDescriptor(key: "slot", ascending: true)
+            let sortDescriptor2 = NSSortDescriptor(key: "name", ascending: true)
+            let sortDescriptors = [sortDescriptor1,sortDescriptor2]
+            armorFetch.sortDescriptors = sortDescriptors
             let fetchedArmor = try! moc.fetch(armorFetch) as! [Armor]
             self.displayStrings.removeAll()
             for armor in fetchedArmor {
