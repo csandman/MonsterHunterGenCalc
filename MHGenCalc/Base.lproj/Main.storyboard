@@ -795,6 +795,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="headClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="JfL-Gd-2Hp"/>
                                             <segue destination="avH-rr-c3G" kind="show" id="Jgw-sX-Bzc"/>
                                         </connections>
                                     </button>
@@ -814,6 +815,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="chestClick:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="XqL-fl-G7I"/>
                                             <segue destination="avH-rr-c3G" kind="show" id="jHN-IY-ZmB"/>
                                         </connections>
                                     </button>
@@ -833,6 +835,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="armsClick:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="bcC-qv-1l0"/>
                                             <segue destination="avH-rr-c3G" kind="show" id="Jne-f9-DFu"/>
                                         </connections>
                                     </button>
@@ -852,6 +855,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="waistClick:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="NuG-8H-aUR"/>
                                             <segue destination="avH-rr-c3G" kind="show" id="PfG-8Q-FDJ"/>
                                         </connections>
                                     </button>
@@ -870,6 +874,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="legsClick:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="OaO-67-SMt"/>
                                             <segue destination="avH-rr-c3G" kind="show" id="K3z-xW-r3B"/>
                                         </connections>
                                     </button>
