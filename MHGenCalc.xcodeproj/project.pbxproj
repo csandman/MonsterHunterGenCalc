@@ -25,7 +25,6 @@
 		3F34E5AE1DEF57A20002BD90 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */; };
 		3F58CE331DF61AD7003DA47F /* armorTable.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3F58CE321DF61AD7003DA47F /* armorTable.csv */; };
 		3F5D91C91DF321AD00B9CE2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5D91C81DF321AD00B9CE2B /* Images.xcassets */; };
-		3F7EBC4B1DFEF4C200F92FC7 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EBC4A1DFEF4C200F92FC7 /* FilterViewController.swift */; };
 		3F7EBC4D1DFEF53800F92FC7 /* Filter2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EBC4C1DFEF53800F92FC7 /* Filter2ViewController.swift */; };
 		3F7EBC4F1DFEF55100F92FC7 /* Filter3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EBC4E1DFEF55100F92FC7 /* Filter3ViewController.swift */; };
 		3F7EBC511DFEF56800F92FC7 /* Filter4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EBC501DFEF56800F92FC7 /* Filter4ViewController.swift */; };
@@ -37,6 +36,7 @@
 		3F88F1BF1DDE4D080044EE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F88F1BD1DDE4D080044EE49 /* LaunchScreen.storyboard */; };
 		3F88F1CA1DDE4D080044EE49 /* MHGenCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1C91DDE4D080044EE49 /* MHGenCalcTests.swift */; };
 		3F88F1D51DDE4D090044EE49 /* MHGenCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88F1D41DDE4D090044EE49 /* MHGenCalcUITests.swift */; };
+		3FEBC0691DFFA1CC002E818D /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBC0681DFFA1CC002E818D /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +75,6 @@
 		3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3F58CE321DF61AD7003DA47F /* armorTable.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = armorTable.csv; sourceTree = "<group>"; };
 		3F5D91C81DF321AD00B9CE2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3F7EBC4A1DFEF4C200F92FC7 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = SOURCE_ROOT; };
 		3F7EBC4C1DFEF53800F92FC7 /* Filter2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter2ViewController.swift; sourceTree = "<group>"; };
 		3F7EBC4E1DFEF55100F92FC7 /* Filter3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter3ViewController.swift; sourceTree = "<group>"; };
 		3F7EBC501DFEF56800F92FC7 /* Filter4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter4ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +92,7 @@
 		3F88F1D01DDE4D090044EE49 /* MHGenCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHGenCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88F1D41DDE4D090044EE49 /* MHGenCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHGenCalcUITests.swift; sourceTree = "<group>"; };
 		3F88F1D61DDE4D090044EE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FEBC0681DFFA1CC002E818D /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +143,7 @@
 		3F88F1B11DDE4D080044EE49 /* MHGenCalc */ = {
 			isa = PBXGroup;
 			children = (
+				3FEBC0681DFFA1CC002E818D /* FilterViewController.swift */,
 				3F58CE321DF61AD7003DA47F /* armorTable.csv */,
 				3F34E5981DEF4FB50002BD90 /* MHGenCalc.xcdatamodeld */,
 				3F0F25011DFA40190084DF34 /* DatabaseLoaded.swift */,
@@ -161,7 +162,6 @@
 				3F34E5AD1DEF57A20002BD90 /* ThirdViewController.swift */,
 				3F08A72A1DF8C61700F289B5 /* AdvancedViewController.swift */,
 				3F08A72C1DF8C63B00F289B5 /* AdvancedPageViewController.swift */,
-				3F7EBC4A1DFEF4C200F92FC7 /* FilterViewController.swift */,
 				3F7EBC4C1DFEF53800F92FC7 /* Filter2ViewController.swift */,
 				3F7EBC4E1DFEF55100F92FC7 /* Filter3ViewController.swift */,
 				3F7EBC501DFEF56800F92FC7 /* Filter4ViewController.swift */,
@@ -348,8 +348,8 @@
 				3F7EBC4F1DFEF55100F92FC7 /* Filter3ViewController.swift in Sources */,
 				3F0F24FD1DFA139F0084DF34 /* PalicoArmor.swift in Sources */,
 				3F298B351DFA5F1A00C17C8E /* StatsViewController.swift in Sources */,
+				3FEBC0691DFFA1CC002E818D /* FilterViewController.swift in Sources */,
 				3F34E5A41DEF51190002BD90 /* Armor+CoreDataProperties.swift in Sources */,
-				3F7EBC4B1DFEF4C200F92FC7 /* FilterViewController.swift in Sources */,
 				3F08A72D1DF8C63B00F289B5 /* AdvancedPageViewController.swift in Sources */,
 				3F34E5A51DEF51190002BD90 /* Builds.swift in Sources */,
 				3F34E5AE1DEF57A20002BD90 /* ThirdViewController.swift in Sources */,

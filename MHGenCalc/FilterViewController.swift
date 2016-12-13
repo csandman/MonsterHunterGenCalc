@@ -46,7 +46,7 @@ class FilterViewController: UIViewController {
         }
         appDelegate.filterOneArr = arrayToPass
     }
-    @IBAction func chestFlag(_ sender: Any) {
+    @IBAction func chestFlag(_ sender: AnyObject) {
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
         if(chestSwitch.isOn==true)
@@ -65,7 +65,7 @@ class FilterViewController: UIViewController {
         appDelegate.filterOneArr = arrayToPass
 
     }
-    @IBAction func armsFlag(_ sender: Any) {
+    @IBAction func armsFlag(_ sender: AnyObject) {
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
         if(armsSwitch.isOn==true)
@@ -85,7 +85,7 @@ class FilterViewController: UIViewController {
         appDelegate.filterOneArr = arrayToPass
 
     }
-    @IBAction func waistFlag(_ sender: Any) {
+    @IBAction func waistFlag(_ sender: AnyObject) {
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
         if(waistSwitch.isOn==true)
@@ -104,7 +104,8 @@ class FilterViewController: UIViewController {
         appDelegate.filterOneArr = arrayToPass
 
     }
-    @IBAction func legsFlag(_ sender: Any) {
+    @IBAction func legsFlag(_ sender: AnyObject) {
+        print(arrayToPass)
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
         if(legsSwitch.isOn==true)
