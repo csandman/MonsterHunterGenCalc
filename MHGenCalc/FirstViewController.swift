@@ -26,7 +26,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                                             _ = appDelegate.parseOutputString(setString: id!)
                                             
                                             NotificationCenter.default.post(name: .reload, object: nil)
-                                            //self.performSegue(withIdentifier: "setIdSegue", sender: nil)
+                                            self.performSegue(withIdentifier: "setIdSegue", sender: nil)
                                             
         })
         

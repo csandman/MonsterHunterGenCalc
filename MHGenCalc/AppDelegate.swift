@@ -633,27 +633,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let waistCode = Int(setFields[4])
         let legsCode = Int(setFields[5])
         if (headCode == 0) {
-            self.currentSetArr[0].head = nil
+            self.currentSetArr[0].head = 0
         } else {
             self.currentSetArr[0].head = (headCode! as NSNumber)
         }
         if (chestCode == 0) {
-            self.currentSetArr[0].chest = nil
+            self.currentSetArr[0].chest = 0
         } else {
             self.currentSetArr[0].chest = (chestCode! as NSNumber)
         }
         if (armsCode == 0) {
-            self.currentSetArr[0].arms = nil
+            self.currentSetArr[0].arms = 0
         } else {
             self.currentSetArr[0].arms = (armsCode! as NSNumber)
         }
         if (waistCode == 0) {
-            self.currentSetArr[0].waist = nil
+            self.currentSetArr[0].waist = 0
         } else {
             self.currentSetArr[0].waist = (waistCode! as NSNumber)
         }
         if (legsCode == 0) {
-            self.currentSetArr[0].legs = nil
+            self.currentSetArr[0].legs = 0
         } else {
             self.currentSetArr[0].legs = (legsCode! as NSNumber)
         }

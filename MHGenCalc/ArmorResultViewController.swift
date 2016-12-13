@@ -39,7 +39,9 @@ class ArmorResultViewController: UIViewController {
                                          style: .default,
                                          handler: { (action:UIAlertAction) -> Void in
                                             
-                                            self.performSegue(withIdentifier: "searchAddSegue", sender: nil)
+                                            //self.performSegue(withIdentifier: "searchAddSegue", sender: nil)
+                                            self.navigationController?.popViewController(animated: true)
+                                            self.navigationController?.popViewController(animated: true)
                                             
                                             
         })
