@@ -251,7 +251,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
             }
             self.tableView.reloadData()
             
-            appDelegate.shouldPerformAdvSearch = false
+            
             
         } else if (appDelegate.slotSelectedForSearch == 0) {
             let moc = appDelegate.managedObjectContext

@@ -11,6 +11,9 @@ import CoreData
 
 class FirstViewController: UIViewController, UITableViewDataSource {
     
+    var tabBarItem1: UITabBarItem = UITabBarItem()
+    var tabBarItem2: UITabBarItem = UITabBarItem()
+    
     @IBAction func loadSetId(_ sender: Any) {
         let alert = UIAlertController(title: "Load Set from ID",
                                       message: "Paste a set code to load a premade set",
@@ -395,6 +398,8 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                     var fetchedHead = try! appDelegate.managedObjectContext.fetch(headFetch) as! [Armor]
                     let head = fetchedHead[0]
                     appDelegate.headPassedToSecondView = head.name!
+                } else {
+                    appDelegate.chestPassedToSecondView = "Empty"
                 }
                 
                 if (currentSet.chest != 0 && currentSet.chest != nil) {
@@ -404,6 +409,8 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                 var fetchedChest = try! appDelegate.managedObjectContext.fetch(chestFetch) as! [Armor]
                 let chest = fetchedChest[0]
                     appDelegate.chestPassedToSecondView = chest.name!
+                } else {
+                    appDelegate.chestPassedToSecondView = "Empty"
                 }
                 
                 if (currentSet.arms != 0 && currentSet.arms != nil) {
@@ -413,6 +420,8 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                 var fetchedArms = try! appDelegate.managedObjectContext.fetch(armsFetch) as! [Armor]
                 let arms = fetchedArms[0]
                     appDelegate.armsPassedToSecondView = arms.name!
+                } else {
+                    appDelegate.chestPassedToSecondView = "Empty"
                 }
                 
                 if (currentSet.legs != 0 && currentSet.legs != nil) {
@@ -423,6 +432,8 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                 let legs = fetchedLegs[0]
                     appDelegate.legsPassedToSecondView = legs.name!
                     
+                } else {
+                    appDelegate.chestPassedToSecondView = "Empty"
                 }
                 
                 if (currentSet.waist != 0 && currentSet.waist != nil) {
@@ -432,6 +443,8 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                 var fetchedWaist = try! appDelegate.managedObjectContext.fetch(waistFetch) as! [Armor]
                 let waist = fetchedWaist[0]
                     appDelegate.waistPassedToSecondView = waist.name!
+                } else {
+                    appDelegate.chestPassedToSecondView = "Empty"
                 }
                 
                 
@@ -459,13 +472,33 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     //var displayStrings = [String]()
     
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        let tabBarControllerItems = self.tabBarController?.tabBar.items
+        
+        if let tabArray = tabBarControllerItems {
+            self.tabBarItem2 = tabArray[1]
+            self.tabBarItem2.isEnabled = true
+        }
+    }
         
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        let tabBarControllerItems = self.tabBarController?.tabBar.items
+        
+        if let tabArray = tabBarControllerItems {
+            self.tabBarItem2 = tabArray[1]
+            self.tabBarItem2.isEnabled = false
+        }
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        appDelegate.headPassedToSecondView = "Empty"
+        appDelegate.chestPassedToSecondView = "Empty"
+        appDelegate.armsPassedToSecondView = "Empty"
+        appDelegate.legsPassedToSecondView = "Empty"
+        appDelegate.waistPassedToSecondView = "Empty"
         
         let managedContext = appDelegate.managedObjectContext
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData(_:)), name: .reload, object: nil)

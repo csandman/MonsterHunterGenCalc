@@ -99,6 +99,7 @@ class SecondViewController: UIViewController {
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
         appDelegate.slotSelectedForSearch = 10
+        appDelegate.shouldPerformAdvSearch = false
         
         if (appDelegate.headPassedToSecondView != "") {
             headFilledLabel.text = appDelegate.headPassedToSecondView
