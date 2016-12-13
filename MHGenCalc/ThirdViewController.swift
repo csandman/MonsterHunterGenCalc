@@ -83,6 +83,109 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                 completion: nil)
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if (appDelegate.shouldPerformAdvSearch) {
+            let firstFilterArr = appDelegate.filterOneArr
+            let secondFilterArr = appDelegate.filterTwoArr
+            //let thirdFilterArr = appDelegate.filterThreeArr
+            //let fourthFilterArr = appDelegate.filterFourArr
+            print(firstFilterArr)
+            var shouldUseFirstFilter = false
+            var shouldUseSecondFilter = false
+            //var shouldUseThirdFilter = false
+            //var shouldUseFourthFilter = false
+            for filter in firstFilterArr {
+                if (filter != 0) {
+                    shouldUseFirstFilter = true
+                }
+            }
+            for filter in secondFilterArr {
+                if (filter != 0) {
+                    shouldUseSecondFilter = true
+                }
+            }
+//            for filter in thirdFilterArr {
+//                if (filter != 0) {
+//                    shouldUseThirdFilter = true
+//                }
+//            }
+//            if (fourthFilterArr[0] != 1 || fourthFilterArr[1] != 100) {
+//                shouldUseFourthFilter = true
+//            }
+            
+            
+            
+            
+            let moc = appDelegate.managedObjectContext
+            let armorFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+            let sortDescriptor1 = NSSortDescriptor(key: "slot", ascending: true)
+            let sortDescriptor2 = NSSortDescriptor(key: "name", ascending: true)
+            let sortDescriptors = [sortDescriptor1,sortDescriptor2]
+            armorFetch.sortDescriptors = sortDescriptors
+            print(armorFetch)
+            
+            if (shouldUseFirstFilter) {
+                var predicateArr = [NSPredicate]()
+                if (firstFilterArr[0] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K LIKE %@", "slot", "Head"))
+                }
+                if (firstFilterArr[1] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K LIKE %@", "slot", "Chest"))
+                }
+                if (firstFilterArr[2] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K LIKE %@", "slot", "Arms"))
+                }
+                if (firstFilterArr[3] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K LIKE %@", "slot", "Waist"))
+                }
+                if (firstFilterArr[4] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K LIKE %@", "slot", "Legs"))
+                }
+                print(predicateArr)
+                let firstPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: predicateArr)
+                armorFetch.predicate = firstPredicate
+            }
+            if (shouldUseSecondFilter) {
+                var predicateArr = [NSPredicate]()
+                if (firstFilterArr[0] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K > %@", "fire_res", 0))
+                }
+                if (firstFilterArr[1] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K > %@", "water_res", 0))
+                }
+                if (firstFilterArr[2] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K > %@", "ice_res", 0))
+                }
+                if (firstFilterArr[3] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K > %@", "thunder_res", 0))
+                }
+                if (firstFilterArr[4] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K > %@", "dragon_res", 0))
+                }
+                let secondPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: predicateArr)
+                armorFetch.predicate = secondPredicate
+            }
+            
+            print(armorFetch)
+            
+            
+            
+            
+            //let predicateOne = NSPredicate(format: "%K CONTAINS[c] %@", "name", name!)
+            
+            let fetchedArmor = try! moc.fetch(armorFetch) as! [Armor]
+            self.displayStrings.removeAll()
+            for armor in fetchedArmor {
+                self.displayStrings.append(armor.name! as String!)
+                //print(armor.name! as String)
+            }
+            self.tableView.reloadData()
+        }
+        
+    }
 
     
     override func viewDidLoad() {

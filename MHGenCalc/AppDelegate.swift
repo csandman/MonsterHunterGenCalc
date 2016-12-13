@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var filterTwoArr = [Int]()
     var filterThreeArr = [Int]()
     var filterFourArr = [Int]()
-    
+    var shouldPerformAdvSearch = false
     
     
     
