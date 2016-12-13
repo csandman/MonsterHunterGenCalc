@@ -209,7 +209,7 @@ class SecondViewController: UIViewController {
                                                 
                                                 
                                                 let name = alert.textFields![0].text
-                                                
+                                                self.inProgressLabel.text = name
                                                 
                                                 _ = appDelegate.saveSet(name: name!)
                                                 NotificationCenter.default.post(name: .reload, object: nil)
@@ -251,6 +251,8 @@ class SecondViewController: UIViewController {
                                             
                                             
                                             _ = appDelegate.saveSet(name: name!)
+                                            
+                                            self.inProgressLabel.text = name
                                             
                                         NotificationCenter.default.post(name: .reload, object: nil)
                                             //self.performSegue(withIdentifier: "saveCurrentSegue", sender: nil)

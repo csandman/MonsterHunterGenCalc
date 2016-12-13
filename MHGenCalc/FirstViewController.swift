@@ -25,36 +25,37 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                                             let appDelegate = UIApplication.shared.delegate as! AppDelegate
                                             let currentSet = appDelegate.parseOutputString(setString: id!)
                                             
-                                            if (currentSet.head != 0) {
+                                            if (currentSet.head != 0 && currentSet.head != nil) {
                                                 let headFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
-                                                let headPredicate = NSPredicate(format: "%K == %d", "id", currentSet.head!)
+                                                let headPredicate = NSPredicate(format: "%K == %d", "id", Int(currentSet.head!))
                                                 headFetch.predicate = headPredicate
+                                                print(headFetch)
                                                 var fetchedHead = try! appDelegate.managedObjectContext.fetch(headFetch) as! [Armor]
                                                 let head = fetchedHead[0]
                                                 appDelegate.headPassedToSecondView = head.name!
                                             }
                                             
-                                            if (currentSet.chest != 0) {
+                                            if (currentSet.chest != 0 && currentSet.chest != nil) {
                                                 let chestFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
-                                                let chestPredicate = NSPredicate(format: "%K == %d", "id", currentSet.chest!)
+                                                let chestPredicate = NSPredicate(format: "%K == %d", "id", Int(currentSet.chest!))
                                                 chestFetch.predicate = chestPredicate
                                                 var fetchedChest = try! appDelegate.managedObjectContext.fetch(chestFetch) as! [Armor]
                                                 let chest = fetchedChest[0]
                                                 appDelegate.chestPassedToSecondView = chest.name!
                                             }
                                             
-                                            if (currentSet.arms != 0) {
+                                            if (currentSet.arms != 0 && currentSet.arms != nil) {
                                                 let armsFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
-                                                let armsPredicate = NSPredicate(format: "%K == %d", "id", currentSet.arms!)
+                                                let armsPredicate = NSPredicate(format: "%K == %d", "id", Int(currentSet.arms!))
                                                 armsFetch.predicate = armsPredicate
                                                 var fetchedArms = try! appDelegate.managedObjectContext.fetch(armsFetch) as! [Armor]
                                                 let arms = fetchedArms[0]
                                                 appDelegate.armsPassedToSecondView = arms.name!
                                             }
                                             
-                                            if (currentSet.legs != 0) {
+                                            if (currentSet.legs != 0 && currentSet.legs != nil) {
                                                 let legsFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
-                                                let legsPredicate = NSPredicate(format: "%K == %d", "id", currentSet.legs!)
+                                                let legsPredicate = NSPredicate(format: "%K == %d", "id", Int(currentSet.legs!))
                                                 legsFetch.predicate = legsPredicate
                                                 var fetchedLegs = try! appDelegate.managedObjectContext.fetch(legsFetch) as! [Armor]
                                                 let legs = fetchedLegs[0]
@@ -62,15 +63,14 @@ class FirstViewController: UIViewController, UITableViewDataSource {
                                                 
                                             }
                                             
-                                            if (currentSet.waist != 0) {
+                                            if (currentSet.waist != 0 && currentSet.waist != nil) {
                                                 let waistFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
-                                                let waistPredicate = NSPredicate(format: "%K == %d", "id", currentSet.waist!)
+                                                let waistPredicate = NSPredicate(format: "%K == %d", "id", Int(currentSet.waist!))
                                                 waistFetch.predicate = waistPredicate
                                                 var fetchedWaist = try! appDelegate.managedObjectContext.fetch(waistFetch) as! [Armor]
                                                 let waist = fetchedWaist[0]
                                                 appDelegate.waistPassedToSecondView = waist.name!
                                             }
-
                                             
                                             NotificationCenter.default.post(name: .reload, object: nil)
                                             self.performSegue(withIdentifier: "setIdSegue", sender: nil)
@@ -150,6 +150,11 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     @IBAction func startNewBuild(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.createNewSet()
+        appDelegate.headPassedToSecondView = "Empty"
+        appDelegate.chestPassedToSecondView = "Empty"
+        appDelegate.armsPassedToSecondView = "Empty"
+        appDelegate.legsPassedToSecondView = "Empty"
+        appDelegate.waistPassedToSecondView = "Empty"
     }
     
     
@@ -164,7 +169,9 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData(_:)), name: .reload, object: nil)
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
-        
+        let sortDescriptor = NSSortDescriptor(key: "setName", ascending: true, selector: #selector(NSString.caseInsensitiveCompare(_:)))
+        let sortDescriptors = [sortDescriptor]
+        fetchRequest.sortDescriptors = sortDescriptors
         do {
             let results = try! managedContext.fetch(fetchRequest)
             let buildsList = results as! [Builds]
@@ -464,7 +471,9 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData(_:)), name: .reload, object: nil)
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Builds")
-        
+        let sortDescriptor = NSSortDescriptor(key: "setName", ascending: true, selector: #selector(NSString.caseInsensitiveCompare(_:)))
+        let sortDescriptors = [sortDescriptor]
+        fetchRequest.sortDescriptors = sortDescriptors
         do {
             let results = try! managedContext.fetch(fetchRequest)
             let buildsList = results as! [Builds]
