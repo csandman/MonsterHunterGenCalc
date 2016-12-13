@@ -12,9 +12,10 @@ class Filter3ViewController: UIViewController {
 
     @IBOutlet weak var hunterLabel: UILabel!
     
+
     @IBOutlet weak var bladeSwitch: UISwitch!
-    @IBOutlet weak var gunnerSwitch: UISwitch!
     
+    @IBOutlet weak var gunnerSwitch: UISwitch!
     
     var bladeValue = 0;
     var gunnerValue = 0;
@@ -22,7 +23,7 @@ class Filter3ViewController: UIViewController {
     var arrayToPass3 = Array(repeating: 0, count: 2)
 
     
-    @IBAction func bladeFlag(_ sender: Any) {
+    @IBAction func bladeFlag(_ sender: AnyObject) {
         let appDelegate =
         UIApplication.shared.delegate as! AppDelegate
         if(bladeSwitch.isOn==true)

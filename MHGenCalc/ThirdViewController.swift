@@ -107,12 +107,12 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
         if (appDelegate.shouldPerformAdvSearch) {
             let firstFilterArr = appDelegate.filterOneArr
             let secondFilterArr = appDelegate.filterTwoArr
-            //let thirdFilterArr = appDelegate.filterThreeArr
+            let thirdFilterArr = appDelegate.filterThreeArr
             let fourthFilterArr = appDelegate.filterFourArr
             print(firstFilterArr)
             var shouldUseFirstFilter = false
             var shouldUseSecondFilter = false
-            //var shouldUseThirdFilter = false
+            var shouldUseThirdFilter = false
             var shouldUseFourthFilter = false
             for filter in firstFilterArr {
                 if (filter != 0) {
@@ -124,11 +124,11 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                     shouldUseSecondFilter = true
                 }
             }
-//            for filter in thirdFilterArr {
-//                if (filter != 0) {
-//                    shouldUseThirdFilter = true
-//                }
-//            }
+            for filter in thirdFilterArr {
+                if (filter != 0) {
+                    shouldUseThirdFilter = true
+                }
+            }
             if (fourthFilterArr[0] != 1 || fourthFilterArr[1] != 100) {
                 shouldUseFourthFilter = true
             }
@@ -186,6 +186,18 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                 }
                 let secondPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: predicateArr)
                 totalPredicateArr.append(secondPredicate)
+            }
+            if (shouldUseThirdFilter) {
+                var predicateArr = [NSPredicate]()
+                predicateArr.append(NSPredicate(format: "%K == %d", "hunter_type", 2))
+                if (secondFilterArr[0] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K == %d", "hunter_type", 0))
+                }
+                if (secondFilterArr[1] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K == %d", "hunter_type", 1))
+                }
+                let thirdPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: predicateArr)
+                totalPredicateArr.append(thirdPredicate)
             }
             if (shouldUseFourthFilter) {
                 var predicateArr = [NSPredicate]()
