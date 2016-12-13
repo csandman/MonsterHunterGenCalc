@@ -533,6 +533,9 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-GB-b4g">
                                                 <rect key="frame" x="150.5" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.015686274510000001" green="0.75294117650000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                <connections>
+                                                    <action selector="bladeMasterFlag:" destination="ZnN-f9-JqH" eventType="valueChanged" id="hg6-at-fWU"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -548,6 +551,9 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cf0-VE-gJ9">
                                                 <rect key="frame" x="150.5" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.015686274510000001" green="0.75294117650000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                <connections>
+                                                    <action selector="gunnerFlag:" destination="ZnN-f9-JqH" eventType="valueChanged" id="NAx-eg-xuK"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -557,7 +563,9 @@
                         <color key="backgroundColor" red="0.20392156859999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <connections>
+                        <outlet property="bladeMasterFlag" destination="7Eg-CS-Dx4" id="2JJ-g8-cIJ"/>
                         <outlet property="bladeMasterSwitch" destination="SfC-GB-b4g" id="lo2-ev-t5A"/>
+                        <outlet property="gunnerFlag" destination="cf0-VE-gJ9" id="Nx7-nJ-8Bb"/>
                         <outlet property="gunnerSwitch" destination="cf0-VE-gJ9" id="o0n-K9-1Qu"/>
                         <outlet property="hunterLabel" destination="MgT-xo-U8N" id="CT1-O7-o92"/>
                     </connections>
