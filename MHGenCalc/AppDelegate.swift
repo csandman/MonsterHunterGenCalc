@@ -26,7 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var filterThreeArr = [Int]()
     var filterFourArr = [Int]()
     var shouldPerformAdvSearch = false
-    var slotSelectedForSearch = Int()
+    var slotSelectedForSearch = 10
+    var headPassedToSecondView = String()
+    var chestPassedToSecondView = String()
+    var armsPassedToSecondView = String()
+    var waistPassedToSecondView = String()
+    var legsPassedToSecondView = String()
 
 
 

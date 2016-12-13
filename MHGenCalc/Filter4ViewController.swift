@@ -43,19 +43,33 @@ class Filter4ViewController: UIViewController, UITextFieldDelegate {
         {
             minValueInt = 1
             maxValueInt = 100
-            //print label jut to test, if it prints it works
+            arrayToPass4[0] = minValueInt!
+            arrayToPass4[1] = maxValueInt!
+            appDelegate.filterFourArr = arrayToPass4
             resultLabel.text = String(minValueInt! + maxValueInt!)
+            print(arrayToPass4)
+            //print label jut to test, if it prints it works
         }
         //if only one is empty
         else if (minValueField.text!.isEmpty)
         {
             minValueInt = 1
+            var maxValueInt = Int(maxValueField.text!)
+            arrayToPass4[0] = minValueInt!
+            arrayToPass4[1] = maxValueInt!
+            appDelegate.filterFourArr = arrayToPass4
             resultLabel.text = String(minValueInt! + maxValueInt!)
+            print(arrayToPass4)
         }
         else if (maxValueField.text!.isEmpty)
         {
             maxValueInt = 100
+            var minValueInt = Int(minValueField.text!)
+            arrayToPass4[0] = minValueInt!
+            arrayToPass4[1] = maxValueInt!
+            appDelegate.filterFourArr = arrayToPass4
             resultLabel.text = String(minValueInt! + maxValueInt!)
+            print(arrayToPass4)
         }
         
         //otherwise, if the numbers are out of range, alerts them

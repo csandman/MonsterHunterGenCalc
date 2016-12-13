@@ -28,11 +28,21 @@ class SecondViewController: UIViewController {
     
     var valueToPass = 0;
     
+    var headPass = 0;
+    var chestPass = 0;
+    var armsPass = 0;
+    var waistPass = 0;
+    var legsPass = 0;
     
     @IBAction func headClicked(_ sender: Any) {
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
         valueToPass=0;
+        headPass = 0;
+        chestPass = 1;
+        armsPass = 1;
+        waistPass = 1;
+        legsPass = 1;
         appDelegate.slotSelectedForSearch = valueToPass
     }
     
@@ -40,6 +50,11 @@ class SecondViewController: UIViewController {
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
         valueToPass=1;
+        headPass = 1;
+        chestPass = 0;
+        armsPass = 1;
+        waistPass = 1;
+        legsPass = 1;
         appDelegate.slotSelectedForSearch = valueToPass
         print(valueToPass)
     }
@@ -47,23 +62,90 @@ class SecondViewController: UIViewController {
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
         valueToPass=2;
+        headPass = 1;
+        chestPass = 1;
+        armsPass = 0;
+        waistPass = 1;
+        legsPass = 1;
         appDelegate.slotSelectedForSearch = valueToPass
     }
     @IBAction func waistClick(_ sender: Any) {
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
         valueToPass=3;
+        headPass = 1;
+        chestPass = 1;
+        armsPass = 1;
+        waistPass = 0;
+        legsPass = 1;
         appDelegate.slotSelectedForSearch = valueToPass
     }
     @IBAction func legsClick(_ sender: Any) {
         let appDelegate =
             UIApplication.shared.delegate as! AppDelegate
         valueToPass=4;
+        headPass = 1;
+        chestPass = 1;
+        armsPass = 1;
+        waistPass = 1;
+        legsPass = 0;
         appDelegate.slotSelectedForSearch = valueToPass
     }
 
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let appDelegate =
+            UIApplication.shared.delegate as! AppDelegate
+        appDelegate.slotSelectedForSearch = 10
+        
+        if (appDelegate.headPassedToSecondView != "") {
+            headFilledLabel.text = appDelegate.headPassedToSecondView
+        }
+        if (appDelegate.chestPassedToSecondView != "") {
+            chestFilledLabel.text = appDelegate.chestPassedToSecondView
+        }
+        if (appDelegate.armsPassedToSecondView != "") {
+            armsFilledLabel.text = appDelegate.armsPassedToSecondView
+        }
+        if (appDelegate.waistPassedToSecondView != "") {
+            waistFilledLabel.text = appDelegate.waistPassedToSecondView
+        }
+        if (appDelegate.legsPassedToSecondView != "") {
+            legsFilledLabel.text = appDelegate.legsPassedToSecondView
+        }
+        
+//        if (headPass == 0)
+//        {
+//            let headName = appDelegate.headPassedToSecondView
+//            headFilledLabel.text = headName
+//        }
+//        
+//        if (chestPass == 0)
+//        {
+//        let chestName = appDelegate.chestPassedToSecondView
+//        chestFilledLabel.text = chestName
+//        }
+//        
+//        if (armsPass == 0)
+//        {
+//        let armsName = appDelegate.armsPassedToSecondView
+//        armsFilledLabel.text = armsName
+//        }
+//        
+//        if (waistPass == 0)
+//        {
+//        let waistName = appDelegate.waistPassedToSecondView
+//        waistFilledLabel.text = waistName
+//        }
+//        
+//        if (legsPass == 0)
+//        {
+//        let legsName = appDelegate.legsPassedToSecondView
+//        legsFilledLabel.text = legsName
+//        }
+    }
     
     
     
@@ -227,7 +309,16 @@ class SecondViewController: UIViewController {
         //let appDelegate = UIApplication.shared.delegate as! AppDelegate
         //_ = appDelegate.outputString()
         //_ = appDelegate.parseOutputString(setString: "mhgc-1310727-0-0-0-0")
+        
+        headFilledLabel.text = "Empty"
+        chestFilledLabel.text = "Empty"
+        armsFilledLabel.text = "Empty"
+        waistFilledLabel.text = "Empty"
+        legsFilledLabel.text = "Empty"
+        
         inProgressLabel.text = passedValue
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

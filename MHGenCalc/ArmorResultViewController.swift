@@ -32,6 +32,37 @@ class ArmorResultViewController: UIViewController {
     @IBAction func addArmorToSet(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.addArmorPieceByName(self.armorValue!)
+        
+        let armorFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let armorPredicate = NSPredicate(format: "%K == %@", "name", armorValue!)
+        armorFetch.predicate = armorPredicate
+        var fetchedArmor = try! appDelegate.managedObjectContext.fetch(armorFetch) as! [Armor]
+        let armor = fetchedArmor[0]
+        if (armor.slot == "Head") {
+            appDelegate.headPassedToSecondView = armor.name!
+        } else if (armor.slot == "Chest") {
+            appDelegate.chestPassedToSecondView = armor.name!
+        } else if (armor.slot == "Arms") {
+            appDelegate.armsPassedToSecondView = armor.name!
+        } else if (armor.slot == "Waist") {
+            appDelegate.waistPassedToSecondView = armor.name!
+        } else if (armor.slot == "Legs") {
+            appDelegate.legsPassedToSecondView = armor.name!
+        }
+        //appDelegate.headPassedToSecondView = head.name!
+        
+        
+//        var addArmorNameToPass = armorValue
+//        appDelegate.headPassedToSecondView = addArmorNameToPass!
+//
+//        appDelegate.chestPassedToSecondView = addArmorNameToPass!
+//        
+//        appDelegate.armsPassedToSecondView = addArmorNameToPass!
+//        
+//        appDelegate.waistPassedToSecondView = addArmorNameToPass!
+//        
+//        appDelegate.legsPassedToSecondView = addArmorNameToPass!
+        
         let alert = UIAlertController(title: "Armor Added",
                                       message: "You have added this item to your current set",
                                       preferredStyle: .alert)
