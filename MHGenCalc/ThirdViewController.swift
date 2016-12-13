@@ -15,7 +15,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
     
     var displayStrings = [String]()
     var armors = [Armor]()
-    
+    var palArmors = [PalicoArmor]()
 
     
     
@@ -31,7 +31,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                                                 UIApplication.shared.delegate as! AppDelegate
                                             let moc = appDelegate.managedObjectContext
                                             let armorFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
-                                            
+                                            let palicoFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "PalicoArmor")
                                       
                                             let name = alert.textFields![0].text
 //                                            print(name!)
@@ -41,7 +41,9 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                                                 let sortDescriptor2 = NSSortDescriptor(key: "name", ascending: true)
                                                 let sortDescriptors = [sortDescriptor1,sortDescriptor2]
                                                 armorFetch.sortDescriptors = sortDescriptors
+                                                palicoFetch.sortDescriptors = sortDescriptors
                                                 let predicate = NSPredicate(format: "%K CONTAINS[c] %@", "name", name!)
+                                                palicoFetch.predicate = predicate
                                                 armorFetch.predicate = predicate
                                             }
                                             
@@ -51,6 +53,10 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                                                 for armor in fetchedArmor {
                                                     self.displayStrings.append(armor.name! as String!)
                                                     //print(armor.name! as String)
+                                                }
+                                                let fetchPal = try moc.fetch(palicoFetch) as! [PalicoArmor]
+                                                for palico in fetchPal{
+                                                    self.displayStrings.append(palico.name! as String!)
                                                 }
                                                 self.tableView.reloadData()
                                                 
@@ -90,13 +96,19 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
         let managedContext = appDelegate.managedObjectContext
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let palRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PalicoArmor")
         
         do {
             let results = try! managedContext.fetch(fetchRequest)
+            let palResults = try! managedContext.fetch(palRequest)
+            palArmors = palResults as! [PalicoArmor]
             armors = results as! [Armor]
             self.displayStrings.removeAll()
             for armor in armors {
                 self.displayStrings.append(armor.name! as String)
+            }
+            for palico in palArmors {
+                self.displayStrings.append(palico.name! as String)
             }
         }
         self.tableView.reloadData()
@@ -140,6 +152,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
         let managedContext = appDelegate.managedObjectContext
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let palRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PalicoArmor")
         let name = displayStrings[indexPath.row]
         do {
             let results = try! managedContext.fetch(fetchRequest)
@@ -175,6 +188,30 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                     }
                 }
                 
+            }
+            
+            let palResult = try! managedContext.fetch(palRequest)
+            palArmors = palResult as! [PalicoArmor]
+            
+            var palImage : UIImage
+            
+            if(name.contains("(Palico")){
+                for palico in palArmors{
+                    if(name == palico.name){
+                        if(palico.slot == "Chest"){
+                            
+                            palImage = UIImage(named: "chest")!
+                            cell?.imageView?.image = palImage
+                        }
+                        if(palico.slot == "Head"){
+                            
+                          palImage = UIImage(named: "Helm")!
+                            cell?.imageView?.image = palImage
+                        }
+                    }
+
+                    
+                }
             }
         }
         

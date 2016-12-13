@@ -69,9 +69,12 @@ class ArmorResultViewController: UIViewController {
         let managedContext = appDelegate.managedObjectContext
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Armor")
+        let palicoRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PalicoArmor")
         do{
             let results = try! managedContext.fetch(fetchRequest)
+            let palResults = try! managedContext.fetch(palicoRequest)
             let armors = results as! [Armor]
+            let palicos = palResults as! [PalicoArmor]
             for armor in armors{
                 if(armor.name == armorValue){
                         defenseLabel.text = "\(armor.defense!)"
@@ -112,8 +115,40 @@ class ArmorResultViewController: UIViewController {
 
 
                 }
-            }
+                
+                if(armorValue?.contains("(Palico)"))! {
+                for palico in palicos{
+                    if(palico.name == armorValue){
+                        
+                        defenseLabel.text = "\(palico.defense!)"
+                        maxDefenseLabel.text = "N/A"
+                        iceLabel.text = "\(palico.ice_res!)"
+                        thunderLabel.text = "\(palico.thunder_res!)"
+                        //dragonLabel.text = "\(armor.dragon_res!)"
+                        dragonLabel.text = "0"
+                        waterLabel.text = "\(palico.water_res!)"
+                        fireLabel.text = "\(palico.fire_res!)"
+                        
+                        var imageArmor : UIImage
+                        if(palico.slot == "Chest"){
+                            
+                            imageArmor = UIImage(named: "chest")!
+                            armorImage.image = imageArmor
+                        }
+                        else if(palico.slot == "Head"){
+                            
+                            imageArmor = UIImage(named: "Helm")!
+                            armorImage.image = imageArmor
+                        }
+                        
+                        
+                        
+                    }
+                
+                }
             
+            }
+        }
         }
        
     }
