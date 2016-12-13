@@ -26,6 +26,54 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var waistFilledLabel: UILabel!
     @IBOutlet weak var legsFilledLabel: UILabel!
     
+    var valueToPass = 0;
+    
+    
+    @IBAction func headClicked(_ sender: Any) {
+        let appDelegate =
+            UIApplication.shared.delegate as! AppDelegate
+        valueToPass=0;
+        appDelegate.slotSelectedForSearch = valueToPass
+    }
+    
+    @IBAction func chestClick(_ sender: Any) {
+        let appDelegate =
+            UIApplication.shared.delegate as! AppDelegate
+        valueToPass=1;
+        appDelegate.slotSelectedForSearch = valueToPass
+        print(valueToPass)
+    }
+    @IBAction func armsClick(_ sender: Any) {
+        let appDelegate =
+            UIApplication.shared.delegate as! AppDelegate
+        valueToPass=2;
+        appDelegate.slotSelectedForSearch = valueToPass
+    }
+    @IBAction func waistClick(_ sender: Any) {
+        let appDelegate =
+            UIApplication.shared.delegate as! AppDelegate
+        valueToPass=3;
+        appDelegate.slotSelectedForSearch = valueToPass
+    }
+    @IBAction func legsClick(_ sender: Any) {
+        let appDelegate =
+            UIApplication.shared.delegate as! AppDelegate
+        valueToPass=4;
+        appDelegate.slotSelectedForSearch = valueToPass
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @IBAction func generateSetId(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let setId = appDelegate.outputString()

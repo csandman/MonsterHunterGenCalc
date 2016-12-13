@@ -26,9 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var filterThreeArr = [Int]()
     var filterFourArr = [Int]()
     var shouldPerformAdvSearch = false
-    
-    
-    
+    var slotSelectedForSearch = Int()
+
+
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let managedContext = self.managedObjectContext
