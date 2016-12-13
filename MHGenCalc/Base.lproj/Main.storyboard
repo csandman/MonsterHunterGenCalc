@@ -74,7 +74,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="loadStats:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="IBu-0L-NPw"/>
+                                    <action selector="advSearchClick:" destination="avH-rr-c3G" eventType="touchUpInside" id="3u4-ba-HeS"/>
                                     <segue destination="25Z-cN-PUk" kind="show" id="Eak-98-ubL"/>
                                 </connections>
                             </button>

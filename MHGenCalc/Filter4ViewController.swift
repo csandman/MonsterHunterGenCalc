@@ -16,6 +16,9 @@ class Filter4ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var maxValueField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     
+    var arrayToPass4 = [1,100]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +32,8 @@ class Filter4ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func checkValue(_ sender: Any) {
+        let appDelegate =
+            UIApplication.shared.delegate as! AppDelegate
         
         var minValueInt = Int(minValueField.text!)
         var maxValueInt = Int(maxValueField.text!)
@@ -75,7 +80,11 @@ class Filter4ViewController: UIViewController, UITextFieldDelegate {
         //if it says sick, then you good
         else
         {
+            arrayToPass4[0] = minValueInt!
+            arrayToPass4[1] = maxValueInt!
+            appDelegate.filterFourArr = arrayToPass4
             resultLabel.text = String(minValueInt! + maxValueInt!)
+            print(arrayToPass4)
         }
     }
     

@@ -17,6 +17,23 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
     var armors = [Armor]()
     var palArmors = [PalicoArmor]()
 
+    @IBAction func advSearchClick(_ sender: Any) {
+        let appDelegate =
+            UIApplication.shared.delegate as! AppDelegate
+        
+        let arrayToPass = Array(repeating: 0, count: 5)
+        let arrayToPass2 = Array(repeating: 0, count: 5)
+        let arrayToPass3 = Array(repeating: 0, count: 2)
+        let arrayToPass4 = [1,100]
+        
+        appDelegate.filterOneArr = arrayToPass
+        appDelegate.filterTwoArr = arrayToPass2
+        appDelegate.filterThreeArr = arrayToPass3
+        appDelegate.filterFourArr = arrayToPass4
+        
+        
+        print(arrayToPass4)
+    }
     
     
     @IBOutlet weak var tableView: UITableView!
