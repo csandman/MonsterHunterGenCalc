@@ -21,6 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var displayStrings = [String]()
     var palicoDisplayStrings = [String]()
     var currentSetArr = [Builds]()
+    var filterOneArr = [Int]()
+    var filterTwoArr = [Int]()
+    var filterThreeArr = [Int]()
+    var filterFourArr = [Int]()
+    
     
     
     
