@@ -127,6 +127,8 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
             armorFetch.sortDescriptors = sortDescriptors
             print(armorFetch)
             
+            var totalPredicateArr = [NSCompoundPredicate]()
+            
             if (shouldUseFirstFilter) {
                 var predicateArr = [NSPredicate]()
                 if (firstFilterArr[0] == 1) {
@@ -146,29 +148,30 @@ class ThirdViewController: UIViewController, UITableViewDataSource{
                 }
                 print(predicateArr)
                 let firstPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: predicateArr)
-                armorFetch.predicate = firstPredicate
+                totalPredicateArr.append(firstPredicate)
             }
             if (shouldUseSecondFilter) {
                 var predicateArr = [NSPredicate]()
-                if (firstFilterArr[0] == 1) {
-                    predicateArr.append(NSPredicate(format: "%K > %@", "fire_res", 0))
+                if (secondFilterArr[0] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K > %d", "fire_res", 0))
                 }
-                if (firstFilterArr[1] == 1) {
-                    predicateArr.append(NSPredicate(format: "%K > %@", "water_res", 0))
+                if (secondFilterArr[1] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K > %d", "water_res", 0))
                 }
-                if (firstFilterArr[2] == 1) {
-                    predicateArr.append(NSPredicate(format: "%K > %@", "ice_res", 0))
+                if (secondFilterArr[2] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K > %d", "ice_res", 0))
                 }
-                if (firstFilterArr[3] == 1) {
-                    predicateArr.append(NSPredicate(format: "%K > %@", "thunder_res", 0))
+                if (secondFilterArr[3] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K > %d", "thunder_res", 0))
                 }
-                if (firstFilterArr[4] == 1) {
-                    predicateArr.append(NSPredicate(format: "%K > %@", "dragon_res", 0))
+                if (secondFilterArr[4] == 1) {
+                    predicateArr.append(NSPredicate(format: "%K > %d", "dragon_res", 0))
                 }
-                let secondPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: predicateArr)
-                armorFetch.predicate = secondPredicate
+                let secondPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: predicateArr)
+                totalPredicateArr.append(secondPredicate)
             }
-            
+            let totalPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: totalPredicateArr)
+            armorFetch.predicate = totalPredicate
             print(armorFetch)
             
             

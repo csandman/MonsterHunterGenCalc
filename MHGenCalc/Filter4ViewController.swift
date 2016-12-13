@@ -22,7 +22,7 @@ class Filter4ViewController: UIViewController, UITextFieldDelegate {
         defenseLabel.textAlignment = NSTextAlignment.center;
         
     }
-    @IBAction func applyAndSearch(_ sender: Any) {
+    @IBAction func applyAndSearch(_ sender: AnyObject) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.shouldPerformAdvSearch = true
         self.navigationController?.popViewController(animated: true)
