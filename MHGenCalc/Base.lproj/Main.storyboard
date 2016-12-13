@@ -370,6 +370,9 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XlI-D3-E3W">
                                                 <rect key="frame" x="135" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.015686274510000001" green="0.75294117650000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                <connections>
+                                                    <action selector="fireFlag:" destination="ewM-In-AoG" eventType="valueChanged" id="7Pf-wt-JKQ"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -393,6 +396,9 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g8F-ZH-XJh">
                                                 <rect key="frame" x="135" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.015686274510000001" green="0.75294117650000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                <connections>
+                                                    <action selector="waterFlag:" destination="ewM-In-AoG" eventType="valueChanged" id="sns-En-n43"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -416,6 +422,9 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="V0E-7u-6ns">
                                                 <rect key="frame" x="135" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.015686274510000001" green="0.75294117650000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                <connections>
+                                                    <action selector="iceFlag:" destination="ewM-In-AoG" eventType="valueChanged" id="tKq-1w-EfV"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -439,6 +448,9 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kRs-2F-pb9">
                                                 <rect key="frame" x="135" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.015686274510000001" green="0.75294117650000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                <connections>
+                                                    <action selector="thunderFlag:" destination="ewM-In-AoG" eventType="valueChanged" id="wjK-ba-w9E"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -462,6 +474,9 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-5s-E9r">
                                                 <rect key="frame" x="135" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.015686274510000001" green="0.75294117650000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                <connections>
+                                                    <action selector="dragonFlag:" destination="ewM-In-AoG" eventType="valueChanged" id="RhV-5Z-6Wj"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
